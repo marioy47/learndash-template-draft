@@ -1,5 +1,4 @@
-$test-var: blue;
 
-body {
-    background-color: $test-var;
-}
+@import 'variables';
+@import 'fonts';
+@import 'body';

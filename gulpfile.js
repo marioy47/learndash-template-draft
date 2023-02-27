@@ -20,6 +20,11 @@ const copyImages = () => {
         .pipe(dest('./dist/images'))
 }
 
+const copyFonts = () => {
+    return src('./src/fonts/**/*.*')
+        .pipe(dest('./dist/fonts'))
+}
+
 const watchChanges = (cb) => {
     bsync.init({
         server: {
@@ -32,5 +37,5 @@ const watchChanges = (cb) => {
     watch(['./src/*.html'], copyHtml).on('change', bsync.reload)
 }
 
-exports.watch = series([copyHtml, copyImages, buildStyles, watchChanges])
-exports.build = series([copyHtml, copyImages, buildStyles])
+exports.watch = series([copyHtml, copyImages, copyFonts, buildStyles, watchChanges])
+exports.build = series([copyHtml, copyImages, copyFonts, buildStyles])
