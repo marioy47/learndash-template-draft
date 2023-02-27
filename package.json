@@ -1,0 +1,22 @@
+{
+  "name": "learndash-template-draft",
+  "version": "1.0.0",
+  "description": "Test project on how the new templates (Breezy) will look like",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "learndash",
+    "breezy"
+  ],
+  "author": "Mario Yepes",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.12",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.3"
+  }
+}
