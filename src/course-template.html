@@ -7,7 +7,11 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <!-- Site Header -->
+        <!--
+            Site Header
+            This is placed in this template as a demostration. The site header and footer should be
+            provided by the sites template.
+        -->
         <header class="site-header">
             <div class="site-header__branding">
                 <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
@@ -24,47 +28,97 @@
                     <div class="menu-profile__icon"></div>
                 </div>
             </aside>
-        </header>
+        </header><!-- site-header -->
 
-        <!-- Content -->
-        <div class="course-info-wrapper"><!-- `wrapper` classes are for enclosing elements in a grid or a flex -->
+        <!--
+            Content
+            The content code is layed out to be more friendly with readers than with styling.
+            This is because grid allows you to reorder the content to match a design very easily.
+        -->
+        <div class="course-info">
 
             <div class="course-info__breadcrumbs">
-                <span>&lt;- All Courses</span>
+                <span class="course-info__back-to">&lt;- All Courses</span>
             </div>
 
             <header class="course-info__header">
-                <h1>Course Title</h1>
-                <div>Not Enrolled</div>
-                <div>6 Lessons</div>
+                <h1 class="course-info__title">Course Title</h1>
+                <div class="course-info__enrollment">Not Enrolled</div>
+                <div class="course-info__lessons">6 Lessons</div>
             </header>
 
-            <!-- Sidebar (with css-grid it doesnt matter that it comes in the middle. But is more accesible this way) -->
-            <aside class="course-info__actions">
+            <!--
+                Sidebar
+                There is an asumption that this widget "could" be taken out of this page and sill make sense.
+                That's why is created as a different Block and not an element.
+                This is open for discussion.
+            -->
+            <aside class="course-subscription">
+                <div class="course-subscription__rating">
+                    <span class="rating-star--filled"></span>
+                    <span class="rating-star--filled"></span>
+                    <span class="rating-star--filled"></span>
+                    <span class="rating-star--empty"></span>
+                </div>
 
-            </aside>
+                <div class="course-subscription__price">
+                    <h2 class="title">Price</h2>
+                    <h2 class="price">Price</h2>
+                </div>
 
-            <div class="course-info__description">
-                <h2>Description</h2>
+                <div class="course-subscription__cta">
+                    <button class="course-subscription__cta--inactive">Enroll in this course</button>
+                </div>
 
-                This is an example of a free course demonstrating some of the core LearnDash functionality.
+                <small class="course-subscription__stats">24 people have subscribed</small>
 
-                Key concepts covered include:
+                <div class="course-subscription__instructors">
 
-                LearnDash Focus Mode demonstration
-                Accepted media files
-                Example quiz questions
-                Timer demonstration
-                Course workflow
-
-                Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂
-            </div>
+                </div>
+            </aside><!-- course-subscription block -->
 
             <nav class="course-info__nav">
-                menu.course-i
+                <menu class="course-info-menu">
+                    <li class="course-info-menu__index">Course</li>
+                    <li class="course-info-menu__materials">Materials</li>
+                </menu>
             </nav>
 
-            <main class="course-info__content">
+            <div class="course-info__description">
+                <h2 class="course-info__subtitle">Description</h2>
+
+                <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
+
+                <p>Key concepts covered include:</p>
+
+                <ul>
+                    <li>LearnDash Focus Mode demonstration</li>
+                    <li>Accepted media files</li>
+                    <li>Example quiz questions</li>
+                    <li>Timer demonstration</li>
+                    <li>Course workflow</li>
+                </ul>
+
+                <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
+            </div><!-- course-info__description -->
+
+
+            <main class="course-info__wrapper">
+                <div class="course-info">
+                    <h2 class="course-content__subtitle">Content</h2>
+                    <section class="course-content__section">
+                        <h3 class="course-content__subtitle">Section 1</h3>
+                    </section>
+                    <section class="course-content__section">
+                        <h3 class="course-content__subtitle">Section 2</h3>
+                    </section>
+                    <section class="course-content__section">
+                        <h3 class="course-content__subtitle">Section 3</h3>
+                    </section>
+                </div>
+
+            </main>
+            <main class="course-info__materials">
 
             </main>
         </div>
