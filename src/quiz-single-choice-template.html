@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="site-header__branding">
+                <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
+            </div>
+            <nav class="site-header__nav">
+                <menu class="site-nav">
+                    <li class="site-nav__item">Courses</li>
+                    <li class="site-nav__item">Pricing</li>
+                    <li class="site-nav__item">About</li>
+                </menu>
+            </nav>
+            <aside class="site-header__cta">
+                <div class="menu-profile">
+                    <div class="menu-profile__icon"></div>
+                </div>
+            </aside>
+        </header>
+
+        <div class="quiz-info">
+            <div class="quiz-info__breadcrumbs">
+                <span class="quiz-info__back-to">Course Name / Lesson Name / Quiz Name</span>
+            </div>
+
+            <header class="quiz-info__header">
+                <h1 class="quiz-info__title">Quiz Name</h1>
+            </header>
+
+            <div class="quiz-info__questions-counter">
+                <span class="quiz-info__questions-counter-label">Question</span>
+                <span class="quiz-info__questions-counter-current">1</span>
+                <span class="quiz-info__questions-counter-separator">of</span>
+                <span class="quiz-info__questions-counter-total">8</span>
+            </div>
+
+            <div class="quiz-info__question-header">
+                <h2 class="quiz-info__question-title">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. Duis venenatis mauris quis nisl tincidunt molestie</h2>
+                <span class="quiz-info__question-description">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. </span>
+            </div>
+
+            <div class="quiz-info__question-content">
+                <div class="quiz-info__question-content--single-choice">
+                    <div class="quiz-info__question-content--single-choice-item">
+                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-1">
+                        <label for="quiz-single-choice-1">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
+                    </div>
+                    <div class="quiz-info__question-content--single-choice-item">
+                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-2">
+                        <label for="quiz-single-choice-2">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
+                    </div>
+                    <div class="quiz-info__question-content--single-choice-item">
+                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-3">
+                        <label for="quiz-single-choice-3">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
+                    </div>
+                    <div class="quiz-info__question-content--single-choice-item">
+                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-4">
+                        <label for="quiz-single-choice-4">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-pagination">
+                <a class="quiz-pagination__item quiz-pagination__item--next">
+                    <span class="quiz-pagination__link">Next question</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <nav class="site-footer__legal"></nav>
+            <nav class="site-footer__sitemap"></nav>
+            <nav class="site-footer__social"></nav>
+        </footer>
+    </body>
+</html>
