@@ -24,4 +24,16 @@
     &__subscription {
         padding: 30px;
     }
+
+    &__description {
+        grid-column: 1 / 2;
+    }
+
+    &__content {
+        grid-column: 1 / 2;
+    }
+
+    &__materials {
+        grid-column: 1 / 2;
+    }
 }
