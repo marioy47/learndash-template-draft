@@ -12,27 +12,29 @@
             This is placed in this template as a demostration. The site header and footer should be
             provided by the sites template.
         -->
-        <header class="site-header">
-            <div class="site-header__wrapper">
-                <div class="site-header__branding">
+        <header class="ld-site-header">
+            <div class="ld-site-header__wrapper">
+                <div class="ld-site-header__branding">
                     <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
                 </div>
-                <nav class="site-header__nav">
-                    <menu class="site-nav">
-                        <li class="site-nav__item">Courses</li>
-                        <li class="site-nav__item">Pricing</li>
-                        <li class="site-nav__item">About</li>
+                <nav class="ld-site-header__nav">
+                    <menu class="ld-site-header__menu">
+                        <li class="ld-site-header__menuitem">Courses</li>
+                        <li class="ld-site-header__menuitem">Pricing</li>
+                        <li class="ld-site-header__menuitem">About</li>
                     </menu>
                 </nav>
-                <aside class="site-header__cta">
-                    <div class="menu-profile">
-                        <div class="menu-profile__icon">
+
+                <aside class="ld-site-header__cta">
+                    <!-- Menu profile might be useful somewhere. Creating it as a new block-->
+                    <div class="ld-menu-profile">
+                        <div class="ld-menu-profile__icon">
                             <div>Profile Icon</div>
                         </div>
-                        <div class="menu-profile__signup">
+                        <div class="ld-menu-profile__signup">
                             <button>Login</button>
                         </div>
-                        <div class="menu-profile__login">
+                        <div class="ld-menu-profile__login">
                             <button>Signup</button>
                         </div>
                     </div>
@@ -41,118 +43,122 @@
         </header><!-- site-header -->
 
         <!--
-            Content
-            The content code is layed out to be more friendly with readers than with styling.
-            This is because grid allows you to reorder the content to match a design very easily.
+            Main content created a embed block si it can be reusable
         -->
-        <div class="course-info">
-            <div class="course-info__wrapper">
-                <div class="course-info__breadcrumbs">
-                    <span class="course-info__back-to">&lt;- All Courses</span>
+        <div class="ld-main-content">
+            <div class="ld-main-content__wrapper">
+
+                <!-- The breadcrums could be a reusable widget. Creating it as a block -->
+                <div class="ld-main-content__breadcrumbs">
+                    <span class="ld-main-content__back-to">&lt;- All Courses</span>
                 </div>
 
-                <header class="course-info__header">
-                    <h1 class="course-info__title">Course Title</h1>
-                    <div class="course-info__enrollment">Not Enrolled</div>
-                    <div class="course-info__lessons">6 Lessons</div>
+                <header class="ld-main-content__header">
+                    <h1 class="ld-main-content__title">Course Title</h1>
+                    <div class="ld-main-content__enrollment">Not Enrolled</div>
+                    <div class="ld-main-content__lessons">6 Lessons</div>
                 </header>
 
-                <aside class="course-info__subscription">
+                <aside class="ld-main-content__aside">
 
-                    <div class="course-info_rating">
-                        <span class="rating-star--filled"></span>
-                        <span class="rating-star--filled"></span>
-                        <span class="rating-star--filled"></span>
-                        <span class="rating-star--empty"></span>
+                    <div class="ld-course-subscription">
+                        <div class="ld-course-subscription__rating">
+                            <span class="ld-course-subscription__star course-info__star--filled"></span>
+                            <span class="ld-course-subscription__star course-subscription__star--filled"></span>
+                            <span class="ld-course-subscription__star course-subscription__star--filled"></span>
+                            <span class="ld-course-subscription__star course-subscription__star--empty"></span>
+                        </div>
+
+                        <div class="ld-course-subscription__pricing">
+                            <h2 class="ld-course-subscription__subtitle">Price</h2>
+                            <h2 class="ld-course-subscription__price">Free</h2>
+                        </div>
+
+                        <div class="ld-course-subscription__cta">
+                            <button class="ld-course-subscription__cta--inactive">Enroll in this course</button>
+                        </div>
+
+                        <small class="ld-course-subscription__stats">24 people have subscribed</small>
+
+                        <div class="ld-course-subscription__instructors">
+                            <menu class="ld-course-subscription__list">
+                                <li class="ld-course-subscription__instructor">Instructor 1</li>
+                                <li class="ld-course-subscription__instructor">Instructor 2</li>
+                                <li class="ld-course-subscription__instructor">Instructor 3</li>
+                            </menu>
+                        </div>
+
+
                     </div>
 
-                    <div class="course-info__price">
-                        <h2 class="title">Price</h2>
-                        <h2 class="price">Free</h2>
-                    </div>
+                </aside><!-- ld-main-content__aside -->
 
-                    <div class="course-info__cta">
-                        <button class="course-subscription__cta--inactive">Enroll in this course</button>
-                    </div>
-
-                    <small class="course-info__stats">24 people have subscribed</small>
-
-                    <div class="course-info__instructors">
-                        <menu class="course-info__list">
-                            <li class="course-info__instructor">Instructor 1</li>
-                            <li class="course-info__instructor">Instructor 2</li>
-                            <li class="course-info__instructor">Instructor 3</li>
-                        </menu>
-
-                    </div>
-                </aside><!-- course-subscription block -->
-
-                <nav class="course-info__nav">
-                    <menu class="course-info-menu">
-                        <li class="course-info-menu__index">Course</li>
-                        <li class="course-info-menu__materials">Materials</li>
+                <nav class="ld-main-content__nav">
+                    <menu class="ld-main-content__navmenu">
+                        <li class="ld-main-content__navitem ld-main-content__navitem--active">Course</li>
+                        <li class="ld-main-content__navitem">Materials</li>
                     </menu>
                 </nav>
 
-                <div class="course-info__description">
-                    <h2 class="course-info__subtitle">Description</h2>
+                <!-- The course content is a different block -->
+                <div class="ld-main-content__main">
+                    <div class="ld-course-info__description">
+                        <h2 class="ld-course-info__subtitle">Description</h2>
 
-                    <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
+                        <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
 
-                    <p>Key concepts covered include:</p>
+                        <p>Key concepts covered include:</p>
 
-                    <ul>
-                        <li>LearnDash Focus Mode demonstration</li>
-                        <li>Accepted media files</li>
-                        <li>Example quiz questions</li>
-                        <li>Timer demonstration</li>
-                        <li>Course workflow</li>
-                    </ul>
+                        <ul>
+                            <li>LearnDash Focus Mode demonstration</li>
+                            <li>Accepted media files</li>
+                            <li>Example quiz questions</li>
+                            <li>Timer demonstration</li>
+                            <li>Course workflow</li>
+                        </ul>
 
-                    <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
-                </div><!-- course-info__description -->
+                        <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
+                    </div><!-- course-info__description -->
 
-                <main class="course-info__content">
-                        <h2 class="course-content__subtitle">Content</h2>
-                        <!--
-                            Course lessons.
-                            It could be said that every lesson is a block. But not sure if that actually makes sense.
-                            Right now I'm creating them as elements of the course-info block
-                        -->
-                        <section class="course-content__section">
-                            <h3 class="course-content__subtitle">Section 1</h3>
-                        </section>
-                        <section class="course-content__section">
-                            <h3 class="course-content__subtitle">Section 2</h3>
-                        </section>
-                        <section class="course-content__section">
-                            <h3 class="course-content__subtitle">Section 3</h3>
-                        </section>
-                </main>
+                    <main class="ld-course-info__content">
+                            <h2 class="course-content__subtitle">Content</h2>
+                            <!--
+                                Course lessons.
+                                It could be said that every lesson is a block. But not sure if that actually makes sense.
+                                Right now I'm creating them as elements of the ld-course-info block
+                            -->
+                            <section class="course-content__section">
+                                <h3 class="course-content__subtitle">Section 1</h3>
+                            </section>
+                            <section class="course-content__section">
+                                <h3 class="course-content__subtitle">Section 2</h3>
+                            </section>
+                            <section class="course-content__section">
+                                <h3 class="course-content__subtitle">Section 3</h3>
+                            </section>
+                    </main>
+                    <main class="ld-course-info__materials">
 
+                        Course Materials here
 
-                <main class="course-info__materials">
-
-                    Course Materials here
-
-                </main>
+                    </main>
+                </div>
             </div>
-
-        </div>
+        </div><!-- ld-main-content -->
 
         <!-- Footer -->
-        <footer class="site-footer">
-            <div class="site-footer__wrapper">
-                <nav class="site-footer__legal">
+        <footer class="ld-site-footer">
+            <div class="ld-site-footer__wrapper">
+                <nav class="ld-site-footer__legal">
                     Legal Menu
                 </nav>
-                <nav class="site-footer__sitemap">
+                <nav class="ld-site-footer__sitemap">
                     Site Map
                 </nav>
-                <nav class="site-footer__social">
+                <nav class="ld-site-footer__social">
                     Social Icons
                 </nav>
             </div>
-        </footer>
+        </footer><!-- ld-site-footer -->
     </body>
 </html>

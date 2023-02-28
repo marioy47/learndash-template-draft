@@ -1,4 +1,4 @@
-.site-header {
+.ld-site-header {
 
     img {
         max-width: 100%;
@@ -15,22 +15,16 @@
         padding: 0 var(--container-padding-desktop);
     }
 
-    .site-nav {
-        justify-content: flex-end;
+    &__menu {
         display: flex;
+        justify-content: flex-end;
         margin: 0;
         padding: 0;
         list-style: none;
-
-        &__item {
-            display: inline-block;
-            padding: 1rem;
-        }
     }
 
-    .menu-profile {
-        display: flex;
-        column-gap: .5rem;
-        justify-content: flex-end;
+    &__menuitem {
+        display: inline-block;
+        padding: 1rem;
     }
 }

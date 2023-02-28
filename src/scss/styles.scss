@@ -3,7 +3,12 @@
 @import 'fonts';
 @import 'body';
 
-@import 'site-header';
-@import 'site-footer';
+@import 'ld-site-header';
+@import 'ld-menu-profile';
+@import 'ld-site-footer';
 
-@import 'course-template/index';
+
+/** Global blocks **/
+@import 'ld-main-content.scss';
+
+/** Pages **/
