@@ -1,6 +1,4 @@
-
 .ld-main-content {
-
     &__wrapper {
         display: grid;
         max-width: var(--container-width-desktop);
@@ -17,12 +15,29 @@
 
     &__breadcrumbs {
         grid-column: 1 / 3;
+    }
 
+    &__breadcrumbs__item {
+        &::after {
+            content: '>'; // TODO: Refactor.
+            margin-left: 5px; // TODO: Refactor.
+        }
+
+        &:last-child::after {
+            content: ''; // TODO: Refactor.
+        }
     }
 
     &__header {
         grid-column: 1 / 2;
+    }
 
+    &__indicators {
+        display: flex;
+    }
+
+    &__indicator {
+        padding: 0 5px; // TODO: Refactor.
     }
 
     &__aside {
@@ -31,6 +46,19 @@
     }
 
     &__nav {
+        grid-column: 1 / 2;
+    }
+
+    &__tabs {
+        display: flex;
+        padding: 0; // TODO: Refactor.
+    }
+
+    &__tab {
+        padding: 0 5px; // TODO: Refactor.
+    }
+
+    &__main {
         grid-column: 1 / 2;
     }
 

@@ -1,0 +1,19 @@
+.ld-progress {
+    margin: 2rem 0; // TODO: Refactor.
+
+    &__bar {
+        height: 1rem; // TODO: Refactor.
+        margin: .5rem 0; // TODO: Refactor.
+        background-color: var(--progress-bar-color); // TODO: Refactor.
+    }
+
+    &__info {
+        display: flex; // TODO: Refactor.
+        justify-content: space-between; // TODO: Refactor.
+        align-items: center; // TODO: Refactor.
+    }
+
+    &__percentage {
+        font-weight: bold; // TODO: Refactor.
+    }
+}
