@@ -5,20 +5,18 @@
     }
 
     &__wrapper {
+        align-items: center;
         background-color: var(--site-header-bg-color);
         border-bottom: 1px solid var(--site-hader-border-color);
         display: grid;
         grid-template-columns: 200px auto 300px;
-        max-width: 1200px;
         margin: 0 auto;
-        align-items: center;
-    }
-
-    &__nav {
-        margin-left: auto;
+        max-width: var(--container-width-desktop);
+        padding: 0 var(--container-padding-desktop);
     }
 
     .site-nav {
+        justify-content: flex-end;
         display: flex;
         margin: 0;
         padding: 0;
@@ -26,10 +24,13 @@
 
         &__item {
             display: inline-block;
-            border: 1px solid red;
             padding: 1rem;
         }
     }
 
-
+    .menu-profile {
+        display: flex;
+        column-gap: .5rem;
+        justify-content: flex-end;
+    }
 }

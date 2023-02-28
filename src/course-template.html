@@ -26,7 +26,15 @@
                 </nav>
                 <aside class="site-header__cta">
                     <div class="menu-profile">
-                        <div class="menu-profile__icon">Profile icon</div>
+                        <div class="menu-profile__icon">
+                            <div>Profile Icon</div>
+                        </div>
+                        <div class="menu-profile__signup">
+                            <button>Login</button>
+                        </div>
+                        <div class="menu-profile__login">
+                            <button>Signup</button>
+                        </div>
                     </div>
                 </aside>
             </div>
@@ -38,113 +46,119 @@
             This is because grid allows you to reorder the content to match a design very easily.
         -->
         <div class="course-info">
+            <div class="course-info_wrapper">
+                <div class="course-info__breadcrumbs">
+                    <span class="course-info__back-to">&lt;- All Courses</span>
+                </div>
 
-            <div class="course-info__breadcrumbs">
-                <span class="course-info__back-to">&lt;- All Courses</span>
+                <header class="course-info__header">
+                    <h1 class="course-info__title">Course Title</h1>
+                    <div class="course-info__enrollment">Not Enrolled</div>
+                    <div class="course-info__lessons">6 Lessons</div>
+                </header>
+
+                <!--
+                    Sidebar
+                    There is an asumption that this widget "could" be taken out of this page and sill make sense.
+                    That's why is created as a different Block and not an element.
+                    This is open for discussion.
+                -->
+                <aside class="course-subscription">
+                    <div class="course-subscription__rating">
+                        <span class="rating-star--filled"></span>
+                        <span class="rating-star--filled"></span>
+                        <span class="rating-star--filled"></span>
+                        <span class="rating-star--empty"></span>
+                    </div>
+
+                    <div class="course-subscription__price">
+                        <h2 class="title">Price</h2>
+                        <h2 class="price">Free</h2>
+                    </div>
+
+                    <div class="course-subscription__cta">
+                        <button class="course-subscription__cta--inactive">Enroll in this course</button>
+                    </div>
+
+                    <small class="course-subscription__stats">24 people have subscribed</small>
+
+                    <div class="course-subscription__instructors">
+                        <menu class="course-subscription__list">
+                            <li class="course-subscription__instructor">Instructor 1</li>
+                            <li class="course-subscription__instructor">Instructor 2</li>
+                            <li class="course-subscription__instructor">Instructor 3</li>
+                        </menu>
+
+                    </div>
+                </aside><!-- course-subscription block -->
+
+                <nav class="course-info__nav">
+                    <menu class="course-info-menu">
+                        <li class="course-info-menu__index">Course</li>
+                        <li class="course-info-menu__materials">Materials</li>
+                    </menu>
+                </nav>
+
+                <div class="course-info__description">
+                    <h2 class="course-info__subtitle">Description</h2>
+
+                    <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
+
+                    <p>Key concepts covered include:</p>
+
+                    <ul>
+                        <li>LearnDash Focus Mode demonstration</li>
+                        <li>Accepted media files</li>
+                        <li>Example quiz questions</li>
+                        <li>Timer demonstration</li>
+                        <li>Course workflow</li>
+                    </ul>
+
+                    <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
+                </div><!-- course-info__description -->
+
+                <main class="course-info__wrapper">
+                    <div class="course-info">
+                        <h2 class="course-content__subtitle">Content</h2>
+                        <!--
+                            Course lessons.
+                            It could be said that every lesson is a block. But not sure if that actually makes sense.
+                            Right now I'm creating them as elements of the course-info block
+                        -->
+                        <section class="course-content__section">
+                            <h3 class="course-content__subtitle">Section 1</h3>
+                        </section>
+                        <section class="course-content__section">
+                            <h3 class="course-content__subtitle">Section 2</h3>
+                        </section>
+                        <section class="course-content__section">
+                            <h3 class="course-content__subtitle">Section 3</h3>
+                        </section>
+                    </div>
+
+                </main>
+
+
+                <main class="course-info__materials">
+
+                    Course Materials here
+
+                </main>
             </div>
 
-            <header class="course-info__header">
-                <h1 class="course-info__title">Course Title</h1>
-                <div class="course-info__enrollment">Not Enrolled</div>
-                <div class="course-info__lessons">6 Lessons</div>
-            </header>
-
-            <!--
-                Sidebar
-                There is an asumption that this widget "could" be taken out of this page and sill make sense.
-                That's why is created as a different Block and not an element.
-                This is open for discussion.
-            -->
-            <aside class="course-subscription">
-                <div class="course-subscription__rating">
-                    <span class="rating-star--filled"></span>
-                    <span class="rating-star--filled"></span>
-                    <span class="rating-star--filled"></span>
-                    <span class="rating-star--empty"></span>
-                </div>
-
-                <div class="course-subscription__price">
-                    <h2 class="title">Price</h2>
-                    <h2 class="price">Free</h2>
-                </div>
-
-                <div class="course-subscription__cta">
-                    <button class="course-subscription__cta--inactive">Enroll in this course</button>
-                </div>
-
-                <small class="course-subscription__stats">24 people have subscribed</small>
-
-                <div class="course-subscription__instructors">
-                    <menu class="course-subscription__list">
-                        <li class="course-subscription__instructor">Instructor 1</li>
-                        <li class="course-subscription__instructor">Instructor 2</li>
-                        <li class="course-subscription__instructor">Instructor 3</li>
-                    </menu>
-
-                </div>
-            </aside><!-- course-subscription block -->
-
-            <nav class="course-info__nav">
-                <menu class="course-info-menu">
-                    <li class="course-info-menu__index">Course</li>
-                    <li class="course-info-menu__materials">Materials</li>
-                </menu>
-            </nav>
-
-            <div class="course-info__description">
-                <h2 class="course-info__subtitle">Description</h2>
-
-                <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
-
-                <p>Key concepts covered include:</p>
-
-                <ul>
-                    <li>LearnDash Focus Mode demonstration</li>
-                    <li>Accepted media files</li>
-                    <li>Example quiz questions</li>
-                    <li>Timer demonstration</li>
-                    <li>Course workflow</li>
-                </ul>
-
-                <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
-            </div><!-- course-info__description -->
-
-
-            <main class="course-info__wrapper">
-                <div class="course-info">
-                    <h2 class="course-content__subtitle">Content</h2>
-                    <!--
-                        Course lessons.
-                        It could be said that every lesson is a block. But not sure if that actually makes sense.
-                        Right now I'm creating them as elements of the course-info block
-                    -->
-                    <section class="course-content__section">
-                        <h3 class="course-content__subtitle">Section 1</h3>
-                    </section>
-                    <section class="course-content__section">
-                        <h3 class="course-content__subtitle">Section 2</h3>
-                    </section>
-                    <section class="course-content__section">
-                        <h3 class="course-content__subtitle">Section 3</h3>
-                    </section>
-                </div>
-
-            </main>
-            <main class="course-info__materials">
-
-            </main>
         </div>
 
         <!-- Footer -->
         <footer class="site-footer">
             <nav class="site-footer__legal">
+                Legal Menu
 
             </nav>
             <nav class="site-footer__sitemap">
-
+                Site Map
             </nav>
             <nav class="site-footer__social">
-
+                Social Icons
             </nav>
         </footer>
     </body>
