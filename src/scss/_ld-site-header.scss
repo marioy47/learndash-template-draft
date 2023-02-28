@@ -1,5 +1,4 @@
 .ld-site-header {
-
     img {
         max-width: 100%;
     }
@@ -7,10 +6,10 @@
     &__wrapper {
         align-items: center;
         background-color: var(--site-header-bg-color);
-        border-bottom: 1px solid var(--site-hader-border-color);
+        border-bottom: 1px solid var(--site-header-border-color);
         display: grid;
         grid-template-columns: 200px auto 300px;
-        margin: 0 auto;
+        margin: 1rem auto;
         max-width: var(--container-width-desktop);
         padding: 0 var(--container-padding-desktop);
     }

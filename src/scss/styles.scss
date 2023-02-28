@@ -1,4 +1,3 @@
-
 @import 'variables';
 @import 'fonts';
 @import 'body';
@@ -7,8 +6,9 @@
 @import 'ld-menu-profile';
 @import 'ld-site-footer';
 
-
 /** Global blocks **/
-@import 'ld-main-content.scss';
+@import 'ld-main-content';
+@import 'ld-progress';
 
 /** Pages **/
+@import "lesson-template/index";
