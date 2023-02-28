@@ -10,9 +10,9 @@
         gap: var(--course-template-column-gap);
         margin: 0 auto;
 
-        // Just for Debugging:
         & > * {
-            border: 1px solid rgba(black, .2);
+            padding: 4px 8px;
+            border: 1px solid rgba(black, .2); // Just for Debugging:
         }
     }
 
