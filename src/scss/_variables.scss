@@ -8,13 +8,17 @@
     --container-width-desktop: 1200px;
     --container-padding-desktop: 8px;
 
-
     /** Site Header **/
     --site-header-bg-color: #fff;
-    --site-hader-border-color: #ddd;
+    --site-header-border-color: #ddd;
 
     /** Main Content (Course content, Grid info, Lesson, etc) **/
     --main-content-column-gap: 0 30px;
     --main-content-grid-columns: 2fr 1fr;
 
+    /** TODO: Where should it go? **/
+    --border-color: #ddd;
+
+    /** Progress Bar TODO: Where should it go? **/
+    --progress-bar-color: #000;
 }
