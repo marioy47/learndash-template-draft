@@ -1,11 +1,13 @@
+@import 'variables';
+
 .course-info {
 
     &__wrapper {
         display: grid;
         max-width: var(--container-width-desktop);
         padding: 0 var(--container-padding-desktop);
-        grid-template-columns: 2fr 1fr;
-        gap: 0 30px;
+        grid-template-columns: var(--course-template-grid-columns);
+        gap: var(--course-template-column-gap);
         margin: 0 auto;
 
         // Just for Debugging:
@@ -22,22 +24,4 @@
     &__subscription {
         padding: 30px;
     }
-
-
-    // &__header {
-    //     grid-column: 1 2 2 3;
-    //     border: 1px solid blue;
-    // }
-    //
-    // &__nav {
-    //     grid-column: 1 2 3 4;
-    //     border: 1px solid green;
-    // }
-    //
-
-
-
-    ///////
-
-
 }
