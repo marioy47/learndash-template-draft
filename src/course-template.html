@@ -46,7 +46,7 @@
             This is because grid allows you to reorder the content to match a design very easily.
         -->
         <div class="course-info">
-            <div class="course-info_wrapper">
+            <div class="course-info__wrapper">
                 <div class="course-info__breadcrumbs">
                     <span class="course-info__back-to">&lt;- All Courses</span>
                 </div>
@@ -57,36 +57,31 @@
                     <div class="course-info__lessons">6 Lessons</div>
                 </header>
 
-                <!--
-                    Sidebar
-                    There is an asumption that this widget "could" be taken out of this page and sill make sense.
-                    That's why is created as a different Block and not an element.
-                    This is open for discussion.
-                -->
-                <aside class="course-subscription">
-                    <div class="course-subscription__rating">
+                <aside class="course-info__subscription">
+
+                    <div class="course-info_rating">
                         <span class="rating-star--filled"></span>
                         <span class="rating-star--filled"></span>
                         <span class="rating-star--filled"></span>
                         <span class="rating-star--empty"></span>
                     </div>
 
-                    <div class="course-subscription__price">
+                    <div class="course-info__price">
                         <h2 class="title">Price</h2>
                         <h2 class="price">Free</h2>
                     </div>
 
-                    <div class="course-subscription__cta">
+                    <div class="course-info__cta">
                         <button class="course-subscription__cta--inactive">Enroll in this course</button>
                     </div>
 
-                    <small class="course-subscription__stats">24 people have subscribed</small>
+                    <small class="course-info__stats">24 people have subscribed</small>
 
-                    <div class="course-subscription__instructors">
-                        <menu class="course-subscription__list">
-                            <li class="course-subscription__instructor">Instructor 1</li>
-                            <li class="course-subscription__instructor">Instructor 2</li>
-                            <li class="course-subscription__instructor">Instructor 3</li>
+                    <div class="course-info__instructors">
+                        <menu class="course-info__list">
+                            <li class="course-info__instructor">Instructor 1</li>
+                            <li class="course-info__instructor">Instructor 2</li>
+                            <li class="course-info__instructor">Instructor 3</li>
                         </menu>
 
                     </div>
@@ -117,8 +112,7 @@
                     <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
                 </div><!-- course-info__description -->
 
-                <main class="course-info__wrapper">
-                    <div class="course-info">
+                <main class="course-info__content">
                         <h2 class="course-content__subtitle">Content</h2>
                         <!--
                             Course lessons.
@@ -134,8 +128,6 @@
                         <section class="course-content__section">
                             <h3 class="course-content__subtitle">Section 3</h3>
                         </section>
-                    </div>
-
                 </main>
 
 

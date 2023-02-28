@@ -1,0 +1,43 @@
+.course-info {
+
+    &__wrapper {
+        display: grid;
+        max-width: var(--container-width-desktop);
+        padding: 0 var(--container-padding-desktop);
+        grid-template-columns: 2fr 1fr;
+        gap: 0 30px;
+        margin: 0 auto;
+
+        // Just for Debugging:
+        & > * {
+            border: 1px solid rgba(black, .2);
+        }
+    }
+
+
+    &__breadcrumbs {
+        grid-column: 1 / 3;
+    }
+
+    &__subscription {
+        padding: 30px;
+    }
+
+
+    // &__header {
+    //     grid-column: 1 2 2 3;
+    //     border: 1px solid blue;
+    // }
+    //
+    // &__nav {
+    //     grid-column: 1 2 3 4;
+    //     border: 1px solid green;
+    // }
+    //
+
+
+
+    ///////
+
+
+}
