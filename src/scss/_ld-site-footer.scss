@@ -1,0 +1,10 @@
+.ld-site-footer {
+
+    &__wrapper {
+        max-width: var(--container-width-desktop);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
