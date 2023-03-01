@@ -1,0 +1,16 @@
+.ld-breadcrumb {
+    grid-column: 1 / 3;
+    display: flex; // TODO: Refactor.
+    padding: 1rem 2rem; // TODO: Refactor.
+
+    &__item {
+        &::after {
+            content: '>'; // TODO: Refactor.
+            margin: 0 .5rem; // TODO: Refactor.
+        }
+
+        &:last-child::after {
+            content: ''; // TODO: Refactor.
+        }
+    }
+}

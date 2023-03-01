@@ -43,22 +43,26 @@
         </header><!-- site-header -->
 
         <!--
-            Main content created a embed block si it can be reusable
+            Main content: In this page this refers to the course lessons and material
         -->
         <div class="ld-main-content">
             <div class="ld-main-content__wrapper">
 
-                <!-- The breadcrums could be a reusable widget. Creating it as a block -->
-                <div class="ld-main-content__breadcrumbs">
-                    <span class="ld-main-content__back-to">&lt;- All Courses</span>
-                </div>
+                <!-- Breadcrumbs at the top of the page -->
+                <ul class="ld-breadcrumb">
+                    <li class="ld-breadcrumb__item ld-breadcrumb__item--current">
+                        &lt;- All Courses
+                    </li>
+                </ul>
 
+                <!-- Page header: Course name, number of lessons and type of enrrolment-->
                 <header class="ld-main-content__header">
                     <h1 class="ld-main-content__title">Course Title</h1>
                     <div class="ld-main-content__enrollment">Not Enrolled</div>
                     <div class="ld-main-content__lessons">6 Lessons</div>
-                </header>
+                </header><!-- Header -->
 
+                <!-- Sidebar: Inforation of subscription status and instructors -->
                 <aside class="ld-main-content__aside">
 
                     <div class="ld-course-subscription">
@@ -105,41 +109,46 @@
 
                     </div>
 
-                </aside><!-- ld-main-content__aside -->
+                </aside><!-- Sidebar -->
 
+                <!-- Display selector: Show course content or course material -->
                 <nav class="ld-main-content__nav">
                     <menu class="ld-main-content__navmenu">
-                        <li class="ld-main-content__navitem ld-main-content__navitem--active"><a href="" data-display-target="course">Course</a></li>
-                        <li class="ld-main-content__navitem"><a href="" data-display-target="materials">Materials</a></li>
+                        <li class="ld-main-content__navitem ld-main-content__navitem--active">
+                            <a href="" data-selector-type="display-content" data-selector-target="description">Course</a>
+                        </li>
+                        <li class="ld-main-content__navitem">
+                            <a href="" data-selector-type="display-content" data-selector-target="materials">Materials</a>
+                        </li>
                     </menu>
-                </nav>
+                </nav><!-- Display selector -->
 
-                <!-- The course content is a different block -->
+                <!-- Course content -->
                 <div class="ld-main-content__main" id="">
                     <div class="ld-course-info">
-                        <div class="ld-course-info__description">
-                            <h2 class="ld-course-info__subtitle">Description</h2>
 
-                            <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
+                        <main class="ld-course-info__content" data-content-id="description">
+                            <div class="ld-course-info__description">
+                                <h2 class="ld-course-info__subtitle">Description</h2>
 
-                            <p>Key concepts covered include:</p>
+                                <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
 
-                            <ul>
-                                <li>LearnDash Focus Mode demonstration</li>
-                                <li>Accepted media files</li>
-                                <li>Example quiz questions</li>
-                                <li>Timer demonstration</li>
-                                <li>Course workflow</li>
-                            </ul>
+                                <p>Key concepts covered include:</p>
 
-                            <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
-                        </div><!-- course-info__description -->
+                                <ul>
+                                    <li>LearnDash Focus Mode demonstration</li>
+                                    <li>Accepted media files</li>
+                                    <li>Example quiz questions</li>
+                                    <li>Timer demonstration</li>
+                                    <li>Course workflow</li>
+                                </ul>
 
-                        <main class="ld-course-info__content">
-                            <h2 class="ld-course-info__subtitle">Content</h2>
-                            <div class="ld-course-section">
+                                <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
+                            </div><!-- course-info__description -->
+                            <div class="ld-course-sections">
+                                <h2 class="ld-course-info__subtitle">Content</h2>
+
                                 <h3 class="ld-course-section__title">Section 1</h3>
-
                                 <section class="ld-course-lesson" id="course-lesson-1">
                                     <h4 class="ld-course-lesson__title">Course Lesson 1</h4>
                                     <div class="ld-course-lesson__status">Not started</div>
@@ -167,19 +176,38 @@
                                         <li class="ld-course-lesson_quiz">Quiz 2</li>
                                     </ul>
                                 </section>
-                            </div>
+
+
+                                <h3 class="ld-course-section__title">Section 2</h3>
+                                <section class="ld-course-lesson" id="course-lesson-3">
+                                    <h4 class="ld-course-lesson__title">Course Lesson 3</h4>
+                                    <div class="ld-course-lesson__status">Not started</div>
+                                    <div class="ld-course-lesson__display"><a href="#course-lesson-3"></a></div>
+                                    <ul class="ld-course-lesson__topics">
+                                        <li class="ld-course-lesson__topic">Topic1</li>
+                                        <li class="ld-course-lesson__topic">Topic2</li>
+                                        <li class="ld-course-lesson__topic">Topic3</li>
+                                    </ul>
+                                    <ul class="ld-course-lesson__quices">
+                                        <li class="ld-course-lesson_quiz">Quiz 1</li>
+                                    </ul>
+                                </section>
+
+                            </div><!-- Sections -->
                         </main>
-                        <main class="ld-course-info__materials">
+                        <!-- Course Content -->
+
+                        <main class="ld-course-info__materials" data-content-id="materials">
                             <h2 class="ld-course-info__subtitle">Course Materials</h2>
 
                             <p>Course Materials here</p>
 
-                        </main>
+                        </main><!-- Course Materials -->
 
                     </div>
-                </div>
+                </div><!-- Course content -->
             </div>
-        </div><!-- ld-main-content -->
+        </div><!-- Main Content -->
 
         <!-- Footer -->
         <footer class="ld-site-footer">
