@@ -24,8 +24,12 @@ const copyFonts = () => {
     return src('./src/fonts/**/*.*')
         .pipe(dest('./dist/fonts'))
 }
+const copyJs = () => {
+    return src('./src/js/**/*.*')
+        .pipe(dest('./dist/js'))
+}
 
-const watchChanges = (cb) => {
+const watchChanges = () => {
     bsync.init({
         server: {
             baseDir: './dist'
@@ -34,8 +38,9 @@ const watchChanges = (cb) => {
 
     watch(['./src/scss/**/*.scss'], buildStyles)
     watch(['./src/images/**/*.*'], copyImages).on('change', bsync.reload)
+    watch(['./src/js/**/*.js'], copyJs).on('change', bsync.reload)
     watch(['./src/*.html'], copyHtml).on('change', bsync.reload)
 }
 
-exports.watch = series([copyHtml, copyImages, copyFonts, buildStyles, watchChanges])
-exports.build = series([copyHtml, copyImages, copyFonts, buildStyles])
+exports.watch = series([copyHtml, copyImages, copyFonts, copyJs, buildStyles, watchChanges])
+exports.build = series([copyHtml, copyImages, copyFonts, copyJs, buildStyles])

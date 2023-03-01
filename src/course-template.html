@@ -95,32 +95,33 @@
 
                 <nav class="ld-main-content__nav">
                     <menu class="ld-main-content__navmenu">
-                        <li class="ld-main-content__navitem ld-main-content__navitem--active">Course</li>
-                        <li class="ld-main-content__navitem">Materials</li>
+                        <li class="ld-main-content__navitem ld-main-content__navitem--active"><a href="" data-display-target="course">Course</a></li>
+                        <li class="ld-main-content__navitem"><a href="" data-display-target="materials">Materials</a></li>
                     </menu>
                 </nav>
 
                 <!-- The course content is a different block -->
-                <div class="ld-main-content__main">
-                    <div class="ld-course-info__description">
-                        <h2 class="ld-course-info__subtitle">Description</h2>
+                <div class="ld-main-content__main" id="">
+                    <div class="ld-course-info">
+                        <div class="ld-course-info__description">
+                            <h2 class="ld-course-info__subtitle">Description</h2>
 
-                        <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
+                            <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
 
-                        <p>Key concepts covered include:</p>
+                            <p>Key concepts covered include:</p>
 
-                        <ul>
-                            <li>LearnDash Focus Mode demonstration</li>
-                            <li>Accepted media files</li>
-                            <li>Example quiz questions</li>
-                            <li>Timer demonstration</li>
-                            <li>Course workflow</li>
-                        </ul>
+                            <ul>
+                                <li>LearnDash Focus Mode demonstration</li>
+                                <li>Accepted media files</li>
+                                <li>Example quiz questions</li>
+                                <li>Timer demonstration</li>
+                                <li>Course workflow</li>
+                            </ul>
 
-                        <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
-                    </div><!-- course-info__description -->
+                            <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
+                        </div><!-- course-info__description -->
 
-                    <main class="ld-course-info__content">
+                        <main class="ld-course-info__content">
                             <h2 class="course-content__subtitle">Content</h2>
                             <!--
                                 Course lessons.
@@ -136,12 +137,15 @@
                             <section class="course-content__section">
                                 <h3 class="course-content__subtitle">Section 3</h3>
                             </section>
-                    </main>
-                    <main class="ld-course-info__materials">
+                        </main>
+                        <main class="ld-course-info__materials">
+                            <h2 class="ld-course-info__subtitle">Course Materials</h2>
 
-                        Course Materials here
+                            <p>Course Materials here</p>
 
-                    </main>
+                        </main>
+
+                    </div>
                 </div>
             </div>
         </div><!-- ld-main-content -->
@@ -160,5 +164,6 @@
                 </nav>
             </div>
         </footer><!-- ld-site-footer -->
+        <script language="JavaScript" src="../js/scripts.js"></script>
     </body>
 </html>

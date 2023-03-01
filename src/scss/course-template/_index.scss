@@ -1,0 +1,24 @@
+
+.ld-course-info {
+    display: grid;
+
+    &__description {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    &__content {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    &__materials {
+        --displayed: 0;
+        grid-column: 1 / 1;
+        grid-row: calc( 1 * var(--displayed)) / 3;
+        height: var(--displayed);
+        overflow: hidden;
+        background-color: var(--body-bg-color);
+    }
+
+}
