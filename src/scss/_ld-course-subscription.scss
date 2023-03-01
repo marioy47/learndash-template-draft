@@ -1,4 +1,73 @@
 .ld-course-subscription {
-    border: 1px solid red;
+
+    &__star::after {
+        content: '\2605';
+    }
+
+    &__star--empty::after {
+        content: '\2606';
+    }
+
+    &__subtitle {
+        font-size: 70%;
+        font-weight: normal;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+     &__price {
+         font-size: 1.5rem;
+         font-weight: 700;
+         margin-bottom: 1rem;
+     }
+
+    &__cta button { // This has to be moved to a "bottons" block
+        background: #333;
+        color: white;
+        border: none;
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 1.05rem;
+        margin-bottom: 1rem;
+    }
+
+    &__instructors {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__instructor {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "avatar name"
+            "avatar title";
+        margin-bottom: 16px;
+        font-size: 80%;
+    }
+
+    &__avatar {
+        grid-area: avatar;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__instruct-name {
+        grid-area: name;
+        font-weight: 700;
+    }
+
+    &__instruct-title {
+        grid-area: title;
+        font-weight: 300;
+    }
 
 }
