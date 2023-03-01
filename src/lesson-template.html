@@ -45,14 +45,18 @@
         <!--
             Main content created a embed block si it can be reusable
         -->
-        <div class="ld-main-content">
+        <div class="ld-main-content ld-lesson">
             <div class="ld-main-content__wrapper">
 
                 <!-- The breadcrumbs could be a reusable widget. Creating it as a block -->
-                <div class="ld-main-content__breadcrumbs">
-                    <a href="/course-template" class="ld-main-content__breadcrumbs__item">Course Name</a>
-                    <span class="ld-main-content__breadcrumbs__item">Lesson Name</span>
-                </div>
+                <ul class="ld-breadcrumb">
+                    <li class="ld-breadcrumb__item">
+                        <a href="/course-template.html">Course Name</a>
+                    </li>
+                    <li class="ld-breadcrumb__item ld-breadcrumb__item--current">
+                        Lesson Name
+                    </li>
+                </ul>
 
                 <header class="ld-main-content__header">
                     <h1 class="ld-main-content__title">Lesson Title</h1>
@@ -69,7 +73,7 @@
                 </header>
 
                 <aside class="ld-main-content__aside">
-                    <div class="ld-lesson-sidebar__wrapper">
+                    <div class="ld-lesson-sidebar">
                         <h2 class="ld-lesson-sidebar__course-name">Course Name</h2>
                         <span class="ld-lesson-sidebar__author">by Jack Kerouac</span>
 
@@ -184,17 +188,17 @@
                     </main>
                 </div>
 
-                <div class="ld-lesson__pagination">
-                    <a class="ld-lesson__pagination-item ld-lesson__pagination-item--prev">
-                        <span class="ld-lesson__pagination-icon">&larr;</span>
-                        <span class="ld-lesson__pagination-label">Previous Lesson</span>
-                        <span class="ld-lesson__pagination-name">Interdum et malesuada fames ac ante</span>
+                <div class="ld-lesson-pagination">
+                    <a class="ld-lesson-pagination__item ld-lesson-pagination__item--prev">
+                        <span class="ld-lesson-pagination__icon">&larr;</span>
+                        <span class="ld-lesson-pagination__label">Previous Lesson</span>
+                        <span class="ld-lesson-pagination__name">Interdum et malesuada fames ac ante</span>
                     </a>
 
-                    <a class="ld-lesson__pagination-item ld-lesson__pagination-item--next">
-                        <span class="ld-lesson__pagination-icon">&rarr;</span>
-                        <span class="ld-lesson__pagination-label">Next Lesson</span>
-                        <span class="ld-lesson__pagination-name">Interdum et malesuada fames ac ante</span>
+                    <a class="ld-lesson-pagination__item ld-lesson-pagination__item--next">
+                        <span class="ld-lesson-pagination__icon">&rarr;</span>
+                        <span class="ld-lesson-pagination__label">Next Lesson</span>
+                        <span class="ld-lesson-pagination__name">Interdum et malesuada fames ac ante</span>
                     </a>
                 </div>
 
