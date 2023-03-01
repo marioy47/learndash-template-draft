@@ -48,10 +48,12 @@
         <div class="ld-main-content">
             <div class="ld-main-content__wrapper">
 
-                <!-- Breadcrrumbs at the top of the page -->
-                <div class="ld-main-content__breadcrumbs">
-                    <span class="ld-main-content__back-to">&lt;- All Courses</span>
-                </div>
+                <!-- Breadcrumbs at the top of the page -->
+                <ul class="ld-breadcrumb">
+                    <li class="ld-breadcrumb__item ld-breadcrumb__item--current">
+                        &lt;- All Courses
+                    </li>
+                </ul>
 
                 <!-- Page header: Course name, number of lessons and type of enrrolment-->
                 <header class="ld-main-content__header">
@@ -112,8 +114,12 @@
                 <!-- Display selector: Show course content or course material -->
                 <nav class="ld-main-content__nav">
                     <menu class="ld-main-content__navmenu">
-                        <li class="ld-main-content__navitem ld-main-content__navitem--active"><a href="" data-selector-type="display-content" data-selector-target="description">Course</a></li>
-                        <li class="ld-main-content__navitem"><a href="" data-selector-type="display-content" data-selector-target="materials">Materials</a></li>
+                        <li class="ld-main-content__navitem ld-main-content__navitem--active">
+                            <a href="" data-selector-type="display-content" data-selector-target="description">Course</a>
+                        </li>
+                        <li class="ld-main-content__navitem">
+                            <a href="" data-selector-type="display-content" data-selector-target="materials">Materials</a>
+                        </li>
                     </menu>
                 </nav><!-- Display selector -->
 

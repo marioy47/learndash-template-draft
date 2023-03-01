@@ -45,14 +45,18 @@
         <!--
             Main content created a embed block si it can be reusable
         -->
-        <div class="ld-main-content">
+        <div class="ld-main-content ld-lesson">
             <div class="ld-main-content__wrapper">
 
                 <!-- The breadcrumbs could be a reusable widget. Creating it as a block -->
-                <div class="ld-main-content__breadcrumbs">
-                    <a href="/course-template" class="ld-main-content__breadcrumbs__item">Course Name</a>
-                    <span class="ld-main-content__breadcrumbs__item">Lesson Name</span>
-                </div>
+                <ul class="ld-breadcrumb">
+                    <li class="ld-breadcrumb__item">
+                        <a href="/course-template.html">Course Name</a>
+                    </li>
+                    <li class="ld-breadcrumb__item ld-breadcrumb__item--current">
+                        Lesson Name
+                    </li>
+                </ul>
 
                 <header class="ld-main-content__header">
                     <h1 class="ld-main-content__title">Lesson Title</h1>
@@ -69,7 +73,7 @@
                 </header>
 
                 <aside class="ld-main-content__aside">
-                    <div class="ld-lesson-sidebar__wrapper">
+                    <div class="ld-lesson-sidebar">
                         <h2 class="ld-lesson-sidebar__course-name">Course Name</h2>
                         <span class="ld-lesson-sidebar__author">by Jack Kerouac</span>
 
@@ -120,81 +124,96 @@
                 </aside>
 
                 <nav class="ld-main-content__nav">
-                    <menu class="ld-main-content__tabs">
-                        <li class="ld-main-content__tab ld-main-content__tab--active">Lesson</li>
-                        <li class="ld-main-content__tab">Materials</li>
+                    <menu class="ld-main-content__navmenu">
+                        <li class="ld-main-content__navitem ld-main-content__navitem--active">
+                            <a href="" data-selector-type="display-content" data-selector-target="description">Lesson</a>
+                        </li>
+                        <li class="ld-main-content__navitem">
+                            <a href="" data-selector-type="display-content" data-selector-target="materials">Materials</a>
+                        </li>
+                        <li class="ld-main-content__navitem">
+                            <a href="" data-selector-type="display-content" data-selector-target="secret">Secret</a>
+                        </li>
                     </menu>
                 </nav>
 
                 <div class="ld-main-content__main">
-                    <main class="ld-main-content__tab-content ld-main-content__tab-content--active">
-                        <h2 class="ld-main-content__subtitle">
-                            Lesson content
-                        </h2>
+                    <div class="ld-main-content__content-wrapper">
+                        <main class="ld-main-content__content ld-main-content__content--active" data-content-id="description">
+                            <h2 class="ld-main-content__subtitle">
+                                Lesson content
+                            </h2>
 
-                        <p>
-                            Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. Duis venenatis mauris quis nisl tincidunt molestie
-                        </p>
+                            <p>
+                                Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. Duis venenatis mauris quis nisl tincidunt molestie
+                            </p>
 
-                        <p>
-                            <b>Maecenas tellus arcu:</b>
-                        </p>
+                            <p>
+                                <b>Maecenas tellus arcu:</b>
+                            </p>
 
-                        <ul>
-                            <li>Pellentesque tempor ligula quis nulla fermentum.</li>
-                            <li>Proin non lobortis purus.</li>
-                            <li>Sed hendrerit sem sit amet magna mattis, eu auctor ante posuere.</li>
-                            <li>Nam ac leo non purus faucibus ornare. Maecenas eu varius quam, in consectetur mi.</li>
-                            <li>Maecenas euismod est ut varius aliquet.</li>
-                        </ul>
+                            <ul>
+                                <li>Pellentesque tempor ligula quis nulla fermentum.</li>
+                                <li>Proin non lobortis purus.</li>
+                                <li>Sed hendrerit sem sit amet magna mattis, eu auctor ante posuere.</li>
+                                <li>Nam ac leo non purus faucibus ornare. Maecenas eu varius quam, in consectetur mi.</li>
+                                <li>Maecenas euismod est ut varius aliquet.</li>
+                            </ul>
 
-                        <p>
-                            Aenean ultricies, odio eget pharetra pretium, turpis lectus blandit diam, at iaculis risus orci et mauris. Sed eu nisl sed est imperdiet semper at ornare ipsum. Nulla facilisi. Mauris varius accumsan suscipit.
-                        </p>
+                            <p>
+                                Aenean ultricies, odio eget pharetra pretium, turpis lectus blandit diam, at iaculis risus orci et mauris. Sed eu nisl sed est imperdiet semper at ornare ipsum. Nulla facilisi. Mauris varius accumsan suscipit.
+                            </p>
 
-                        <h2 class="ld-main-content__subtitle">
-                            Pellentesque ultrices ac sem non varius
-                        </h2>
+                            <h2 class="ld-main-content__subtitle">
+                                Pellentesque ultrices ac sem non varius
+                            </h2>
 
-                        <p>
-                            Sed ac metus libero. Donec commodo odio a ex tempor, id laoreet lectus aliquet. Pellentesque eu scelerisque arcu.
-                        </p>
+                            <p>
+                                Sed ac metus libero. Donec commodo odio a ex tempor, id laoreet lectus aliquet. Pellentesque eu scelerisque arcu.
+                            </p>
 
-                        <p>
-                            Mauris aliquet diam a aliquet pellentesque. Aliquam bibendum massa sit amet luctus tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quis tortor augue. Aenean lobortis mattis tellus, id semper massa blandit sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ut neque leo. Nullam tincidunt porttitor metus sed commodo. Sed condimentum accumsan neque, in ultrices orci euismod tristique. Phasellus tellus sem, laoreet sed libero nec, luctus facilisis eros.
-                        </p>
-                    </main>
+                            <p>
+                                Mauris aliquet diam a aliquet pellentesque. Aliquam bibendum massa sit amet luctus tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quis tortor augue. Aenean lobortis mattis tellus, id semper massa blandit sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ut neque leo. Nullam tincidunt porttitor metus sed commodo. Sed condimentum accumsan neque, in ultrices orci euismod tristique. Phasellus tellus sem, laoreet sed libero nec, luctus facilisis eros.
+                            </p>
+                        </main>
 
-                    <main class="ld-main-content__tab-content">
-                        <h2 class="ld-main-content__subtitle">
-                            Materials for this lesson
-                        </h2>
+                        <main class="ld-main-content__content" data-content-id="materials">
+                            <h2 class="ld-main-content__subtitle">
+                                Materials for this lesson
+                            </h2>
 
-                        <p>
-                            <b>Maecenas tellus arcu:</b>
-                        </p>
+                            <p>
+                                <b>Maecenas tellus arcu:</b>
+                            </p>
 
-                        <ul>
-                            <li>Pellentesque tempor ligula quis nulla fermentum.</li>
-                            <li>Proin non lobortis purus.</li>
-                            <li>Sed hendrerit sem sit amet magna mattis, eu auctor ante posuere.</li>
-                            <li>Nam ac leo non purus faucibus ornare. Maecenas eu varius quam, in consectetur mi.</li>
-                            <li>Maecenas euismod est ut varius aliquet.</li>
-                        </ul>
-                    </main>
+                            <ul>
+                                <li>Pellentesque tempor ligula quis nulla fermentum.</li>
+                                <li>Proin non lobortis purus.</li>
+                                <li>Sed hendrerit sem sit amet magna mattis, eu auctor ante posuere.</li>
+                                <li>Nam ac leo non purus faucibus ornare. Maecenas eu varius quam, in consectetur mi.</li>
+                                <li>Maecenas euismod est ut varius aliquet.</li>
+                            </ul>
+                        </main>
+
+                        <main class="ld-main-content__content" data-content-id="secret">
+                            <h2 class="ld-main-content__subtitle">
+                                It had to be a secret..
+                            </h2>
+                        </main>
+                    </div>
                 </div>
 
-                <div class="ld-lesson__pagination">
-                    <a class="ld-lesson__pagination-item ld-lesson__pagination-item--prev">
-                        <span class="ld-lesson__pagination-icon">&larr;</span>
-                        <span class="ld-lesson__pagination-label">Previous Lesson</span>
-                        <span class="ld-lesson__pagination-name">Interdum et malesuada fames ac ante</span>
+                <div class="ld-lesson-pagination">
+                    <a class="ld-lesson-pagination__item ld-lesson-pagination__item--prev">
+                        <span class="ld-lesson-pagination__icon">&larr;</span>
+                        <span class="ld-lesson-pagination__label">Previous Lesson</span>
+                        <span class="ld-lesson-pagination__name">Interdum et malesuada fames ac ante</span>
                     </a>
 
-                    <a class="ld-lesson__pagination-item ld-lesson__pagination-item--next">
-                        <span class="ld-lesson__pagination-icon">&rarr;</span>
-                        <span class="ld-lesson__pagination-label">Next Lesson</span>
-                        <span class="ld-lesson__pagination-name">Interdum et malesuada fames ac ante</span>
+                    <a class="ld-lesson-pagination__item ld-lesson-pagination__item--next">
+                        <span class="ld-lesson-pagination__icon">&rarr;</span>
+                        <span class="ld-lesson-pagination__label">Next Lesson</span>
+                        <span class="ld-lesson-pagination__name">Interdum et malesuada fames ac ante</span>
                     </a>
                 </div>
 
@@ -215,5 +234,7 @@
                 </nav>
             </div>
         </footer><!-- ld-site-footer -->
+
+        <script language="JavaScript" src="../js/scripts.js"></script>
     </body>
 </html>
