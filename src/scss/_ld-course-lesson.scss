@@ -9,7 +9,7 @@
 
     &__display a:after {
         font-size: 150%;
-        content: '\002B';
+        content: '\002B'; // plus
     }
 
     &__topics,
@@ -27,7 +27,7 @@
         --display: auto;
     }
     &:target &__display a:after {
-        content: '\2212';
+        content: '\2212'; // minus
     }
 
 }

@@ -13,10 +13,10 @@
     }
 
     &__materials {
-        --displayed: 0;
+        --display: 0;
         grid-column: 1 / 1;
-        grid-row: calc( 1 * var(--displayed)) / 3;
-        height: var(--displayed);
+        grid-row: calc( 1 * var(--display)) / 3;
+        height: var(--display);
         overflow: hidden;
         background-color: var(--body-bg-color);
     }
