@@ -19,7 +19,7 @@
 
     &__breadcrumbs__item {
         &::after {
-            content: '>'; // TODO: Refactor.
+            content: '/'; // TODO: Refactor.
             margin-left: 5px; // TODO: Refactor.
         }
 

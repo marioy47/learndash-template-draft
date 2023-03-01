@@ -1,83 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Quiz Template</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <header class="site-header">
-            <div class="site-header__branding">
-                <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
-            </div>
-            <nav class="site-header__nav">
-                <menu class="site-nav">
-                    <li class="site-nav__item">Courses</li>
-                    <li class="site-nav__item">Pricing</li>
-                    <li class="site-nav__item">About</li>
-                </menu>
-            </nav>
-            <aside class="site-header__cta">
-                <div class="menu-profile">
-                    <div class="menu-profile__icon"></div>
-                </div>
-            </aside>
-        </header>
 
-        <div class="quiz-info">
-            <div class="quiz-info__breadcrumbs">
-                <span class="quiz-info__back-to">Course Name / Lesson Name / Quiz Name</span>
-            </div>
+<head>
+  <title>Quiz Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-            <header class="quiz-info__header">
-                <h1 class="quiz-info__title">Quiz Name</h1>
-            </header>
+<body>
+  <!--
+      Site Header
+      This is placed in this template as a demostration. The site header and footer should be
+      provided by the sites template.
+  -->
+  <header class="ld-site-header">
+    <div class="ld-site-header__wrapper">
+      <div class="ld-site-header__branding">
+        <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
+      </div>
+      <nav class="ld-site-header__nav">
+        <menu class="ld-site-header__menu">
+          <li class="ld-site-header__menuitem">Courses</li>
+          <li class="ld-site-header__menuitem">Pricing</li>
+          <li class="ld-site-header__menuitem">About</li>
+        </menu>
+      </nav>
 
-            <div class="quiz-info__questions-counter">
-                <span class="quiz-info__questions-counter-label">Question</span>
-                <span class="quiz-info__questions-counter-current">1</span>
-                <span class="quiz-info__questions-counter-separator">of</span>
-                <span class="quiz-info__questions-counter-total">8</span>
-            </div>
+      <aside class="ld-site-header__cta">
+        <!-- Menu profile might be useful somewhere. Creating it as a new block-->
+        <div class="ld-menu-profile">
+          <div class="ld-menu-profile__icon">
+            <div>Profile Icon</div>
+          </div>
+          <div class="ld-menu-profile__signup">
+            <button>Login</button>
+          </div>
+          <div class="ld-menu-profile__login">
+            <button>Signup</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header><!-- site-header -->
 
-            <div class="quiz-info__question-header">
-                <h2 class="quiz-info__question-title">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. Duis venenatis mauris quis nisl tincidunt molestie</h2>
-                <span class="quiz-info__question-description">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. </span>
-            </div>
 
-            <div class="quiz-info__question-content">
-                <div class="quiz-info__question-content--single-choice">
-                    <div class="quiz-info__question-content--single-choice-item">
-                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-1">
-                        <label for="quiz-single-choice-1">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
-                    </div>
-                    <div class="quiz-info__question-content--single-choice-item">
-                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-2">
-                        <label for="quiz-single-choice-2">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
-                    </div>
-                    <div class="quiz-info__question-content--single-choice-item">
-                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-3">
-                        <label for="quiz-single-choice-3">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
-                    </div>
-                    <div class="quiz-info__question-content--single-choice-item">
-                        <input type="radio" name="quiz-single-choice" id="quiz-single-choice-4">
-                        <label for="quiz-single-choice-4">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.</label>
-                    </div>
-                </div>
-            </div>
+  <div class="ld-main-content">
+    <div class="ld-main-content__wrapper">
 
-            <div class="quiz-pagination">
-                <a class="quiz-pagination__item quiz-pagination__item--next">
-                    <span class="quiz-pagination__link">Next question</span>
-                </a>
-            </div>
+      <div class="ld-main-content__breadcrumbs">
+        <a href="/course-template.html" class="ld-main-content__breadcrumbs__item">Course Name</a>
+        <a href="/lesson-template.html" class="ld-main-content__breadcrumbs__item">Lesson Name</a>
+        <span class="ld-main-content__back-to">Quiz Name</span>
+      </div>
+
+      <header class="ld-main-content__header">
+        <h1 class="ld-main-content__title">Quiz Name</h1>
+
+        <div class="ld-main-content__counter">
+          <span class="ld-main-content__counter-label">Question</span>
+          <span class="ld-main-content__counter-current">1</span>
+          <span class="ld-main-content__counter-separator">of</span>
+          <span class="ld-main-content__counter-total">8</span>
+        </div>
+      </header>
+
+      <div class="ld-main-content__main">
+        <div class="ld-quiz__question-header">
+          <h2 class="ld-quiz__question-title">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+            fringilla. Duis venenatis mauris quis nisl tincidunt molestie</h2>
+          <span class="ld-quiz__question-description">Pellentesque tempor ligula quis nulla fermentum, eget egestas
+            augue
+            fringilla. </span>
         </div>
 
-        <footer class="site-footer">
-            <nav class="site-footer__legal"></nav>
-            <nav class="site-footer__sitemap"></nav>
-            <nav class="site-footer__social"></nav>
-        </footer>
-    </body>
+        <div class="ld-quiz__question-content">
+          <div class="ld-quiz__question-content--single-choice">
+            <div class="ld-quiz__question-content--single-choice-item">
+              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-1">
+              <label for="quiz-single-choice-1">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                fringilla.</label>
+            </div>
+            <div class="ld-quiz__question-content--single-choice-item">
+              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-2">
+              <label for="quiz-single-choice-2">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                fringilla.</label>
+            </div>
+            <div class="ld-quiz__question-content--single-choice-item">
+              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-3">
+              <label for="quiz-single-choice-3">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                fringilla.</label>
+            </div>
+            <div class="ld-quiz__question-content--single-choice-item">
+              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-4">
+              <label for="quiz-single-choice-4">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                fringilla.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="ld-quiz__pagination">
+          <a class="ld-quiz-pagination__item ld-quiz-pagination__item--next">
+            <span class="ld-quiz-pagination__link">Next question</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="ld-site-footer">
+    <div class="ld-site-footer__wrapper">
+      <nav class="ld-site-footer__legal">
+        Legal Menu
+      </nav>
+      <nav class="ld-site-footer__sitemap">
+        Site Map
+      </nav>
+      <nav class="ld-site-footer__social">
+        Social Icons
+      </nav>
+    </div>
+  </footer><!-- ld-site-footer -->
+</body>
+
 </html>
