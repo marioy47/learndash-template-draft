@@ -1,4 +1,38 @@
 .ld-lesson {
-    @import 'ld-lesson-pagination';
     @import 'ld-lesson-sidebar';
+    @import 'ld-lesson-pagination';
+
+    &__topics {
+        margin-top: 2rem; // TODO: Refactor.
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem; // TODO: Refactor.
+    }
+
+    &__topic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--border-color); // TODO: Refactor.
+        padding: 1.5rem; // TODO: Refactor.
+    }
+
+    &__topic-heading {
+        display: flex;
+        align-items: center;
+        gap: 1rem; // TODO: Refactor.
+    }
+
+    &__topic-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__topic-title {
+        font-weight: 500;
+    }
+
+    &__topic-status {
+        font-size: .9rem; // TODO: Refactor.
+    }
 }

@@ -23,5 +23,7 @@
     --border-color: #ddd;
 
     /** Progress Bar TODO: Where should it go? **/
-    --progress-bar-color: #000;
+    --progress-bar-border-radius: 2px;
+    --progress-bar-background-color: #F5F5F5;
+    --progress-bar-foreground-color: #000;
 }

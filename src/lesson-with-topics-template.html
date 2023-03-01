@@ -15,7 +15,9 @@
         <header class="ld-site-header">
             <div class="ld-site-header__wrapper">
                 <div class="ld-site-header__branding">
-                    <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
+                    <a href="/">
+                        <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
+                    </a>
                 </div>
                 <nav class="ld-site-header__nav">
                     <menu class="ld-site-header__menu">
@@ -75,50 +77,51 @@
                 <aside class="ld-main-content__aside">
                     <div class="ld-lesson-sidebar">
                         <h2 class="ld-lesson-sidebar__course-name">Course Name</h2>
-                        <span class="ld-lesson-sidebar__author">by Jack Kerouac</span>
+                        <small class="ld-lesson-sidebar__author">by Jack Kerouac</small>
 
                         <div class="ld-progress">
-                            <span class="ld-progress__heading">Your progress</span>
+                            <small class="ld-progress__heading">Your progress</small>
 
-                            <div class="ld-progress__bar"></div>
+                            <div class="ld-progress__bar">
+                                <div class="ld-progress__bar-inner" style="width: 60%;"></div>
+                            </div>
 
                             <div class="ld-progress__info">
-                                <span class="ld-progress__percentage">60%</span>
-                                <span class="ld-progress__label">15/25 Lessons</span>
+                                <small class="ld-progress__percentage">60%</small>
+                                <small class="ld-progress__label">15/25 Lessons</small>
                             </div>
                         </div>
 
-                        <div class="ld-lesson-sidebar__section">
-                            <span class="ld-lesson-sidebar__section-name">SECTION 1</span>
-                            <span class="ld-lesson-sidebar__section-trigger">Hide content</span>
-                        </div>
+                        <div class="ld-lesson-sidebar__sections">
+                            <div class="ld-lesson-sidebar__section">
+                                <span class="ld-lesson-sidebar__section-name">SECTION 1</span>
+                                <a class="ld-lesson-sidebar__section-trigger">Hide content</a>
+                            </div>
 
-                        <div class="ld-lesson-sidebar__lesson">
-                            <span class="ld-lesson-sidebar__lesson-name">
-                                <b>Interdum et malesuada fames ac ante</b>
-                            </span>
+                            <div class="ld-lesson-sidebar__lesson ld-lesson-sidebar__lesson--current">
+                                <span class="ld-lesson-sidebar__lesson-name">Interdum et malesuada fames ac ante</span>
+                                <span class="ld-lesson-sidebar__lesson-status">Completed</span>
+                            </div>
 
-                            <span class="ld-lesson-sidebar__lesson-status">Completed</span>
-                        </div>
+                            <div class="ld-lesson-sidebar__lesson">
+                                <span class="ld-lesson-sidebar__lesson-name">Phasellus tellus sem, laoreet sed libero tellus nec...</span>
+                                <span class="ld-lesson-sidebar__lesson-status">33%</span>
+                            </div>
 
-                        <div class="ld-lesson-sidebar__lesson">
-                            <span class="ld-lesson-sidebar__lesson-name">Phasellus tellus sem, laoreet sed libero tellus nec...</span>
-                            <span class="ld-lesson-sidebar__lesson-status">33%</span>
-                        </div>
+                            <div class="ld-lesson-sidebar__lesson">
+                                <span class="ld-lesson-sidebar__lesson-name">Phasellus tellus sem, laoreet sed libero tellus nec...</span>
+                                <span class="ld-lesson-sidebar__lesson-status">50%</span>
+                            </div>
 
-                        <div class="ld-lesson-sidebar__lesson">
-                            <span class="ld-lesson-sidebar__lesson-name">Phasellus tellus sem, laoreet sed libero tellus nec...</span>
-                            <span class="ld-lesson-sidebar__lesson-status">50%</span>
-                        </div>
+                            <div class="ld-lesson-sidebar__lesson">
+                                <span class="ld-lesson-sidebar__lesson-name">Interdum et malesuada fames ac ante</span>
+                                <span class="ld-lesson-sidebar__lesson-status">Not started</span>
+                            </div>
 
-                        <div class="ld-lesson-sidebar__lesson">
-                            <span class="ld-lesson-sidebar__lesson-name">Interdum et malesuada fames ac ante</span>
-                            <span class="ld-lesson-sidebar__lesson-status">Not started</span>
-                        </div>
-
-                        <div class="ld-lesson-sidebar__section">
-                            <span class="ld-lesson-sidebar__section-name">SECTION 2</span>
-                            <span class="ld-lesson-sidebar__section-trigger">Show content</span>
+                            <div class="ld-lesson-sidebar__section">
+                                <span class="ld-lesson-sidebar__section-name">SECTION 2</span>
+                                <a class="ld-lesson-sidebar__section-trigger">Show content</a>
+                            </div>
                         </div>
                     </div>
                 </aside>
@@ -130,9 +133,6 @@
                         </li>
                         <li class="ld-main-content__navitem">
                             <a href="" data-selector-type="display-content" data-selector-target="materials">Materials</a>
-                        </li>
-                        <li class="ld-main-content__navitem">
-                            <a href="" data-selector-type="display-content" data-selector-target="secret">Secret</a>
                         </li>
                     </menu>
                 </nav>
@@ -175,6 +175,44 @@
                             <p>
                                 Mauris aliquet diam a aliquet pellentesque. Aliquam bibendum massa sit amet luctus tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quis tortor augue. Aenean lobortis mattis tellus, id semper massa blandit sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ut neque leo. Nullam tincidunt porttitor metus sed commodo. Sed condimentum accumsan neque, in ultrices orci euismod tristique. Phasellus tellus sem, laoreet sed libero nec, luctus facilisis eros.
                             </p>
+
+                            <div class="ld-lesson__topics">
+                                <div class="ld-lesson__topic">
+                                    <div class="ld-lesson__topic-heading">
+                                        <img src="https://via.placeholder.com/24x24" alt="Topic image" class="ld-lesson__topic-image">
+                                        <span class="ld-lesson__topic-title">Interdum et malesuada fames ac ante</span>
+                                    </div>
+
+                                    <span class="ld-lesson__topic-status">Not started</span>
+                                </div>
+
+                                <div class="ld-lesson__topic">
+                                    <div class="ld-lesson__topic-heading">
+                                        <img src="https://via.placeholder.com/24x24" alt="Topic image" class="ld-lesson__topic-image">
+                                        <span class="ld-lesson__topic-title">Interdum et malesuada fames ac ante</span>
+                                    </div>
+
+                                    <span class="ld-lesson__topic-status">Not started</span>
+                                </div>
+
+                                <div class="ld-lesson__topic">
+                                    <div class="ld-lesson__topic-heading">
+                                        <img src="https://via.placeholder.com/24x24" alt="Topic image" class="ld-lesson__topic-image">
+                                        <span class="ld-lesson__topic-title">Interdum et malesuada fames ac ante</span>
+                                    </div>
+
+                                    <span class="ld-lesson__topic-status">Not started</span>
+                                </div>
+
+                                <div class="ld-lesson__topic">
+                                    <div class="ld-lesson__topic-heading">
+                                        <img src="https://via.placeholder.com/24x24" alt="Topic image" class="ld-lesson__topic-image">
+                                        <span class="ld-lesson__topic-title">Quiz</span>
+                                    </div>
+
+                                    <span class="ld-lesson__topic-status">Not started</span>
+                                </div>
+                            </div>
                         </main>
 
                         <main class="ld-main-content__content" data-content-id="materials">
@@ -193,12 +231,6 @@
                                 <li>Nam ac leo non purus faucibus ornare. Maecenas eu varius quam, in consectetur mi.</li>
                                 <li>Maecenas euismod est ut varius aliquet.</li>
                             </ul>
-                        </main>
-
-                        <main class="ld-main-content__content" data-content-id="secret">
-                            <h2 class="ld-main-content__subtitle">
-                                It had to be a secret..
-                            </h2>
                         </main>
                     </div>
                 </div>

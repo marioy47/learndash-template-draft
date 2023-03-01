@@ -1,10 +1,17 @@
 .ld-progress {
-    margin: 2rem 0; // TODO: Refactor.
+    margin: 1.5rem 0; // TODO: Refactor.
 
     &__bar {
-        height: 1rem; // TODO: Refactor.
-        margin: .5rem 0; // TODO: Refactor.
-        background-color: var(--progress-bar-color); // TODO: Refactor.
+        height: 16px;
+        margin: .7rem 0; // TODO: Refactor.
+        border-radius: var(--progress-bar-border-radius); // TODO: Refactor.
+        background-color: var(--progress-bar-background-color); // TODO: Refactor.
+        overflow: hidden;
+    }
+
+    &__bar-inner {
+        height: 100%;
+        background-color: var(--progress-bar-foreground-color); // TODO: Refactor.
     }
 
     &__info {
@@ -13,7 +20,11 @@
         align-items: center; // TODO: Refactor.
     }
 
+    &__percentage, &__label {
+        font-size: .8rem;
+    }
+
     &__percentage {
-        font-weight: bold; // TODO: Refactor.
+        font-weight: 600; // TODO: Refactor.
     }
 }
