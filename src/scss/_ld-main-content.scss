@@ -32,6 +32,13 @@
         grid-column: 1 / 2;
     }
 
+    &__enrollment ,
+    &__lessons {
+        display: inline-block;
+        border-right: 1px solid #ccc;
+        padding: 0 8px;
+    }
+
     &__indicators {
         display: flex;
     }
@@ -47,6 +54,23 @@
 
     &__nav {
         grid-column: 1 / 2;
+    }
+
+    &__navmenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    &__navitem a {
+        display: inline-block;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    &__navitem--active a {
+        border-bottom: 2px solid #555;
     }
 
     &__tabs {
