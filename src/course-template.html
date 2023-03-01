@@ -122,21 +122,38 @@
                         </div><!-- course-info__description -->
 
                         <main class="ld-course-info__content">
-                            <h2 class="course-content__subtitle">Content</h2>
-                            <!--
-                                Course lessons.
-                                It could be said that every lesson is a block. But not sure if that actually makes sense.
-                                Right now I'm creating them as elements of the ld-course-info block
-                            -->
-                            <section class="course-content__section">
-                                <h3 class="course-content__subtitle">Section 1</h3>
-                            </section>
-                            <section class="course-content__section">
-                                <h3 class="course-content__subtitle">Section 2</h3>
-                            </section>
-                            <section class="course-content__section">
-                                <h3 class="course-content__subtitle">Section 3</h3>
-                            </section>
+                            <h2 class="ld-course-info__subtitle">Content</h2>
+                            <div class="ld-course-section">
+                                <h3 class="ld-course-section__title">Section 1</h3>
+
+                                <section class="ld-course-lesson" id="course-lesson-1">
+                                    <h4 class="ld-course-lesson__title">Course Lesson 1</h4>
+                                    <div class="ld-course-lesson__status">Not started</div>
+                                    <div class="ld-course-lesson__display"><a href="#course-lesson-1"></a></div>
+                                    <ul class="ld-course-lesson__topics">
+                                        <li class="ld-course-lesson__topic">Topic1</li>
+                                        <li class="ld-course-lesson__topic">Topic2</li>
+                                        <li class="ld-course-lesson__topic">Topic3</li>
+                                    </ul>
+                                    <ul class="ld-course-lesson__quices">
+                                        <li class="ld-course-lesson_quiz">Quiz 1</li>
+                                    </ul>
+                                </section>
+
+                                <section class="ld-course-lesson" id="course-lesson-2">
+                                    <h4 class="ld-course-lesson__title">Course Lesson 2</h4>
+                                    <div class="ld-course-lesson__status">Not started</div>
+                                    <div class="ld-course-lesson__display"><a href="#course-lesson-2"></a></div>
+                                    <ul class="ld-course-lesson__topics">
+                                        <li class="ld-course-lesson__topic">Topic1</li>
+                                        <li class="ld-course-lesson__topic">Topic2</li>
+                                    </ul>
+                                    <ul class="ld-course-lesson__quices">
+                                        <li class="ld-course-lesson_quiz">Quiz 1</li>
+                                        <li class="ld-course-lesson_quiz">Quiz 2</li>
+                                    </ul>
+                                </section>
+                            </div>
                         </main>
                         <main class="ld-course-info__materials">
                             <h2 class="ld-course-info__subtitle">Course Materials</h2>
