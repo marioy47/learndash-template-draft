@@ -1,19 +1,19 @@
 &-sidebar {
-    &__course-name {
-        margin: .5rem 0; // TODO: Refactor.
-    }
+	&__course-name {
+		margin: 0.5rem 0; // TODO: Refactor.
+	}
 
-    &__section {
-        margin: 1rem 0; // TODO: Refactor.
-        display: flex;
-        justify-content: space-between;
-    }
+	&__section {
+		margin: 1rem 0; // TODO: Refactor.
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &__lesson {
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-        padding: .75rem; // TODO: Refactor.
-        border-bottom: 1px solid var(--border-color); // TODO: Refactor.
-    }
+	&__lesson {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding: 0.75rem; // TODO: Refactor.
+		border-bottom: 1px solid var(--border-color); // TODO: Refactor.
+	}
 }

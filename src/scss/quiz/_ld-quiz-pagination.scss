@@ -1,0 +1,19 @@
+&-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0 2rem 0; // TODO: Refactor.
+}
+
+&-pagination__item {
+	display: flex;
+	flex-direction: column;
+}
+
+&-pagination__link {
+	// TODO: Refactor.
+	text-decoration: none;
+	border: 0.1rem solid var(--border-color);
+	border-radius: 0.2rem;
+	padding: 0.5rem 1rem;
+}

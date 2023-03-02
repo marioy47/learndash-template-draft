@@ -1,15 +1,15 @@
 &-pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3rem 0 0 0; // TODO: Refactor.
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem 0 0 0; // TODO: Refactor.
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-    }
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
 
-    &__item--next {
-        text-align: right;
-    }
+	&__item--next {
+		text-align: right;
+	}
 }
