@@ -17,19 +17,18 @@
         grid-column: 1 / 2;
     }
 
-    &__enrollment ,
-    &__lessons {
-        display: inline-block;
-        border-right: 1px solid #ccc;
-        padding: 0 8px;
-    }
-
     &__indicators {
         display: flex;
     }
 
     &__indicator {
-        padding: 0 5px; // TODO: Refactor.
+        display: inline-block;
+        border-right: 1px solid #ccc;
+        padding: 0 8px;
+
+        &:last-of-type {
+            border-right: none;
+        }
     }
 
     &__aside {
