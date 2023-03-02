@@ -1,21 +1,20 @@
-@import 'variables';
-@import 'fonts';
-@import 'body';
+@import "variables";
+@import "fonts";
+@import "body";
 
 /** Page Sections **/
-@import 'ld-site-header';
-@import 'ld-menu-profile';
-@import 'ld-site-footer';
+@import "ld-site-header";
+@import "ld-menu-profile";
+@import "ld-site-footer";
 
 /** Global blocks **/
-@import 'ld-main-content';
-@import 'ld-progress';
-@import 'ld-breadcrumb';
-@import 'ld-course-subscription';
-@import 'ld-course-lesson';
-@import 'ld-course-info';
+@import "ld-main-content";
+@import "ld-progress";
+@import "ld-breadcrumb";
+@import "ld-course-subscription";
+@import "ld-course-lesson";
+@import "ld-course-info";
 
 /** Pages **/
-@import 'course-template/index';
+@import "course-template/index";
 @import "lesson/ld-lesson";
-
