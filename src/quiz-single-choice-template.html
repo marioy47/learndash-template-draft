@@ -45,63 +45,76 @@
   </header><!-- site-header -->
 
 
-  <div class="ld-main-content">
+  <!--
+      Main content created a embed block si it can be reusable
+  -->
+  <div class="ld-main-content ld-quiz">
     <div class="ld-main-content__wrapper">
 
-      <div class="ld-main-content__breadcrumbs">
-        <a href="/course-template.html" class="ld-main-content__breadcrumbs__item">Course Name</a>
-        <a href="/lesson-template.html" class="ld-main-content__breadcrumbs__item">Lesson Name</a>
-        <span class="ld-main-content__back-to">Quiz Name</span>
-      </div>
+      <!-- The breadcrumbs could be a reusable widget. Creating it as a block -->
+      <ul class="ld-breadcrumb">
+        <li class="ld-breadcrumb__item">
+          <a href="/course-template.html">Course Name</a>
+        </li>
+        <li class="ld-breadcrumb__item">
+          <a href="/lesson-template.html">Lesson Name</a>
+        </li>
+        <li class="ld-breadcrumb__item ld-breadcrumb__item--current">
+          Quiz Name
+        </li>
+      </ul>
 
-      <header class="ld-quiz-content__header">
-        <h1 class="ld-quiz-content__title">Quiz Name</h1>
+      <header class="ld-quiz-header-content">
+        <h1 class="ld-quiz-header-content__title">Quiz Name</h1>
       </header>
 
-      <div class="ld-quiz-content__main">
-        <div class="ld-quiz-content__counter">
-          <span class="ld-quiz-content__counter-label">Question</span>
-          <span class="ld-quiz-content__counter-current">1</span>
-          <span class="ld-quiz-content__counter-separator">of</span>
-          <span class="ld-quiz-content__counter-total">8</span>
-        </div>
-  
-        <div class="ld-quiz__question-header">
-          <h2 class="ld-quiz__question-title">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
-            fringilla. Duis venenatis mauris quis nisl tincidunt molestie</h2>
-          <span class="ld-quiz__question-description">Pellentesque tempor ligula quis nulla fermentum, eget egestas
-            augue
-            fringilla. </span>
+      <div class="ld-quiz-main-content">
+        <div class="ld-quiz-questions-counter">
+          <span class="ld-quiz-questions-counter__label">Question</span>
+          <span class="ld-quiz-questions-counter__current">1</span>
+          <span class="ld-quiz-questions-counter__separator">of</span>
+          <span class="ld-quiz-questions-counter__total">8</span>
         </div>
 
-        <div class="ld-quiz__question-content">
-          <div class="ld-quiz__question-content--single-choice">
-            <div class="ld-quiz__question-content--single-choice-item">
-              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-1">
-              <label for="quiz-single-choice-1">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
-                fringilla.</label>
-            </div>
-            <div class="ld-quiz__question-content--single-choice-item">
-              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-2">
-              <label for="quiz-single-choice-2">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
-                fringilla.</label>
-            </div>
-            <div class="ld-quiz__question-content--single-choice-item">
-              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-3">
-              <label for="quiz-single-choice-3">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
-                fringilla.</label>
-            </div>
-            <div class="ld-quiz__question-content--single-choice-item">
-              <input type="radio" name="quiz-single-choice" id="quiz-single-choice-4">
-              <label for="quiz-single-choice-4">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
-                fringilla.</label>
+        <div class="ld-quiz-question">
+          <div class="ld-quiz-question__header">
+            <h2 class="ld-quiz-question__title">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+              fringilla. Duis venenatis mauris quis nisl tincidunt molestie</h2>
+            <span class="ld-quiz-question__description">Pellentesque tempor ligula quis nulla fermentum, eget egestas
+              augue
+              fringilla.</span>
+          </div>
+
+          <div class="ld-quiz-question__content">
+            <div class="ld-quiz-question__items ld-quiz-question__items--single-choice">
+              <div class="ld-quiz-question__item ld-quiz-question__item--single-choice">
+                <input type="radio" name="quiz-single-choice" id="quiz-single-choice-1">
+                <label for="quiz-single-choice-1">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                  fringilla.</label>
+              </div>
+              <div class="ld-quiz-question__item ld-quiz-question__item--single-choice">
+                <input type="radio" name="quiz-single-choice" id="quiz-single-choice-2">
+                <label for="quiz-single-choice-2">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                  fringilla.</label>
+              </div>
+              <div class="ld-quiz-question__item ld-quiz-question__item--single-choice">
+                <input type="radio" name="quiz-single-choice" id="quiz-single-choice-3">
+                <label for="quiz-single-choice-3">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                  fringilla.</label>
+              </div>
+              <div class="ld-quiz-question__item ld-quiz-question__item--single-choice">
+                <input type="radio" name="quiz-single-choice" id="quiz-single-choice-4">
+                <label for="quiz-single-choice-4">Pellentesque tempor ligula quis nulla fermentum, eget egestas augue
+                  fringilla.</label>
+              </div>
             </div>
           </div>
+
         </div>
 
-        <div class="ld-quiz__pagination">
-          <a class="ld-quiz__pagination-item ld-quiz__pagination-item--next">
-            <span class="ld-quiz__pagination-link">Next question</span>
+        <div class="ld-quiz-pagination">
+          <a class="ld-quiz-pagination__item ld-quiz-pagination__item--next">
+            <span class="ld-quiz-pagination__link">Next question</span>
           </a>
         </div>
 
