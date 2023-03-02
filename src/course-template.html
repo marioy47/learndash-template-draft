@@ -1,234 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <!--
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--
             Site Header
             This is placed in this template as a demostration. The site header and footer should be
             provided by the sites template.
         -->
-        <header class="ld-site-header">
-            <div class="ld-site-header__wrapper">
-                <div class="ld-site-header__branding">
-                    <a href="/">
-                        <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
-                    </a>
-                </div>
-                <nav class="ld-site-header__nav">
-                    <menu class="ld-site-header__menu">
-                        <li class="ld-site-header__menuitem">Courses</li>
-                        <li class="ld-site-header__menuitem">Pricing</li>
-                        <li class="ld-site-header__menuitem">About</li>
-                    </menu>
-                </nav>
+		<header class="ld-site-header">
+			<div class="ld-site-header__wrapper">
+				<div class="ld-site-header__branding">
+					<img
+						src="./images/LearnDash-logo-black.png"
+						alt="LearnDash Logo"
+					/>
+				</div>
+				<nav class="ld-site-header__nav">
+					<menu class="ld-site-header__menu">
+						<li class="ld-site-header__menuitem">Courses</li>
+						<li class="ld-site-header__menuitem">Pricing</li>
+						<li class="ld-site-header__menuitem">About</li>
+					</menu>
+				</nav>
 
-                <aside class="ld-site-header__cta">
-                    <!-- Menu profile might be useful somewhere. Creating it as a new block-->
-                    <div class="ld-menu-profile">
-                        <div class="ld-menu-profile__icon">
-                            <div>Profile Icon</div>
-                        </div>
-                        <div class="ld-menu-profile__signup">
-                            <button>Login</button>
-                        </div>
-                        <div class="ld-menu-profile__login">
-                            <button>Signup</button>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </header><!-- site-header -->
+				<aside class="ld-site-header__cta">
+					<!-- Menu profile might be useful somewhere. Creating it as a new block-->
+					<div class="ld-menu-profile">
+						<div class="ld-menu-profile__icon">
+							<div>Profile Icon</div>
+						</div>
+						<div class="ld-menu-profile__signup">
+							<button>Login</button>
+						</div>
+						<div class="ld-menu-profile__login">
+							<button>Signup</button>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</header>
+		<!-- site-header -->
 
-        <!--
+		<!--
             Main content: In this page this refers to the course lessons and material
         -->
-        <div class="ld-main-content">
-            <div class="ld-main-content__wrapper">
+		<div class="ld-container ld-course">
+			<div class="ld-container__wrapper">
+				<!-- Breadcrrumbs at the top of the page -->
+				<div class="ld-breadcrumb">
+					<span class="ld-breadcrumb__item">&lt;- All Courses</span>
+				</div>
 
-                <!-- Breadcrumbs at the top of the page -->
-                <ul class="ld-breadcrumb">
-                    <li class="ld-breadcrumb__item ld-breadcrumb__item--current">
-                        &lt;- All Courses
-                    </li>
-                </ul>
+				<!-- Page header: Course name, number of lessons and type of enrrolment-->
+				<header class="ld-main-content__header">
+					<h1 class="ld-main-content__title">Course Title</h1>
+					<div class="ld-main-content__enrollment">Not Enrolled</div>
+					<div class="ld-main-content__lessons">6 Lessons</div>
+				</header>
+				<!-- Header -->
 
-                <!-- Page header: Course name, number of lessons and type of enrrolment-->
-                <header class="ld-main-content__header">
-                    <h1 class="ld-main-content__title">Course Title</h1>
+				<!-- Sidebar: Inforation of subscription status and instructors -->
+				<aside class="ld-main-content__aside">
+					<div class="ld-course-subscription">
+						<div class="ld-course-subscription__rating">
+							<span
+								class="ld-course-subscription__star ld-course-subscription__star--filled"
+							></span>
+							<span
+								class="ld-course-subscription__star ld-course-subscription__star--filled"
+							></span>
+							<span
+								class="ld-course-subscription__star ld-course-subscription__star--filled"
+							></span>
+							<span
+								class="ld-course-subscription__star ld-course-subscription__star--empty"
+							></span>
+						</div>
 
-                    <div class="ld-main-content__indicators">
-                        <div class="ld-main-content__indicator ld-main-content__indicator--status">Not Enrolled</div>
-                        <!-- If a lesson is presented. -->
-                        <div class="ld-main-content__indicator ld-main-content__indicator--lesson">6 Lessons</div>
-                    </div>
-                </header><!-- Header -->
+						<div class="ld-course-subscription__pricing">
+							<h2 class="ld-course-subscription__subtitle">
+								Price
+							</h2>
+							<div class="ld-course-subscription__price">
+								Free
+							</div>
+						</div>
 
-                <!-- Sidebar: Inforation of subscription status and instructors -->
-                <aside class="ld-main-content__aside">
+						<div class="ld-course-subscription__cta">
+							<button class="ld-course-subscription__cta">
+								Enroll in this course
+							</button>
+						</div>
 
-                    <div class="ld-course-subscription">
-                        <div class="ld-course-subscription__rating">
-                            <span class="ld-course-subscription__star ld-course-subscription__star--filled"></span>
-                            <span class="ld-course-subscription__star ld-course-subscription__star--filled"></span>
-                            <span class="ld-course-subscription__star ld-course-subscription__star--filled"></span>
-                            <span class="ld-course-subscription__star ld-course-subscription__star--empty"></span>
-                        </div>
+						<small class="ld-course-subscription__stats"
+							>24 people have subscribed</small
+						>
 
-                        <div class="ld-course-subscription__pricing">
-                            <h2 class="ld-course-subscription__subtitle">Price</h2>
-                            <div class="ld-course-subscription__price">Free</div>
-                        </div>
+						<div class="ld-course-subscription__instructors">
+							<h2 class="ld-course-subscription__subtitle">
+								Course By
+							</h2>
 
-                        <div class="ld-course-subscription__cta">
-                            <button class="ld-course-subscription__cta">Enroll in this course</button>
-                        </div>
+							<ul class="ld-course-subscription__instructors">
+								<li class="ld-course-subscription__instructor">
+									<img
+										class="ld-course-subscription__avatar"
+										src="https://placebeard.it/45x45"
+										alt=""
+									/>
+									<span
+										class="ld-course-subscription__instruct-name"
+										>John Doe</span
+									>
+									<span
+										class="ld-course-subscription__instruct-title"
+										>Industry Expert</span
+									>
+								</li>
+								<li class="ld-course-subscription__instructor">
+									<img
+										class="ld-course-subscription__avatar"
+										src="https://placebeard.it/45x45"
+										alt=""
+									/>
+									<span
+										class="ld-course-subscription__instruct-name"
+										>Peter Pan</span
+									>
+									<span
+										class="ld-course-subscription__instruct-title"
+										>Industry Expert</span
+									>
+								</li>
+								<li class="ld-course-subscription__instructor">
+									<img
+										class="ld-course-subscription__avatar"
+										src="https://placebeard.it/45x45"
+										alt=""
+									/>
+									<span
+										class="ld-course-subscription__instruct-name"
+										>Scott Britte</span
+									>
+									<span
+										class="ld-course-subscription__instruct-title"
+										>Industry Expert</span
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+				<!-- Sidebar -->
 
-                        <small class="ld-course-subscription__stats">24 people have subscribed</small>
+				<!-- Display selector: Show course content or course material -->
+				<nav class="ld-main-content__nav">
+					<menu class="ld-main-content__navmenu">
+						<li
+							class="ld-main-content__navitem ld-main-content__navitem--active"
+						>
+							<a
+								href=""
+								data-selector-type="display-content"
+								data-selector-target="description"
+								>Course</a
+							>
+						</li>
+						<li class="ld-main-content__navitem">
+							<a
+								href=""
+								data-selector-type="display-content"
+								data-selector-target="materials"
+								>Materials</a
+							>
+						</li>
+					</menu>
+				</nav>
+				<!-- Display selector -->
 
-                        <div class="ld-course-subscription__instructors">
-                            <h2 class="ld-course-subscription__subtitle">Course By</h2>
+				<!-- Course content -->
+				<div class="ld-main-content__main" id="">
+					<div class="ld-course-info">
+						<main
+							class="ld-course-info__content"
+							data-content-id="description"
+						>
+							<div class="ld-course-info__description">
+								<h2 class="ld-course-info__subtitle">
+									Description
+								</h2>
 
-                            <ul class="ld-course-subscription__instructors">
-                                <li class="ld-course-subscription__instructor">
-                                    <img class="ld-course-subscription__avatar"src="https://placebeard.it/45x45" alt=""  />
-                                    <span class="ld-course-subscription__instruct-name">John Doe</span>
-                                    <span class="ld-course-subscription__instruct-title">Industry Expert</span>
-                                </li>
-                                <li class="ld-course-subscription__instructor">
-                                    <img class="ld-course-subscription__avatar"src="https://placebeard.it/45x45" alt=""  />
-                                    <span class="ld-course-subscription__instruct-name">Peter Pan</span>
-                                    <span class="ld-course-subscription__instruct-title">Industry Expert</span>
-                                </li>
-                                <li class="ld-course-subscription__instructor">
-                                    <img class="ld-course-subscription__avatar"src="https://placebeard.it/45x45" alt=""  />
-                                    <span class="ld-course-subscription__instruct-name">Scott Britte</span>
-                                    <span class="ld-course-subscription__instruct-title">Industry Expert</span>
-                                </li>
-                            </ul>
-                        </div>
+								<p>
+									This is an example of a free course
+									demonstrating some of the core LearnDash
+									functionality.
+								</p>
 
+								<p>Key concepts covered include:</p>
 
-                    </div>
+								<ul>
+									<li>LearnDash Focus Mode demonstration</li>
+									<li>Accepted media files</li>
+									<li>Example quiz questions</li>
+									<li>Timer demonstration</li>
+									<li>Course workflow</li>
+								</ul>
 
-                </aside><!-- Sidebar -->
+								<p>
+									Advanced functionality such as learner
+									engagement notifications, assignments, essay
+									questions (and more) are not featured. Don’t
+									hesitate to contact us if you have any
+									questions relating to any of the LearnDash
+									functionality. 🙂
+								</p>
+							</div>
+							<!-- course-info__description -->
+							<div class="ld-course-sections">
+								<h2 class="ld-course-info__subtitle">
+									Content
+								</h2>
 
-                <!-- Display selector: Show course content or course material -->
-                <nav class="ld-main-content__nav">
-                    <menu class="ld-main-content__navmenu">
-                        <li class="ld-main-content__navitem ld-main-content__navitem--active">
-                            <a href="" data-selector-type="display-content" data-selector-target="description">Course</a>
-                        </li>
-                        <li class="ld-main-content__navitem">
-                            <a href="" data-selector-type="display-content" data-selector-target="materials">Materials</a>
-                        </li>
-                    </menu>
-                </nav><!-- Display selector -->
+								<h3 class="ld-course-section__title">
+									Section 1
+								</h3>
+								<section
+									class="ld-course-lesson"
+									id="course-lesson-1"
+								>
+									<h4 class="ld-course-lesson__title">
+										Course Lesson 1
+									</h4>
+									<div class="ld-course-lesson__status">
+										Not started
+									</div>
+									<div class="ld-course-lesson__display">
+										<a href="#course-lesson-1"></a>
+									</div>
+									<ul class="ld-course-lesson__topics">
+										<li class="ld-course-lesson__topic">
+											Topic1
+										</li>
+										<li class="ld-course-lesson__topic">
+											Topic2
+										</li>
+										<li class="ld-course-lesson__topic">
+											Topic3
+										</li>
+									</ul>
+									<ul class="ld-course-lesson__quices">
+										<li class="ld-course-lesson_quiz">
+											Quiz 1
+										</li>
+									</ul>
+								</section>
 
-                <!-- Course content -->
-                <div class="ld-main-content__main" id="">
-                    <div class="ld-course-info">
+								<section
+									class="ld-course-lesson"
+									id="course-lesson-2"
+								>
+									<h4 class="ld-course-lesson__title">
+										Course Lesson 2
+									</h4>
+									<div class="ld-course-lesson__status">
+										Not started
+									</div>
+									<div class="ld-course-lesson__display">
+										<a href="#course-lesson-2"></a>
+									</div>
+									<ul class="ld-course-lesson__topics">
+										<li class="ld-course-lesson__topic">
+											Topic1
+										</li>
+										<li class="ld-course-lesson__topic">
+											Topic2
+										</li>
+									</ul>
+									<ul class="ld-course-lesson__quices">
+										<li class="ld-course-lesson_quiz">
+											Quiz 1
+										</li>
+										<li class="ld-course-lesson_quiz">
+											Quiz 2
+										</li>
+									</ul>
+								</section>
 
-                        <main class="ld-course-info__content" data-content-id="description">
-                            <div class="ld-course-info__description">
-                                <h2 class="ld-course-info__subtitle">Description</h2>
+								<h3 class="ld-course-section__title">
+									Section 2
+								</h3>
+								<section
+									class="ld-course-lesson"
+									id="course-lesson-3"
+								>
+									<h4 class="ld-course-lesson__title">
+										Course Lesson 3
+									</h4>
+									<div class="ld-course-lesson__status">
+										Not started
+									</div>
+									<div class="ld-course-lesson__display">
+										<a href="#course-lesson-3"></a>
+									</div>
+									<ul class="ld-course-lesson__topics">
+										<li class="ld-course-lesson__topic">
+											Topic1
+										</li>
+										<li class="ld-course-lesson__topic">
+											Topic2
+										</li>
+										<li class="ld-course-lesson__topic">
+											Topic3
+										</li>
+									</ul>
+									<ul class="ld-course-lesson__quices">
+										<li class="ld-course-lesson_quiz">
+											Quiz 1
+										</li>
+									</ul>
+								</section>
+							</div>
+							<!-- Sections -->
+						</main>
+						<!-- Course Content -->
 
-                                <p>This is an example of a free course demonstrating some of the core LearnDash functionality.</p>
+						<main
+							class="ld-course-info__materials"
+							data-content-id="materials"
+						>
+							<h2 class="ld-course-info__subtitle">
+								Course Materials
+							</h2>
 
-                                <p>Key concepts covered include:</p>
+							<p>Course Materials here</p>
+						</main>
+						<!-- Course Materials -->
+					</div>
+				</div>
+				<!-- Course content -->
+			</div>
+		</div>
+		<!-- Main Content -->
 
-                                <ul>
-                                    <li>LearnDash Focus Mode demonstration</li>
-                                    <li>Accepted media files</li>
-                                    <li>Example quiz questions</li>
-                                    <li>Timer demonstration</li>
-                                    <li>Course workflow</li>
-                                </ul>
-
-                                <p>Advanced functionality such as learner engagement notifications, assignments, essay questions (and more) are not featured. Don’t hesitate to contact us if you have any questions relating to any of the LearnDash functionality. 🙂</p>
-                            </div><!-- course-info__description -->
-                            <div class="ld-course-sections">
-                                <h2 class="ld-course-info__subtitle">Content</h2>
-
-                                <h3 class="ld-course-section__title">Section 1</h3>
-                                <section class="ld-course-lesson" id="course-lesson-1">
-                                    <h4 class="ld-course-lesson__title">Course Lesson 1</h4>
-                                    <div class="ld-course-lesson__status">Not started</div>
-                                    <div class="ld-course-lesson__display"><a href="#course-lesson-1"></a></div>
-                                    <ul class="ld-course-lesson__topics">
-                                        <li class="ld-course-lesson__topic">Topic1</li>
-                                        <li class="ld-course-lesson__topic">Topic2</li>
-                                        <li class="ld-course-lesson__topic">Topic3</li>
-                                    </ul>
-                                    <ul class="ld-course-lesson__quices">
-                                        <li class="ld-course-lesson_quiz">Quiz 1</li>
-                                    </ul>
-                                </section>
-
-                                <section class="ld-course-lesson" id="course-lesson-2">
-                                    <h4 class="ld-course-lesson__title">Course Lesson 2</h4>
-                                    <div class="ld-course-lesson__status">Not started</div>
-                                    <div class="ld-course-lesson__display"><a href="#course-lesson-2"></a></div>
-                                    <ul class="ld-course-lesson__topics">
-                                        <li class="ld-course-lesson__topic">Topic1</li>
-                                        <li class="ld-course-lesson__topic">Topic2</li>
-                                    </ul>
-                                    <ul class="ld-course-lesson__quices">
-                                        <li class="ld-course-lesson_quiz">Quiz 1</li>
-                                        <li class="ld-course-lesson_quiz">Quiz 2</li>
-                                    </ul>
-                                </section>
-
-
-                                <h3 class="ld-course-section__title">Section 2</h3>
-                                <section class="ld-course-lesson" id="course-lesson-3">
-                                    <h4 class="ld-course-lesson__title">Course Lesson 3</h4>
-                                    <div class="ld-course-lesson__status">Not started</div>
-                                    <div class="ld-course-lesson__display"><a href="#course-lesson-3"></a></div>
-                                    <ul class="ld-course-lesson__topics">
-                                        <li class="ld-course-lesson__topic">Topic1</li>
-                                        <li class="ld-course-lesson__topic">Topic2</li>
-                                        <li class="ld-course-lesson__topic">Topic3</li>
-                                    </ul>
-                                    <ul class="ld-course-lesson__quices">
-                                        <li class="ld-course-lesson_quiz">Quiz 1</li>
-                                    </ul>
-                                </section>
-
-                            </div><!-- Sections -->
-                        </main>
-                        <!-- Course Content -->
-
-                        <main class="ld-course-info__materials" data-content-id="materials">
-                            <h2 class="ld-course-info__subtitle">Course Materials</h2>
-
-                            <p>Course Materials here</p>
-
-                        </main><!-- Course Materials -->
-
-                    </div>
-                </div><!-- Course content -->
-            </div>
-        </div><!-- Main Content -->
-
-        <!-- Footer -->
-        <footer class="ld-site-footer">
-            <div class="ld-site-footer__wrapper">
-                <nav class="ld-site-footer__legal">
-                    Legal Menu
-                </nav>
-                <nav class="ld-site-footer__sitemap">
-                    Site Map
-                </nav>
-                <nav class="ld-site-footer__social">
-                    Social Icons
-                </nav>
-            </div>
-        </footer><!-- ld-site-footer -->
-        <script language="JavaScript" src="../js/scripts.js"></script>
-    </body>
+		<!-- Footer -->
+		<footer class="ld-site-footer">
+			<div class="ld-site-footer__wrapper">
+				<nav class="ld-site-footer__legal">Legal Menu</nav>
+				<nav class="ld-site-footer__sitemap">Site Map</nav>
+				<nav class="ld-site-footer__social">Social Icons</nav>
+			</div>
+		</footer>
+		<!-- ld-site-footer -->
+		<script language="JavaScript" src="../js/scripts.js"></script>
+	</body>
 </html>
