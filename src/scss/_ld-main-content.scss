@@ -1,16 +1,6 @@
 .ld-main-content {
 	&__wrapper {
 		display: grid;
-		max-width: var(--container-width-desktop);
-		padding: 0 var(--container-padding-desktop);
-		grid-template-columns: var(--main-content-grid-columns);
-		gap: var(--main-content-column-gap);
-		margin: 0 auto;
-
-		& > * {
-			padding: 4px 8px;
-			border: 1px solid rgba(black, 0.2); // Just for Debugging:
-		}
 	}
 
 	&__header {
@@ -61,10 +51,6 @@
 
 	&__main {
 		grid-column: 1 / 2;
-	}
-
-	&__content-wrapper {
-		display: grid;
 	}
 
 	&__content {
