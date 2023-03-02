@@ -1,15 +1,13 @@
 .ld-lesson {
-    @import 'ld-lesson-sidebar';
-    @import 'ld-lesson-pagination';
 
-    &__topics {
+    &__items {
         margin-top: 2rem; // TODO: Refactor.
         display: flex;
         flex-direction: column;
         gap: 1.5rem; // TODO: Refactor.
     }
 
-    &__topic {
+    &__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,22 +15,22 @@
         padding: 1.5rem; // TODO: Refactor.
     }
 
-    &__topic-heading {
+    &__item-heading {
         display: flex;
         align-items: center;
         gap: 1rem; // TODO: Refactor.
     }
 
-    &__topic-image {
+    &__item-image {
         width: 24px;
         height: 24px;
     }
 
-    &__topic-title {
+    &__item-title {
         font-weight: 500;
     }
 
-    &__topic-status {
-        font-size: .9rem; // TODO: Refactor.
+    &__item-status {
+        font-size: .875rem; // TODO: Refactor.
     }
 }

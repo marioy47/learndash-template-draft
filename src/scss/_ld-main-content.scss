@@ -7,14 +7,21 @@
 		grid-column: 1 / 2;
 	}
 
+	&__title {
+		line-height: 2.5rem; // TODO: Refactor.
+		font-weight: 700;
+	}
+
 	&__indicators {
 		display: flex;
 	}
 
 	&__indicator {
-		display: inline-block;
+		display: flex;
+		gap: .5rem;
 		border-right: 1px solid #ccc;
 		padding: 0 8px;
+		font-size: 1rem;
 
 		&:last-of-type {
 			border-right: none;

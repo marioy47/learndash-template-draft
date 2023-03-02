@@ -1,7 +1,10 @@
-&-sidebar {
+.ld-lesson-sidebar {
+
     $sidebar: &;
 
-    padding: 1rem .5rem; // TODO: Refactor.
+    &__info {
+        padding: 1rem .5rem; // TODO: Refactor.
+    }
 
     &__course-name {
         margin: 0; // TODO: Refactor.
@@ -19,7 +22,7 @@
     }
 
     &__section {
-        margin: 1rem 0; // TODO: Refactor.
+        margin: 1rem .5rem; // TODO: Refactor.
         display: flex;
         justify-content: space-between;
     }
@@ -36,7 +39,7 @@
         display: flex;
         flex-direction: column;
         gap: .25rem; // TODO: Refactor.
-        padding: .75rem 0; // TODO: Refactor.
+        padding: .75rem .5rem; // TODO: Refactor.
         border-bottom: 1px solid var(--border-color); // TODO: Refactor.
 
         &--current {
@@ -52,5 +55,44 @@
 
     &__lesson-status {
         font-size: .7rem; // TODO: Refactor.
+    }
+
+    &__lesson-progress {
+        display: flex;
+        align-items: center;
+        gap: .5rem; // TODO: Refactor.
+    }
+
+    &__lesson__items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem; // TODO: Refactor.
+        padding: 1.5rem 1rem; // TODO: Refactor.
+        border-bottom: 1px solid var(--border-color); // TODO: Refactor.
+        background-color: #F9F9F9;
+    }
+
+    &__lesson__item {
+        display: flex;
+        gap: .5rem; // TODO: Refactor.
+    }
+
+    &__lesson__item-image {
+        width: 16px; // TODO: Refactor.
+        height: 16px; // TODO: Refactor.
+    }
+
+    &__lesson__item-heading {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem; // TODO: Refactor.
+    }
+
+    &__lesson__item-title {
+        font-size: .875rem; // TODO: Refactor.
+    }
+
+    &__lesson__item-status {
+        font-size: .75rem; // TODO: Refactor.
     }
 }

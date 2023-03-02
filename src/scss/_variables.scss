@@ -24,4 +24,8 @@
     --progress-bar-border-radius: 2px;
     --progress-bar-background-color: #F5F5F5;
     --progress-bar-foreground-color: #000;
+
+	/** Progress Pie **/
+	--progress-pie-size-small: 14px; // TODO: Refactor.
+	--progress-pie-size-medium: 22px; // TODO: Refactor.
 }

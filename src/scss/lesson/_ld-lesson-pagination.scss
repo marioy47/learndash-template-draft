@@ -1,4 +1,5 @@
-&-pagination {
+.ld-lesson-pagination {
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -6,10 +7,29 @@
 
     &__item {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
 
         &--next {
+            flex-direction: row-reverse;
             text-align: right;
         }
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        margin: 0 0 .25rem 0;
+    }
+
+    &__labels {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        justify-content: center;
+        font-size: .8rem;
+    }
+
+    &__name {
+        font-weight: 600;
     }
 }
