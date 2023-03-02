@@ -7,6 +7,8 @@
 	/** Container margins and padding **/
 	--container-width-desktop: 1200px;
 	--container-padding-desktop: 8px;
+	--container-column-gap: 0 30px;
+	--container-grid-columns: 2fr 1fr;
 
 	/** Site body **/
 	--body-bg-color: #fff;
@@ -14,10 +16,6 @@
 	/** Site Header **/
 	--site-header-bg-color: #fff;
 	--site-header-border-color: #ddd;
-
-	/** Main Content (Course content, Grid info, Lesson, etc) **/
-	--main-content-column-gap: 0 30px;
-	--main-content-grid-columns: 2fr 1fr;
 
 	/** TODO: Where should it go? **/
 	--border-color: #ddd;
