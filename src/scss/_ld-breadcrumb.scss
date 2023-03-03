@@ -1,7 +1,7 @@
 .ld-breadcrumb {
 	grid-column: 1 / 3;
 	display: flex; // TODO: Refactor.
-	padding: .5rem; // TODO: Refactor.
+	padding: 16px 20px;
 	list-style: none;
 
 	&__item {
