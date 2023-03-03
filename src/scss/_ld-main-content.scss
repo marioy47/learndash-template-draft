@@ -1,4 +1,5 @@
 .ld-main-content {
+
 	&__wrapper {
 		display: grid;
 	}
@@ -19,12 +20,11 @@
 	&__indicator {
 		display: flex;
 		gap: .5rem;
-		border-right: 1px solid #ccc;
 		padding: 0 8px;
 		font-size: 1rem;
 
-		&:last-of-type {
-			border-right: none;
+		&--progress {
+			border-right: 1px solid #ccc;
 		}
 	}
 
@@ -75,5 +75,19 @@
 			height: var(--display);
 			overflow: hidden;
 		}
+
+		&--locked {
+			opacity: .2;
+		}
+	}
+
+	&__empty {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: .25rem; // TODO: Refactor.
+		min-height: 200px; // TODO: Refactor.
+		font-size: .875rem; // TODO: Refactor.
 	}
 }

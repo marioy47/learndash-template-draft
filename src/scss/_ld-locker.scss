@@ -1,0 +1,16 @@
+.ld-locker {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem; // TODO: Refactor.
+	gap: 1rem; // TODO: Refactor.
+	text-align: center;
+	border: 1px solid var(--border-color);
+	background: red;
+
+	&__text {
+		font-weight: 700;
+		font-size: 2rem; // TODO: Refactor.
+	}
+}
