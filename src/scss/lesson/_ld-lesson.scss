@@ -1,4 +1,20 @@
 .ld-lesson {
+    &__warning {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0; // TODO: Refactor.
+        padding: 1.25rem; // TODO: Refactor.
+        background: #F5F5F5; // TODO: Refactor.
+        border: 1px solid #000000;
+        font-size: .875rem; // TODO: Refactor.
+    }
+
+    &__warning-button {
+        display: flex; // TODO: Refactor.
+        border: 1px solid #000000; // TODO: Refactor.
+        padding: 0 1rem; // TODO: Refactor.
+        align-items: center;
+    }
 
     &__items {
         margin-top: 2rem; // TODO: Refactor.
@@ -32,5 +48,40 @@
 
     &__item-status {
         font-size: .875rem; // TODO: Refactor.
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0 0 0; // TODO: Refactor.
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            &--next {
+                flex-direction: row-reverse;
+                text-align: right;
+            }
+        }
+
+        &__icon {
+            font-size: 1.25rem;
+            margin: 0 0 .25rem 0;
+        }
+
+        &__labels {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+            justify-content: center;
+            font-size: .8rem;
+        }
+
+        &__name {
+            font-weight: 600;
+        }
     }
 }
