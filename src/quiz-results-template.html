@@ -1,215 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>Quiz Results Template</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="css/styles.css" rel="stylesheet" />
+	</head>
 
-<head>
-  <title>Quiz Results Template</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="css/styles.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!--
+	<body>
+		<!--
       Site Header
       This is placed in this template as a demostration. The site header and footer should be
       provided by the sites template.
   -->
-  <header class="ld-site-header">
-    <div class="ld-site-header__wrapper">
-      <div class="ld-site-header__branding">
-        <img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo" />
-      </div>
-      <nav class="ld-site-header__nav">
-        <menu class="ld-site-header__menu">
-          <li class="ld-site-header__menuitem">Courses</li>
-          <li class="ld-site-header__menuitem">Pricing</li>
-          <li class="ld-site-header__menuitem">About</li>
-        </menu>
-      </nav>
+		<header class="ld-site-header">
+			<div class="ld-site-header__wrapper">
+				<div class="ld-site-header__branding">
+					<img
+						src="./images/LearnDash-logo-black.png"
+						alt="LearnDash Logo"
+					/>
+				</div>
+				<nav class="ld-site-header__nav">
+					<menu class="ld-site-header__menu">
+						<li class="ld-site-header__menuitem">Courses</li>
+						<li class="ld-site-header__menuitem">Pricing</li>
+						<li class="ld-site-header__menuitem">About</li>
+					</menu>
+				</nav>
 
-      <aside class="ld-site-header__cta">
-        <!-- Menu profile might be useful somewhere. Creating it as a new block-->
-        <div class="ld-menu-profile">
-          <div class="ld-menu-profile__icon">
-            <div>Profile Icon</div>
-          </div>
-          <div class="ld-menu-profile__signup">
-            <button>Login</button>
-          </div>
-          <div class="ld-menu-profile__login">
-            <button>Signup</button>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </header>
-  <!-- site-header -->
+				<aside class="ld-site-header__cta">
+					<!-- Menu profile might be useful somewhere. Creating it as a new block-->
+					<div class="ld-menu-profile">
+						<div class="ld-menu-profile__icon">
+							<div>Profile Icon</div>
+						</div>
+						<div class="ld-menu-profile__signup">
+							<button>Login</button>
+						</div>
+						<div class="ld-menu-profile__login">
+							<button>Signup</button>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</header>
+		<!-- site-header -->
 
-  <div class="ld-container ld-quiz">
-    <div class="ld-container__wrapper">
-      <!-- The breadcrumbs could be a reusable widget. Creating it as a block -->
-      <ul class="ld-breadcrumb">
-        <li class="ld-breadcrumb__item">
-          <a href="/course-template.html">Course Name</a>
-        </li>
-        <li class="ld-breadcrumb__item">
-          <a href="/lesson-template.html">Lesson Name</a>
-        </li>
-        <li class="ld-breadcrumb__item ld-breadcrumb__item--current">
-          Quiz Name
-        </li>
-      </ul>
+		<div class="ld-container ld-quiz">
+			<div class="ld-container__wrapper">
+				<!-- The breadcrumbs could be a reusable widget. Creating it as a block -->
+				<ul class="ld-breadcrumb">
+					<li class="ld-breadcrumb__item">
+						<a href="/course-template.html">Course Name</a>
+					</li>
+					<li class="ld-breadcrumb__item">
+						<a href="/lesson-template.html">Lesson Name</a>
+					</li>
+					<li
+						class="ld-breadcrumb__item ld-breadcrumb__item--current"
+					>
+						Quiz Name
+					</li>
+				</ul>
 
-      <header class="ld-quiz-header-content">
-        <h1 class="ld-quiz-header-content__title">Quiz Name</h1>
-      </header>
+				<header class="ld-quiz-header-content">
+					<h1 class="ld-quiz-header-content__title">Quiz Name</h1>
+				</header>
 
-      <div class="ld-quiz-main-content">
-        <div class="ld-quiz-results">
-          <div class="ld-quiz-results__back">
-            <a href="/lesson-template.html">&#60;Back to lesson</a>
-          </div>
+				<div class="ld-quiz-main-content">
+					<div class="ld-quiz-results">
+						<div class="ld-quiz-results__back">
+							<a href="/lesson-template.html"
+								>&#60;Back to lesson</a
+							>
+						</div>
 
-          <h2 class="ld-quiz-results__title">
-            Your results
-          </h2>
+						<h2 class="ld-quiz-results__title">Your results</h2>
 
-          <!-- Results overview -->
-          <div class="ld-quiz-results__overview">
-            <div class="ld-quiz-results__overview-item">
-              <div class="ld-quiz-results__overview-item-title">
-                Correct answers
-              </div>
-              <div class="ld-quiz-results__overview-item-value">
-                2 of 3
-              </div>
-            </div>
+						<!-- Results overview -->
+						<div class="ld-quiz-results__overview">
+							<div class="ld-quiz-results__overview-item">
+								<div
+									class="ld-quiz-results__overview-item-title"
+								>
+									Correct answers
+								</div>
+								<div
+									class="ld-quiz-results__overview-item-value"
+								>
+									2 of 3
+								</div>
+							</div>
 
-            <div class="ld-quiz-results__overview-item">
-              <div class="ld-quiz-results__overview-item-title">
-                Time spent
-              </div>
-              <div class="ld-quiz-results__overview-item-value">
-                00:04:42
-              </div>
-            </div>
+							<div class="ld-quiz-results__overview-item">
+								<div
+									class="ld-quiz-results__overview-item-title"
+								>
+									Time spent
+								</div>
+								<div
+									class="ld-quiz-results__overview-item-value"
+								>
+									00:04:42
+								</div>
+							</div>
 
-            <div class="ld-quiz-results__overview-item">
-              <div class="ld-quiz-results__overview-item-title">
-                Earned points
-              </div>
-              <div class="ld-quiz-results__overview-item-value">
-                2 of 3 (66%)
-              </div>
-            </div>
-          </div>
+							<div class="ld-quiz-results__overview-item">
+								<div
+									class="ld-quiz-results__overview-item-title"
+								>
+									Earned points
+								</div>
+								<div
+									class="ld-quiz-results__overview-item-value"
+								>
+									2 of 3 (66%)
+								</div>
+							</div>
+						</div>
 
-          <!-- Results actions -->
-          <div class="ld-quiz-results__actions">
-            <span class="ld-quiz-results__action-title">You earned the required points to complete this quiz.</span>
+						<!-- Results actions -->
+						<div class="ld-quiz-results__actions">
+							<span class="ld-quiz-results__action-title"
+								>You earned the required points to complete this
+								quiz.</span
+							>
 
-            <div class="ld-quiz-results__action-items">
-              <div class="ld-quiz-results__action-item">
-                <a class="ld-quiz-results__action-link">View questions</a>
-              </div>
+							<div class="ld-quiz-results__action-items">
+								<div class="ld-quiz-results__action-item">
+									<a class="ld-quiz-results__action-link"
+										>View questions</a
+									>
+								</div>
 
-              <div class="ld-quiz-results__action-item">
-                <a class="ld-quiz-results__action-link ld-quiz-results__action-link--primary">Continue</a>
-              </div>
-            </div>
-          </div>
+								<div class="ld-quiz-results__action-item">
+									<a
+										class="ld-quiz-results__action-link ld-quiz-results__action-link--primary"
+										>Continue</a
+									>
+								</div>
+							</div>
+						</div>
 
-          <!-- Results question review -->
-          <div class="ld-quiz-results__questions">
-            <div class="ld-quiz-result__question">
-              <div class="ld-quiz-questions-counter">
-                <span class="ld-quiz-questions-counter__label">Question</span>
-                <span class="ld-quiz-questions-counter__current">1</span>
-                <span class="ld-quiz-questions-counter__separator">of</span>
-                <span class="ld-quiz-questions-counter__total">8</span>
-              </div>
+						<!-- Results question review -->
+						<div class="ld-quiz-results__questions">
+							<div class="ld-quiz-result__question">
+								<div class="ld-quiz-questions-counter">
+									<span
+										class="ld-quiz-questions-counter__label"
+										>Question</span
+									>
+									<span
+										class="ld-quiz-questions-counter__current"
+										>1</span
+									>
+									<span
+										class="ld-quiz-questions-counter__separator"
+										>of</span
+									>
+									<span
+										class="ld-quiz-questions-counter__total"
+										>8</span
+									>
+								</div>
 
-              <div class="ld-quiz-result__question-feedback">
-                <span class="ld-quiz-result__question-feedback-message">Incorrect (0 points earned)</span>
-                <a class="ld-quiz-result__question-feedback-link">See note</a>
-              </div>
+								<div class="ld-quiz-result__question-feedback">
+									<span
+										class="ld-quiz-result__question-feedback-message"
+										>Incorrect (0 points earned)</span
+									>
+									<a
+										class="ld-quiz-result__question-feedback-link"
+										>See note</a
+									>
+								</div>
 
-              <div class="ld-quiz-question-header">
-                <h2 class="ld-quiz-question-header__title">
-                  Pellentesque tempor ligula quis nulla fermentum,
-                  eget egestas augue fringilla. Duis venenatis
-                  mauris quis nisl tincidunt molestie
-                </h2>
-                <span class="ld-quiz-question-header__description">Pellentesque tempor ligula quis nulla
-                  fermentum, eget egestas augue fringilla.</span>
-              </div>
+								<div class="ld-quiz-question-header">
+									<h2 class="ld-quiz-question-header__title">
+										Pellentesque tempor ligula quis nulla
+										fermentum, eget egestas augue fringilla.
+										Duis venenatis mauris quis nisl
+										tincidunt molestie
+									</h2>
+									<span
+										class="ld-quiz-question-header__description"
+										>Pellentesque tempor ligula quis nulla
+										fermentum, eget egestas augue
+										fringilla.</span
+									>
+								</div>
 
-              <div class="ld-quiz-question-body">
-                <div class="ld-quiz-question-body__answers ld-quiz-question-body__answers--single-choice">
-                  <div class="ld-quiz-question-body__answer">
-                    <div class="ld-quiz-question-body__answer-tooltip">
-                      <span class="ld-quiz-question-body__answer-tooltip-text">Your answer</span>
-                      <div class="ld-quiz-question-body__answer-tooltip-feedback">
-                        <span
-                          class="ld-quiz-question-body__answer-tooltip-feedback-icon ld-quiz-question-body__answer-tooltip-feedback-icon--incorrect">X</span>
-                        <span class="ld-quiz-question-body__answer-tooltip-feedback-text">Incorrect</span>
-                      </div>
-                    </div>
+								<div class="ld-quiz-question-body">
+									<div
+										class="ld-quiz-question-body__answers ld-quiz-question-body__answers--single-choice"
+									>
+										<div
+											class="ld-quiz-question-body__answer"
+										>
+											<div
+												class="ld-quiz-question-body__answer-tooltip"
+											>
+												<span
+													class="ld-quiz-question-body__answer-tooltip-text"
+													>Your answer</span
+												>
+												<div
+													class="ld-quiz-question-body__answer-tooltip-feedback"
+												>
+													<span
+														class="ld-quiz-question-body__answer-tooltip-feedback-icon ld-quiz-question-body__answer-tooltip-feedback-icon--incorrect"
+														>X</span
+													>
+													<span
+														class="ld-quiz-question-body__answer-tooltip-feedback-text"
+														>Incorrect</span
+													>
+												</div>
+											</div>
 
-                    <div class="ld-quiz-question-body__answer-text ld-quiz-question-body__answer-text--user-answer">
-                      Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.
-                    </div>
-                  </div>
+											<div
+												class="ld-quiz-question-body__answer-text ld-quiz-question-body__answer-text--user-answer"
+											>
+												Pellentesque tempor ligula quis
+												nulla fermentum, eget egestas
+												augue fringilla.
+											</div>
+										</div>
 
-                  <div class="ld-quiz-question-body__answer">
-                    <div class="ld-quiz-question-body__answer-text">
-                      Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.
-                    </div>
-                  </div>
+										<div
+											class="ld-quiz-question-body__answer"
+										>
+											<div
+												class="ld-quiz-question-body__answer-text"
+											>
+												Pellentesque tempor ligula quis
+												nulla fermentum, eget egestas
+												augue fringilla.
+											</div>
+										</div>
 
-                  <div class="ld-quiz-question-body__answer">
-                    <div class="ld-quiz-question-body__answer-tooltip">
-                      <span class="ld-quiz-question-body__answer-tooltip-text">Correct answer</span>
-                    </div>
+										<div
+											class="ld-quiz-question-body__answer"
+										>
+											<div
+												class="ld-quiz-question-body__answer-tooltip"
+											>
+												<span
+													class="ld-quiz-question-body__answer-tooltip-text"
+													>Correct answer</span
+												>
+											</div>
 
-                    <div class="ld-quiz-question-body__answer-text ld-quiz-question-body__answer-text--correct">
-                      Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.
-                    </div>
-                  </div>
+											<div
+												class="ld-quiz-question-body__answer-text ld-quiz-question-body__answer-text--correct"
+											>
+												Pellentesque tempor ligula quis
+												nulla fermentum, eget egestas
+												augue fringilla.
+											</div>
+										</div>
 
-                  <div class="ld-quiz-question-body__answer">
-                    <div class="ld-quiz-question-body__answer-text">
-                      Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla.
-                    </div>
-                  </div>
-                </div>
-              </div>
+										<div
+											class="ld-quiz-question-body__answer"
+										>
+											<div
+												class="ld-quiz-question-body__answer-text"
+											>
+												Pellentesque tempor ligula quis
+												nulla fermentum, eget egestas
+												augue fringilla.
+											</div>
+										</div>
+									</div>
+								</div>
 
-              <div class="ld-quiz-question-result__note">
-                <span class="ld-quiz-question-result__note-title">Note</span>
-                <div class="ld-quiz-question-result__note-text">
-                  Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. Duis venenatis mauris
-                  quis nisl tincidunt molestie
-                </div>
-              </div>
+								<div class="ld-quiz-question-result__note">
+									<span
+										class="ld-quiz-question-result__note-title"
+										>Note</span
+									>
+									<div
+										class="ld-quiz-question-result__note-text"
+									>
+										Pellentesque tempor ligula quis nulla
+										fermentum, eget egestas augue fringilla.
+										Duis venenatis mauris quis nisl
+										tincidunt molestie
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="ld-site-footer">
-    <div class="ld-site-footer__wrapper">
-      <nav class="ld-site-footer__legal">Legal Menu</nav>
-      <nav class="ld-site-footer__sitemap">Site Map</nav>
-      <nav class="ld-site-footer__social">Social Icons</nav>
-    </div>
-  </footer>
-  <!-- ld-site-footer -->
-</body>
-
+		<!-- Footer -->
+		<footer class="ld-site-footer">
+			<div class="ld-site-footer__wrapper">
+				<nav class="ld-site-footer__legal">Legal Menu</nav>
+				<nav class="ld-site-footer__sitemap">Site Map</nav>
+				<nav class="ld-site-footer__social">Social Icons</nav>
+			</div>
+		</footer>
+		<!-- ld-site-footer -->
+	</body>
 </html>
