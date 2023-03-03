@@ -1,4 +1,5 @@
 .ld-main-content {
+
 	&__wrapper {
 		display: grid;
 	}
@@ -7,17 +8,23 @@
 		grid-column: 1 / 2;
 	}
 
+	&__title {
+		line-height: 2.5rem; // TODO: Refactor.
+		font-weight: 700;
+	}
+
 	&__indicators {
 		display: flex;
 	}
 
 	&__indicator {
-		display: inline-block;
-		border-right: 1px solid #ccc;
+		display: flex;
+		gap: .5rem;
 		padding: 0 8px;
+		font-size: 1rem;
 
-		&:last-of-type {
-			border-right: none;
+		&--progress {
+			border-right: 1px solid #ccc;
 		}
 	}
 
@@ -68,5 +75,19 @@
 			height: var(--display);
 			overflow: hidden;
 		}
+
+		&--locked {
+			opacity: .2;
+		}
+	}
+
+	&__empty {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: .25rem; // TODO: Refactor.
+		min-height: 200px; // TODO: Refactor.
+		font-size: .875rem; // TODO: Refactor.
 	}
 }

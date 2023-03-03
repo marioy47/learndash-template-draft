@@ -1,0 +1,14 @@
+.ld-pie-chart {
+	background-image: url(../images/pie-chart.png);
+	background-size: cover;
+
+	&--small {
+		width: var(--progress-pie-size-small);
+		height: var(--progress-pie-size-small);
+	}
+
+	&--medium {
+		width: var(--progress-pie-size-medium);
+		height: var(--progress-pie-size-medium);
+	}
+}

@@ -20,6 +20,17 @@
 	/** TODO: Where should it go? **/
 	--border-color: #ddd;
 
-	/** Progress Bar TODO: Where should it go? **/
-	--progress-bar-color: #000;
+    /** Progress Bar **/
+    --progress-bar-border-radius: 2px;
+    --progress-bar-background-color: #F5F5F5;
+    --progress-bar-foreground-color: #000;
+
+	/** Progress Pie **/
+	--progress-pie-size-small: 14px;
+	--progress-pie-size-medium: 22px;
+
+	/** Alert Widget **/
+	--alert-border-radius: 6px;
+	--alert-background-color: #7A7A7A;
+	--alert-text-color: #FFF;
 }
