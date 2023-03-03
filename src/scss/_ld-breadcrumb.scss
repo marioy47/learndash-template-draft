@@ -1,16 +1,17 @@
 .ld-breadcrumb {
-	grid-column: 1 / 3;
-	display: flex; // TODO: Refactor.
-	padding: 1rem 2rem; // TODO: Refactor.
+	display: flex;
+	padding: 16px 20px;
+	margin: 0;
+	list-style: none;
 
 	&__item {
 		&::after {
-			content: ">"; // TODO: Refactor.
-			margin: 0 0.5rem; // TODO: Refactor.
+			content: "\203A";
+			margin: 0 8px;
 		}
 
 		&:last-child::after {
-			content: ""; // TODO: Refactor.
+			content: "";
 		}
 	}
 }
