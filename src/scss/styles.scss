@@ -11,11 +11,14 @@
 /** Global blocks **/
 @import "ld-main-content";
 @import "ld-progress";
+@import "ld-pie-chart";
 @import "ld-breadcrumb";
+@import "ld-alert";
+@import "ld-locker";
 @import "ld-course-subscription";
 @import "ld-course-lesson";
 
 /** Pages **/
 @import "course/ld-course";
-@import "lesson/ld-lesson";
+@import "lesson/index";
 @import "quiz/ld-quiz";

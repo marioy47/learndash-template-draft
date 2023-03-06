@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lesson Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<!--
+	 Site Header
+	 This is placed in this template as a demostration. The site header and footer should be
+	 provided by the sites template.
+ -->
+<header class="ld-site-header">
+	<div class="ld-site-header__wrapper">
+		<div class="ld-site-header__branding">
+			<a href="/">
+				<img src="./images/LearnDash-logo-black.png" alt="LearnDash Logo">
+			</a>
+		</div>
+
+		<nav class="ld-site-header__nav">
+			<menu class="ld-site-header__menu">
+				<li class="ld-site-header__menuitem">Courses</li>
+				<li class="ld-site-header__menuitem">Pricing</li>
+				<li class="ld-site-header__menuitem">About</li>
+			</menu>
+		</nav>
+
+		<aside class="ld-site-header__cta">
+			<!-- Menu profile might be useful somewhere. Creating it as a new block-->
+			<div class="ld-menu-profile">
+				<div class="ld-menu-profile__icon">
+					<div>Profile Icon</div>
+				</div>
+				<div class="ld-menu-profile__signup">
+					<button>Login</button>
+				</div>
+				<div class="ld-menu-profile__login">
+					<button>Signup</button>
+				</div>
+			</div>
+		</aside>
+	</div>
+</header><!-- site-header -->
+
+<!--
+	Main content created a embed block si it can be reusable
+-->
+<div class="ld-container ld-lesson">
+	<div class="ld-container__wrapper">
+		<!-- The breadcrumbs could be a reusable widget. Creating it as a block -->
+		<ul class="ld-breadcrumb">
+			<li class="ld-breadcrumb__item">
+				<a href="/course-template.html">Course Name</a>
+			</li>
+
+			<li class="ld-breadcrumb__item ld-breadcrumb__item--current">
+				Lesson Name
+			</li>
+		</ul>
+
+		<header class="ld-main-content__header">
+			<h1 class="ld-main-content__title">
+				Phasellus tellus sem, laoreet sed libero tellus nec condimentum accumsan
+			</h1>
+
+			<div class="ld-main-content__indicators">
+				<div class="ld-main-content__indicator ld-main-content__indicator--progress">
+					<span>100%</span>
+
+					<div class="ld-pie-chart ld-pie-chart--medium" data-value="100"></div>
+				</div>
+
+				<!-- If a topic is presented. -->
+				<div class="ld-main-content__indicator ld-main-content__indicator--topic">3 Topics</div>
+				<!-- If a quiz is presented. -->
+				<div class="ld-main-content__indicator ld-main-content__indicator--quiz">1 Quiz</div>
+			</div>
+
+			<div class="ld-lesson__warning">
+				<span class="ld-lesson__warning-text">
+					All sections have been completed successfully.
+				</span>
+
+				<a class="ld-lesson__warning-button">
+					Mark Lesson As Complete
+				</a>
+			</div>
+		</header>
+
+		<aside class="ld-main-content__aside">
+			<div class="ld-lesson-sidebar">
+				<div class="ld-lesson-sidebar__info">
+					<h2 class="ld-lesson-sidebar__course-name">
+						Course Name
+					</h2>
+
+					<small class="ld-lesson-sidebar__author">
+						by Jack Kerouac
+					</small>
+
+					<div class="ld-progress">
+						<small class="ld-progress__heading">
+							Your progress
+						</small>
+
+						<div class="ld-progress__bar">
+							<div class="ld-progress__bar-inner" style="width: 60%;"></div>
+						</div>
+
+						<div class="ld-progress__info">
+							<small class="ld-progress__percentage">
+								60%
+							</small>
+							<small class="ld-progress__label">
+								15/25 Lessons
+							</small>
+						</div>
+					</div>
+				</div>
+
+				<div class="ld-lesson-sidebar__sections">
+					<div class="ld-lesson-sidebar__section">
+						<span class="ld-lesson-sidebar__section-name">SECTION 1</span>
+						<a class="ld-lesson-sidebar__section-trigger">Hide content</a>
+					</div>
+
+					<div class="ld-lesson-sidebar__lesson">
+						<span class="ld-lesson-sidebar__lesson-name">Interdum et malesuada fames ac ante</span>
+						<span class="ld-lesson-sidebar__lesson-status">Completed</span>
+					</div>
+
+					<div class="ld-lesson-sidebar__lesson ld-lesson-sidebar__lesson--current">
+						<span class="ld-lesson-sidebar__lesson-name">Phasellus tellus sem, laoreet sed libero tellus nec...</span>
+
+						<div class="ld-lesson-sidebar__lesson-progress">
+							<span class="ld-lesson-sidebar__lesson-status">100%</span>
+							<div class="ld-pie-chart ld-pie-chart--small" data-value="100"></div>
+						</div>
+					</div>
+
+					<div class="ld-lesson-sidebar__lesson__items">
+						<div class="ld-lesson-sidebar__lesson__item">
+							<img src="https://via.placeholder.com/16x16" alt="" class="ld-lesson-sidebar__lesson__item-image">
+
+							<div class="ld-lesson-sidebar__lesson__item-heading">
+								<span class="ld-lesson-sidebar__lesson__item-title">
+									Interdum et malesuadaturpis lectus blandit fames ac ante...
+								</span>
+
+								<small class="ld-lesson-sidebar__lesson__item-status">
+									Completed
+								</small>
+							</div>
+						</div>
+
+						<div class="ld-lesson-sidebar__lesson__item">
+							<img src="https://via.placeholder.com/16x16" alt="" class="ld-lesson-sidebar__lesson__item-image">
+
+							<div class="ld-lesson-sidebar__lesson__item-heading">
+								<span class="ld-lesson-sidebar__lesson__item-title">
+									Interdum et malesuada
+								</span>
+
+								<small class="ld-lesson-sidebar__lesson__item-status">
+									Completed
+								</small>
+							</div>
+						</div>
+
+						<div class="ld-lesson-sidebar__lesson__item">
+							<img src="https://via.placeholder.com/16x16" alt="" class="ld-lesson-sidebar__lesson__item-image">
+
+							<div class="ld-lesson-sidebar__lesson__item-heading">
+								<span class="ld-lesson-sidebar__lesson__item-title">
+									Nullam tincidunt porttitor metus sed commodo...
+								</span>
+
+								<small class="ld-lesson-sidebar__lesson__item-status">
+									Completed
+								</small>
+							</div>
+						</div>
+
+						<div class="ld-lesson-sidebar__lesson__item">
+							<img src="https://via.placeholder.com/16x16" alt="" class="ld-lesson-sidebar__lesson__item-image">
+
+							<div class="ld-lesson-sidebar__lesson__item-heading">
+								<span class="ld-lesson-sidebar__lesson__item-title">
+									Quiz
+								</span>
+
+								<small class="ld-lesson-sidebar__lesson__item-status">
+									Completed
+								</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="ld-lesson-sidebar__lesson">
+						<span class="ld-lesson-sidebar__lesson-name">Phasellus tellus sem, laoreet sed libero tellus nec...</span>
+
+						<div class="ld-lesson-sidebar__lesson-progress">
+							<span class="ld-lesson-sidebar__lesson-status">50%</span>
+							<div class="ld-pie-chart ld-pie-chart--small" data-value="50"></div>
+						</div>
+					</div>
+
+					<div class="ld-lesson-sidebar__lesson">
+						<span class="ld-lesson-sidebar__lesson-name">Interdum et malesuada fames ac ante</span>
+						<span class="ld-lesson-sidebar__lesson-status">Not started</span>
+					</div>
+
+					<div class="ld-lesson-sidebar__section">
+						<span class="ld-lesson-sidebar__section-name">SECTION 2</span>
+						<a class="ld-lesson-sidebar__section-trigger">Show content</a>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<nav class="ld-main-content__nav">
+			<menu class="ld-main-content__navmenu">
+				<li class="ld-main-content__navitem ld-main-content__navitem--active">
+					<a href="" data-selector-type="display-content" data-selector-target="description">
+						Lesson
+					</a>
+				</li>
+
+				<li class="ld-main-content__navitem">
+					<a href="" data-selector-type="display-content" data-selector-target="materials">
+						Materials
+					</a>
+				</li>
+			</menu>
+		</nav>
+
+		<div class="ld-main-content__main">
+			<div class="ld-main-content__wrapper">
+				<main
+					class="ld-main-content__content ld-main-content__content--active"
+					data-content-id="description"
+				>
+					<h2 class="ld-main-content__subtitle">
+						Praesent vulputate
+					</h2>
+
+					<p>
+						Pellentesque tempor ligula quis nulla fermentum, eget egestas augue fringilla. Duis venenatis
+						mauris quis nisl tincidunt molestie
+					</p>
+
+					<p>
+						<b>Maecenas tellus arcu:</b>
+					</p>
+
+					<ul>
+						<li>Pellentesque tempor ligula quis nulla fermentum.</li>
+						<li>Proin non lobortis purus.</li>
+						<li>Sed hendrerit sem sit amet magna mattis, eu auctor ante posuere.</li>
+						<li>Nam ac leo non purus faucibus ornare. Maecenas eu varius quam, in consectetur mi.</li>
+						<li>Maecenas euismod est ut varius aliquet.</li>
+					</ul>
+
+					<p>
+						Aenean ultricies, odio eget pharetra pretium, turpis lectus blandit diam, at iaculis risus orci
+						et mauris. Sed eu nisl sed est imperdiet semper at ornare ipsum. Nulla facilisi. Mauris varius
+						accumsan suscipit.
+					</p>
+
+					<img src="https://via.placeholder.com/443x246" alt="">
+
+					<h2 class="ld-main-content__subtitle">
+						Pellentesque ultrices ac sem non varius
+					</h2>
+
+					<p>
+						Sed ac metus libero. Donec commodo odio a ex tempor, id laoreet lectus aliquet. Pellentesque eu
+						scelerisque arcu.
+					</p>
+
+					<p>
+						Mauris aliquet diam a aliquet pellentesque. Aliquam bibendum massa sit amet luctus tincidunt.
+						Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quis
+						tortor augue. Aenean lobortis mattis tellus, id semper massa blandit sit amet. Vestibulum ante
+						ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut ut neque leo. Nullam
+						tincidunt porttitor metus sed commodo. Sed condimentum accumsan neque, in ultrices orci euismod
+						tristique. Phasellus tellus sem, laoreet sed libero nec, luctus facilisis eros.
+					</p>
+
+					<div class="ld-lesson__items">
+						<div class="ld-lesson__item">
+							<div class="ld-lesson__item-heading">
+								<img src="https://via.placeholder.com/24x24" alt="item image"
+								     class="ld-lesson__item-image">
+								<span class="ld-lesson__item-title">Interdum et malesuada fames ac ante</span>
+							</div>
+
+							<span class="ld-lesson__item-status">Completed</span>
+						</div>
+
+						<div class="ld-lesson__item">
+							<div class="ld-lesson__item-heading">
+								<img src="https://via.placeholder.com/24x24" alt="item image"
+								     class="ld-lesson__item-image">
+								<span class="ld-lesson__item-title">Interdum et malesuada fames ac ante</span>
+							</div>
+
+							<span class="ld-lesson__item-status">Completed</span>
+						</div>
+
+						<div class="ld-lesson__item">
+							<div class="ld-lesson__item-heading">
+								<img src="https://via.placeholder.com/24x24" alt="item image"
+								     class="ld-lesson__item-image">
+								<span class="ld-lesson__item-title">Interdum et malesuada fames ac ante</span>
+							</div>
+
+							<span class="ld-lesson__item-status">Completed</span>
+						</div>
+
+						<div class="ld-lesson__item">
+							<div class="ld-lesson__item-heading">
+								<img src="https://via.placeholder.com/24x24" alt="item image"
+								     class="ld-lesson__item-image">
+								<span class="ld-lesson__item-title">Quiz</span>
+							</div>
+
+							<span class="ld-lesson__item-status">Completed</span>
+						</div>
+					</div>
+				</main>
+
+				<main class="ld-main-content__content" data-content-id="materials">
+					<h2 class="ld-main-content__subtitle">
+						Materials for this lesson
+					</h2>
+
+					<p>
+						<b>Maecenas tellus arcu:</b>
+					</p>
+
+					<ul>
+						<li>Pellentesque tempor ligula quis nulla fermentum.</li>
+						<li>Proin non lobortis purus.</li>
+						<li>Sed hendrerit sem sit amet magna mattis, eu auctor ante posuere.</li>
+						<li>Nam ac leo non purus faucibus ornare. Maecenas eu varius quam, in consectetur mi.</li>
+						<li>Maecenas euismod est ut varius aliquet.</li>
+					</ul>
+				</main>
+			</div>
+
+			<div class="ld-lesson__warning">
+				<span class="ld-lesson__warning-text">
+					All sections have been completed successfully.
+				</span>
+
+				<a class="ld-lesson__warning-button">
+					Mark Lesson As Complete
+				</a>
+			</div>
+		</div>
+
+		<div class="ld-lesson__pagination">
+			<a class="ld-lesson__pagination__item ld-lesson__pagination__item--prev">
+				<span class="ld-lesson__pagination__icon">&larr;</span>
+
+				<div class="ld-lesson__pagination__labels">
+					<span class="ld-lesson__pagination__label">
+						Previous Lesson
+					</span>
+
+					<span class="ld-lesson__pagination__name">
+						Interdum et malesuada fames ac ante
+					</span>
+				</div>
+			</a>
+
+			<a class="ld-lesson__pagination__item ld-lesson__pagination__item--next">
+				<span class="ld-lesson__pagination__icon">&rarr;</span>
+
+				<div class="ld-lesson__pagination__labels">
+					<span class="ld-lesson__pagination__label">
+						Next Lesson
+					</span>
+
+					<span class="ld-lesson__pagination__name">
+						Interdum et malesuada fames ac ante
+					</span>
+				</div>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="ld-site-footer">
+	<div class="ld-site-footer__wrapper">
+		<nav class="ld-site-footer__legal">
+			Legal Menu
+		</nav>
+		<nav class="ld-site-footer__sitemap">
+			Site Map
+		</nav>
+		<nav class="ld-site-footer__social">
+			Social Icons
+		</nav>
+	</div>
+</footer><!-- ld-site-footer -->
+
+<script language="JavaScript" src="../js/scripts.js"></script>
+</body>
+</html>

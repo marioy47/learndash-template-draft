@@ -1,0 +1,27 @@
+.ld-alert {
+	margin: 1rem 0; // TODO: Refactor.
+	padding: 1rem; // TODO: Refactor.
+	background-color: var(--alert-background-color);
+	color: var(--alert-text-color);
+	border-radius: var(--alert-border-radius);
+	font-size: .875rem; // TODO: Refactor.
+
+	&__icon {
+		display: inline-block; // TODO: Refactor.
+		margin-right: 0.5rem; // TODO: Refactor.
+
+		&::after {
+			content: "✔"; // TODO: Refactor.
+		}
+	}
+
+	&__close {
+		display: inline-block; // TODO: Refactor.
+		float: right; // TODO: Refactor.
+		cursor: pointer;
+
+		&::after {
+			content: "✕"; // TODO: Refactor.
+		}
+	}
+}
