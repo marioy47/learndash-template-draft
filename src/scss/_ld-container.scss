@@ -1,4 +1,5 @@
 .ld-container {
+
 	&__wrapper {
 		display: grid;
 		max-width: var(--container-width-desktop);
@@ -7,9 +8,9 @@
 		gap: var(--container-column-gap);
 		margin: 0 auto;
 
-		& > * {
+		> * {
 			padding: 4px 8px;
-			border: 1px solid rgba(black, 0.2); // Just for Debugging:
+			border: 1px solid rgba(#000, 0.2); // Just for Debugging:
 		}
 	}
 }

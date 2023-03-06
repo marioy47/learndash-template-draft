@@ -7,7 +7,7 @@
 		text-decoration: none;
 	}
 
-	&__display a:after {
+	&__display a::after {
 		font-size: 150%;
 		content: "\002B"; // plus
 	}
@@ -17,7 +17,6 @@
 		--display: 0;
 		grid-column: 1 / 4;
 		overflow: hidden;
-		height: 0;
 		margin: 0;
 		height: var(--display);
 	}
@@ -26,7 +25,8 @@
 	&:target > &__quices {
 		--display: auto;
 	}
-	&:target &__display a:after {
+
+	&:target &__display a::after {
 		content: "\2212"; // minus
 	}
 }

@@ -1,4 +1,5 @@
 .ld-course-subscription {
+
 	&__star::after {
 		content: "\2605";
 	}
@@ -9,7 +10,7 @@
 
 	&__subtitle {
 		font-size: 70%;
-		font-weight: normal;
+		font-weight: 400;
 		border-bottom: 1px solid #ccc;
 		margin-bottom: 1rem;
 		padding-bottom: 1rem;
@@ -24,13 +25,13 @@
 	&__cta button {
 		// This has to be moved to a "bottons" block
 		background: #333;
-		color: white;
+		color: #fff;
 		border: none;
 		display: block;
 		width: 100%;
 		border-radius: 3px;
 		padding: 16px;
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 1.05rem;
 		margin-bottom: 1rem;
 	}

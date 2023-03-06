@@ -1,4 +1,5 @@
 .ld-progress {
+
 	margin: 2rem 0; // TODO: Refactor.
 
 	&__bar {
@@ -14,6 +15,6 @@
 	}
 
 	&__percentage {
-		font-weight: bold; // TODO: Refactor.
+		font-weight: 700; // TODO: Refactor.
 	}
 }
