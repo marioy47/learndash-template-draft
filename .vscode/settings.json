@@ -1,13 +1,7 @@
 {
-    "spellright.language": [
-        "en"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ],
-    "cSpell.words": [
-        "bsync"
-    ]
+	"spellright.language": ["en"],
+	"spellright.documentTypes": ["markdown", "latex", "plaintext"],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.requireConfig": true,
+	"stylelint.validate": ["css", "postcss", "scss"]
 }
