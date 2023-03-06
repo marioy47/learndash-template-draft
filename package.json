@@ -16,7 +16,6 @@
     "format:css": "wp-scripts lint-style src/**/*.scss --fix",
     "format:js": "wp-scripts lint-js src/**/*.js *.js --fix",
     "format:md:docs": "wp-scripts lint-md-docs ./**/*.md --fix",
-    "format:spell": "cspell ./src/**/*.{js,scss} --fix",
     "format": "run-p format:*",
     "packages-update": "wp-scripts packages-update"
   },
