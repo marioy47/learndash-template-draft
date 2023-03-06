@@ -14,7 +14,7 @@
     "lint:spell": "cspell ./src/**/*.{js,scss}",
     "lint": "run-p lint:*",
     "format:css": "wp-scripts lint-style src/**/*.scss --fix",
-    "format:js": "wp-scripts lint-js src/**/*.js ./.*.js spell.config.js --fix",
+    "format:js": "wp-scripts lint-js src/**/*.js ./.*.js cspell.config.js --fix",
     "format:md:docs": "wp-scripts lint-md-docs ./**/*.md --fix",
     "format:spell": "cspell ./src/**/*.{js,scss} --fix",
     "format": "run-p format:*",
