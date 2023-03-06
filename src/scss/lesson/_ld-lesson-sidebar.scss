@@ -1,98 +1,98 @@
 .ld-lesson-sidebar {
 
-    $sidebar: &;
+	$sidebar: &;
 
-    &__info {
-        padding: 1rem .5rem; // TODO: Refactor.
-    }
+	&__info {
+		padding: 1rem 0.5rem; // TODO: Refactor.
+	}
 
-    &__course-name {
-        margin: 0; // TODO: Refactor.
-        font-size: 1.25rem; // TODO: Refactor.
-        font-weight: 700;
-    }
+	&__course-name {
+		margin: 0; // TODO: Refactor.
+		font-size: 1.25rem; // TODO: Refactor.
+		font-weight: 700;
+	}
 
-    &__author {
-        font-size: .875rem; // TODO: Refactor.
-        font-weight: 400;
-    }
+	&__author {
+		font-size: 0.875rem; // TODO: Refactor.
+		font-weight: 400;
+	}
 
-    &__sections {
-        margin-top: 4rem; // TODO: Refactor.
-    }
+	&__sections {
+		margin-top: 4rem; // TODO: Refactor.
+	}
 
-    &__section {
-        margin: 1rem .5rem; // TODO: Refactor.
-        display: flex;
-        justify-content: space-between;
-    }
+	&__section {
+		margin: 1rem 0.5rem; // TODO: Refactor.
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &__section-name {
-        font-size: .75rem; // TODO: Refactor.
-    }
+	&__section-name {
+		font-size: 0.75rem; // TODO: Refactor.
+	}
 
-    &__section-trigger {
-        font-size: .75rem; // TODO: Refactor.
-    }
+	&__section-trigger {
+		font-size: 0.75rem; // TODO: Refactor.
+	}
 
-    &__lesson {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem; // TODO: Refactor.
-        padding: .75rem .5rem; // TODO: Refactor.
-        border-bottom: 1px solid var(--border-color); // TODO: Refactor.
+	&__lesson {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem; // TODO: Refactor.
+		padding: 0.75rem 0.5rem; // TODO: Refactor.
+		border-bottom: 1px solid var(--border-color); // TODO: Refactor.
 
-        &--current {
-            #{$sidebar}__lesson-name {
-                font-weight: 700;
-            }
-        }
-    }
+		&--current {
+			#{$sidebar}__lesson-name {
+				font-weight: 700;
+			}
+		}
+	}
 
-    &__lesson-name {
-        font-size: 1rem; // TODO: Refactor.
-    }
+	&__lesson-name {
+		font-size: 1rem; // TODO: Refactor.
+	}
 
-    &__lesson-status {
-        font-size: .7rem; // TODO: Refactor.
-    }
+	&__lesson-status {
+		font-size: 0.7rem; // TODO: Refactor.
+	}
 
-    &__lesson-progress {
-        display: flex;
-        align-items: center;
-        gap: .5rem; // TODO: Refactor.
-    }
+	&__lesson-progress {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem; // TODO: Refactor.
+	}
 
-    &__lesson__items {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem; // TODO: Refactor.
-        padding: 1.5rem 1rem; // TODO: Refactor.
-        border-bottom: 1px solid var(--border-color); // TODO: Refactor.
-        background-color: #F9F9F9;
-    }
+	&__lesson__items {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem; // TODO: Refactor.
+		padding: 1.5rem 1rem; // TODO: Refactor.
+		border-bottom: 1px solid var(--border-color); // TODO: Refactor.
+		background-color: #f9f9f9;
+	}
 
-    &__lesson__item {
-        display: flex;
-        gap: .5rem; // TODO: Refactor.
-    }
+	&__lesson__item {
+		display: flex;
+		gap: 0.5rem; // TODO: Refactor.
+	}
 
-    &__lesson__item-image {
-        width: 16px; // TODO: Refactor.
-        height: 16px; // TODO: Refactor.
-    }
+	&__lesson__item-image {
+		width: 16px; // TODO: Refactor.
+		height: 16px; // TODO: Refactor.
+	}
 
-    &__lesson__item-heading {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem; // TODO: Refactor.
-    }
+	&__lesson__item-heading {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem; // TODO: Refactor.
+	}
 
-    &__lesson__item-title {
-        font-size: .875rem; // TODO: Refactor.
-    }
+	&__lesson__item-title {
+		font-size: 0.875rem; // TODO: Refactor.
+	}
 
-    &__lesson__item-status {
-        font-size: .75rem; // TODO: Refactor.
-    }
+	&__lesson__item-status {
+		font-size: 0.75rem; // TODO: Refactor.
+	}
 }
