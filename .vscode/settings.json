@@ -3,5 +3,6 @@
 	"spellright.documentTypes": ["markdown", "latex", "plaintext"],
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.requireConfig": true,
-	"stylelint.validate": ["css", "postcss", "scss"]
+	"stylelint.validate": ["css", "postcss", "scss"],
+	"editor.formatOnSave": true
 }
