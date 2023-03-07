@@ -13,7 +13,7 @@
 	}
 
 	&__topics,
-	&__quices {
+	&__quizzes {
 		--display: 0;
 		grid-column: 1 / 4;
 		overflow: hidden;
@@ -22,7 +22,7 @@
 	}
 
 	&:target > &__topics,
-	&:target > &__quices {
+	&:target > &__quizzes {
 		--display: auto;
 	}
 
