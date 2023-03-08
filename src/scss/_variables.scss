@@ -1,6 +1,7 @@
 :root {
+
 	/** Typography **/
-	--type-font-family-body: Inter, -apple-system, roboto, ubuntu, sans-serif;
+	--type-font-family-body: inter, -apple-system, roboto, ubuntu, sans-serif;
 	--type-font-size-body: 1.125rem;
 	--type-line-height-body: 1.25rem;
 
@@ -20,10 +21,10 @@
 	/** TODO: Where should it go? **/
 	--border-color: #ddd;
 
-    /** Progress Bar **/
-    --progress-bar-border-radius: 2px;
-    --progress-bar-background-color: #F5F5F5;
-    --progress-bar-foreground-color: #000;
+	/** Progress Bar **/
+	--progress-bar-border-radius: 2px;
+	--progress-bar-background-color: #f5f5f5;
+	--progress-bar-foreground-color: #000;
 
 	/** Progress Pie **/
 	--progress-pie-size-small: 14px;
@@ -31,6 +32,6 @@
 
 	/** Alert Widget **/
 	--alert-border-radius: 6px;
-	--alert-background-color: #7A7A7A;
-	--alert-text-color: #FFF;
+	--alert-background-color: #7a7a7a;
+	--alert-text-color: #fff;
 }

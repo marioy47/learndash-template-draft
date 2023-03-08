@@ -9,7 +9,7 @@
 
 		&::after {
 			content: "/"; // TODO: Refactor.
-			margin-right: .25rem; // TODO: Refactor.
+			margin-right: 0.25rem; // TODO: Refactor.
 		}
 
 		&:last-child::after {

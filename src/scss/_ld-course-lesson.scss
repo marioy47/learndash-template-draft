@@ -7,26 +7,26 @@
 		text-decoration: none;
 	}
 
-	&__display a:after {
+	&__display a::after {
 		font-size: 150%;
 		content: "\002B"; // plus
 	}
 
 	&__topics,
-	&__quices {
+	&__quizzes {
 		--display: 0;
 		grid-column: 1 / 4;
 		overflow: hidden;
-		height: 0;
 		margin: 0;
 		height: var(--display);
 	}
 
 	&:target > &__topics,
-	&:target > &__quices {
+	&:target > &__quizzes {
 		--display: auto;
 	}
-	&:target &__display a:after {
+
+	&:target &__display a::after {
 		content: "\2212"; // minus
 	}
 }

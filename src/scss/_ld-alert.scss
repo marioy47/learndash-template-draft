@@ -4,7 +4,7 @@
 	background-color: var(--alert-background-color);
 	color: var(--alert-text-color);
 	border-radius: var(--alert-border-radius);
-	font-size: .875rem; // TODO: Refactor.
+	font-size: 0.875rem; // TODO: Refactor.
 
 	&__icon {
 		display: inline-block; // TODO: Refactor.
