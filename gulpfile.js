@@ -1,6 +1,8 @@
-const { src, dest, watch, series } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 const bsync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
+const webpackStream = require('webpack-stream');
+const webpack = require('webpack');
 
 const buildStyles = () => {
 	return src('./src/scss/**/*.scss', { sourcemaps: true })
@@ -21,6 +23,12 @@ const copyFonts = () => {
 	return src('./src/fonts/**/*.*').pipe(dest('./dist/fonts'));
 };
 
+const buildJs = () => {
+	return src('src/js/scripts.js')
+		.pipe(webpackStream(require('./webpack.config.js')), webpack)
+		.pipe(dest('dist/js'));
+};
+
 const watchChanges = () => {
 	bsync.init({
 		server: {
@@ -33,11 +41,12 @@ const watchChanges = () => {
 	watch(['./src/*.html'], copyHtml).on('change', bsync.reload);
 };
 
-exports.watch = series([
+exports.watch = series(
 	copyHtml,
 	copyImages,
 	copyFonts,
 	buildStyles,
-	watchChanges,
-]);
-exports.build = series([copyHtml, copyImages, copyFonts, buildStyles]);
+	buildJs,
+	watchChanges
+);
+exports.build = parallel(copyHtml, copyImages, copyFonts, buildStyles, buildJs);
