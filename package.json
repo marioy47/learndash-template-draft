@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp watch",
-    "build": "gulp build",
+    "build": "wp-scripts build src/js/scripts.js src/scss/styles.scss",
     "lint:css": "wp-scripts lint-style src/**/*.scss",
     "lint:js": "wp-scripts lint-js src/**/*.js *.js",
     "lint:docs": "wp-scripts lint-md-docs ./**/*.md",
