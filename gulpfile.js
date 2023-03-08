@@ -20,9 +20,6 @@ const copyImages = () => {
 const copyFonts = () => {
 	return src('./src/fonts/**/*.*').pipe(dest('./dist/fonts'));
 };
-const copyJs = () => {
-	return src('./src/js/**/*.*').pipe(dest('./dist/js'));
-};
 
 const watchChanges = () => {
 	bsync.init({
@@ -33,7 +30,6 @@ const watchChanges = () => {
 
 	watch(['./src/scss/**/*.scss'], buildStyles);
 	watch(['./src/images/**/*.*'], copyImages).on('change', bsync.reload);
-	watch(['./src/js/**/*.js'], copyJs).on('change', bsync.reload);
 	watch(['./src/*.html'], copyHtml).on('change', bsync.reload);
 };
 
@@ -41,8 +37,7 @@ exports.watch = series([
 	copyHtml,
 	copyImages,
 	copyFonts,
-	copyJs,
 	buildStyles,
 	watchChanges,
 ]);
-exports.build = series([copyHtml, copyImages, copyFonts, copyJs, buildStyles]);
+exports.build = series([copyHtml, copyImages, copyFonts, buildStyles]);
