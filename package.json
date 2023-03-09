@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp watch",
-    "build": "NODE_ENV=production gulp build",
+    "build": "NODE_ENV=production WP_NO_EXTERNALS=1 gulp build",
     "lint:css": "wp-scripts lint-style src/**/*.scss",
     "lint:js": "wp-scripts lint-js src/**/*.js *.js",
     "lint:docs": "wp-scripts lint-md-docs ./**/*.md",
