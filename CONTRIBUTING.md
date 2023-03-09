@@ -115,7 +115,7 @@ This are the conventions we use when it comes to JavaScript:
 -   Each js file in `src/js/` shold export at least one function (`export default myFunction`)
 -   Try as much as possible to export just one function on each JS file.
 -   If you are importing functions from a JS library or file, just import the one you need. This will help with _Tree-Shaking_ and reduce the size of the final bundle
-- Tryt to use the `id` and specially the `class` attributes to select elements with JavaScript. Try to use [`dataset`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset) attributes to refer to elements and pass data.
+- Try not to use the `id` and specially the `class` attributes to select elements with JavaScript. Try to use [`dataset`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset) attributes to refer to elements and pass data.
 - Complementing the previouse rule. Use the `id` atributte to access an element if the `querySelector` is too complicated otherwise.
 
 ```html
