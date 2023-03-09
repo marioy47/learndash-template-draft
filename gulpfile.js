@@ -3,6 +3,7 @@ const bsync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 const webpackStream = require('webpack-stream');
 const webpack = require('webpack');
+const clean = require('gulp-clean');
 
 const buildStyles = () => {
 	return src('./src/scss/**/*.scss', { sourcemaps: true })
@@ -21,6 +22,10 @@ const copyImages = () => {
 
 const copyFonts = () => {
 	return src('./src/fonts/**/*.*').pipe(dest('./dist/fonts'));
+};
+
+const removeDistFolder = () => {
+	return src('dist/', { read: false, allowEmpty: true }).pipe(clean());
 };
 
 const buildJs = () => {
@@ -49,4 +54,7 @@ exports.watch = series(
 	buildJs,
 	watchChanges
 );
-exports.build = parallel(copyHtml, copyImages, copyFonts, buildStyles, buildJs);
+exports.build = series(
+	removeDistFolder,
+	parallel(copyHtml, copyImages, copyFonts, buildStyles, buildJs)
+);
