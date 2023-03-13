@@ -11,7 +11,9 @@ module.exports = {
 		scripts: './src/js/scripts.js',
 		'admin-scripts': './src/js/admin-scripts.js',
 		styles: './src/scss/styles.scss',
+		'styles-rtl': './src/scss/styles-rtl.scss',
 		'admin-styles': './src/scss/admin-styles.scss',
+		'admin-styles-rtl': './src/scss/admin-styles-rtl.scss',
 	},
 	output: {
 		// Change the output folder from build to dist
@@ -20,11 +22,13 @@ module.exports = {
 	plugins: [
 		// Remove the empty JS files that webpack creates after compiling SCSS files
 		new FixStyleOnlyEntriesPlugin(),
+
 		// remove the DependencyExtractionWebpackPlugin so the main.assets.php file desn't gets generated.
 		...webpackWpConfig.plugins.filter(
 			(plugin) =>
 				plugin.constructor.name !== 'DependencyExtractionWebpackPlugin'
 		),
+
 		// Copy HTML files to the dist/ directory
 		new CopyPlugin({
 			patterns: [
@@ -34,6 +38,7 @@ module.exports = {
 				},
 			],
 		}),
+
 		// Add browsersync for automatic browser reload
 		new BrowserSyncPlugin({
 			host: 'localhost',
@@ -42,5 +47,5 @@ module.exports = {
 				baseDir: './dist',
 			},
 		}),
-	],
+	], // plugins
 };

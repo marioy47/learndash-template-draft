@@ -6,12 +6,12 @@ For requirements and tooling, please refer to the main [README](/README.md) file
 
 <!-- toc -->
 
--   [File structure](#file-structure)
--   [File Naming conventions](#file-naming-conventions)
--   [Styling](#styling)
--   [JavaScript](#javascript)
--   [Accessibility](#accessibility)
--   [Npm commands](#npm-commands)
+- [File structure](#file-structure)
+- [File Naming conventions](#file-naming-conventions)
+- [Styling](#styling)
+- [JavaScript](#javascript)
+- [Accessibility](#accessibility)
+- [Npm commands](#npm-commands)
 
 <!-- tocstop -->
 
