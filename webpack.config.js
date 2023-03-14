@@ -2,6 +2,7 @@ const webpackWpConfig = require('@wordpress/scripts/config/webpack.config');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const CopyPlugin = require('copy-webpack-plugin');
+const RtlCssPlugin = require('rtlcss-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -11,9 +12,7 @@ module.exports = {
 		scripts: './src/js/scripts.js',
 		'admin-scripts': './src/js/admin-scripts.js',
 		styles: './src/scss/styles.scss',
-		'styles-rtl': './src/scss/styles-rtl.scss',
 		'admin-styles': './src/scss/admin-styles.scss',
-		'admin-styles-rtl': './src/scss/admin-styles-rtl.scss',
 	},
 	output: {
 		// Change the output folder from build to dist
@@ -28,6 +27,8 @@ module.exports = {
 			(plugin) =>
 				plugin.constructor.name !== 'DependencyExtractionWebpackPlugin'
 		),
+
+		new RtlCssPlugin('[name]-rtl.css'),
 
 		// Copy HTML files to the dist/ directory
 		new CopyPlugin({
