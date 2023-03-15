@@ -9,8 +9,29 @@ $break-desktop-lg: 1440px;
 :root {
 	/** Typography **/
 	--ld-font-family: inter, -apple-system, roboto, ubuntu, sans-serif;
-	--ld-font-size: 1.125rem;
-	--ld-line-height: 1.25rem;
+	--ld-font-size: calc(0.875rem + ((1vw - 0.4rem) * 0.25));
+	--ld-line-height: 1.5rem;
+
+	/* Headings */
+	--ld-h1-size: calc(2.5rem + ((1vw - 0.4rem) * 3)); // from 2 to 4 rem
+	--ld-h1-weight: bold;
+	--ld-h1-spacing: -2%;
+	--ld-h1-height: 1.2;
+
+	--ld-h2-size: calc(1.5rem + ((1vw - 0.4rem) * 2)); // from 1.4 to 2.5rem
+	--ld-h2-weight: bold;
+	--ld-h2-spacing: -2%;
+	--ld-h2-height: 1.2;
+
+	--ld-h3-size: calc(1rem + ((1vw - 0.4rem) * 1)); // from 1 to 1.5rem
+	--ld-h3-weight: bold;
+	--ld-h3-spacing: -2%;
+	--ld-h3-height: 1.2;
+
+	--ld-h4-size: calc(1rem + ((1vw - 0.4rem) * 1)); // from 1 to 1.5rem
+	--ld-h4-weight: 500;
+	--ld-h4-spacing: inherit;
+	--ld-h4-height: 1.2;
 
 	/** Container margins and padding **/
 	--ld-container-width-desktop: 1200px;

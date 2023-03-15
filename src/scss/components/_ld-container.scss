@@ -1,8 +1,9 @@
 // Main container for all the thinks LearnDash
+
 .ld-container {
 	display: block;
-	font-family: var( --global-body-font-family, var(--ld-font-family));
-	font-size: var(--ld-font-size);
+	font-family: var(--ld-font-family);
+	font-size: clamp(var(--ld-font-size), calc(var(--ld-font-size) + ((1vw - 0.4rem) * 0.25)), 1rem);
 	line-height: var(--ld-line-height);
 	max-width: var(--ld-container-width-desktop);
 	padding: var(--ld-container-padding);
@@ -14,5 +15,14 @@
 
 	@include break-mobile() {
 		max-width: var(--ld-container-width-mobile);
+	}
+
+	@for $i from 1 through 4 {
+		h#{$i} {
+			font-size: var(--ld-h#{$i}-size);
+			font-weight: var(--ld-h#{$i}-weight);
+			letter-spacing: var(--ld-h#{$i}-spacing);
+			line-height: var(--ld-h#{$i}-height);
+		}
 	}
 }
