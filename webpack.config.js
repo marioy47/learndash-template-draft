@@ -8,11 +8,8 @@ module.exports = {
 	...webpackWpConfig,
 	entry: {
 		// Instead of one main.js file, we have 2 stylesheets and 2 javascripts.
-		scripts: { import: './src/js/scripts.js', filename: 'js/[name].js' },
-		'admin-scripts': {
-			import: './src/js/admin-scripts.js',
-			filename: 'js/[name].js',
-		},
+		scripts: './src/js/scripts.js',
+		'admin-scripts': './src/js/admin-scripts.js',
 		styles: './src/scss/styles.scss',
 		'admin-styles': './src/scss/admin-styles.scss',
 	},
@@ -33,17 +30,6 @@ module.exports = {
 			events: {
 				onEnd: {
 					// Move the css files since changing the entry is not enough.
-					move: [
-						{
-							source: 'dist/styles.css',
-							destination: 'dist/css/styles.css',
-						},
-						{
-							source: 'dist/admin-styles.css',
-							destination: 'dist/css/admin-styles.css',
-						},
-					],
-					// Copy the html templates.
 					copy: [
 						{
 							source: 'src/html/',
