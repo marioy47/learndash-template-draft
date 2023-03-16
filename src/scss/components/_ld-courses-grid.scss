@@ -1,0 +1,12 @@
+.ld-courses-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+
+	&__course {
+		height: 640px;
+		min-height: 500px;
+		background-color: rgba(#000, .5);
+	}
+
+}

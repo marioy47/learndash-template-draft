@@ -1,0 +1,42 @@
+.ld-courses {
+	display: grid;
+	gap: 16px;
+	grid-template-areas:
+		"toggle search search"
+		"list list list"
+		"pg pg pg";
+
+	&__toggle {
+		grid-area: toggle;
+	}
+
+	&__search {
+		grid-area: search;
+	}
+
+	&__filters {
+		grid-area: filters;
+		grid-column: 1 / 1;
+		width: 0;
+		overflow: hidden;
+	}
+
+	&__list {
+		grid-area: list;
+	}
+
+	&__pagination {
+		grid-area: pg;
+	}
+
+	&#{&}--show-filters {
+		grid-template-areas:
+			"toggle search search search"
+			"filters list list list"
+			"pg pg pg pg";
+	}
+
+	&#{&}--show-filters &__filters {
+		width: auto;
+	}
+}

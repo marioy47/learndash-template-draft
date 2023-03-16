@@ -1,3 +1,3 @@
-import tabSelector from './tabs/tab-selector';
+import toggleClass from './toggle-class';
 
-tabSelector('[data-selector-type="display-content"]', '[data-content-id]');
+toggleClass();

@@ -16,7 +16,7 @@
 
 // display on desktop
 @mixin break-desktop() {
-	@media (min-width: #{$break-desktop-lg}){
+	@media (max-width: #{$break-desktop-lg}){
 		@content;
 	}
 }
