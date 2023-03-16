@@ -7,6 +7,20 @@ $break-desktop-lg: 1440px;
 
 // CSS Variables.
 :root {
+	/** Colors **/
+	--ld-color-primary: #3259eb;
+	--ld-color-secondary: #ffd057;
+	--ld-color-tertiary: #479bf8;
+	--ld-color-success: #57ce95;
+	--ld-color-error: #f3695c;
+	--ld-color-dark: #0e0e2c;
+	--ld-color-body: #4a4a68;
+	--ld-color-subtitle: #8c8ca1;
+	--ld-color-contrast: #dce1e8;
+	--ld-color-light-1: #f3f8ff;
+	--ld-color-light-2: #f7f9fc;
+	--ld-color-white: #ffffff;
+
 	/** Typography **/
 	--ld-font-family: inter, -apple-system, roboto, ubuntu, sans-serif;
 	--ld-font-size: calc(0.875rem + ((1vw - 0.4rem) * 0.25));
@@ -18,7 +32,7 @@ $break-desktop-lg: 1440px;
 	--ld-h1-spacing: -2%;
 	--ld-h1-height: 1.2;
 
-	--ld-h2-size: calc(1.5rem + ((1vw - 0.4rem) * 2)); // from 1.4 to 2.5rem
+	--ld-h2-size: calc(1.5rem + ((1vw - 0.4rem) * 2)); // from 1.5 to 2.5rem
 	--ld-h2-weight: bold;
 	--ld-h2-spacing: -2%;
 	--ld-h2-height: 1.2;
