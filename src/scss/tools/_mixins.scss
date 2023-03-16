@@ -20,3 +20,12 @@
 		@content;
 	}
 }
+
+// Create icon from svg file
+@mixin ld-icon($icon-name, $svg-path) {
+	.ld-icon-#{$icon-name}::before {
+		mask-image: url($svg-path);
+		-webkit-mask-image: url($svg-path);
+	}
+}
+

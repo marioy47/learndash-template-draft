@@ -1,0 +1,28 @@
+[class^="ld-icon-"]::before {
+	content: "";
+	display: inline-block;
+	height: 1.5em;
+	width: 1.5em;
+	background-image: initial;
+	background-position: initial;
+	background-size: initial;
+	background-repeat: initial;
+	mask-image: initial;
+	-webkit-mask-image: initial;
+	background-color: var(--ld-color-dark);
+}
+
+@include ld-icon('lesson', '../images/icon-lesson.svg');
+@include ld-icon('course', '../images/icon-course.svg');
+@include ld-icon('quiz', '../images/icon-quiz.svg');
+@include ld-icon('materials', '../images/icon-materials.svg');
+@include ld-icon('search', '../images/icon-search.svg');
+@include ld-icon('carret-down', '../images/icon-carret-down.svg');
+@include ld-icon('carret-up', '../images/icon-carret-up.svg');
+@include ld-icon('arrow-left', '../images/icon-arrow-left.svg');
+@include ld-icon('list', '../images/icon-list.svg');
+@include ld-icon('star', '../images/icon-star.svg');
+@include ld-icon('filter', '../images/icon-filter.svg');
+@include ld-icon('image', '../images/icon-image.svg');
+@include ld-icon('close', '../images/icon-close.svg');
+@include ld-icon('check', '../images/icon-check.svg');
