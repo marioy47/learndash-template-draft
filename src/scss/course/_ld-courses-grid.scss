@@ -16,7 +16,7 @@
 		}
 	}
 
-	@include break-mobile{
+	@include break-mobile {
 		grid-template-columns: 1fr;
 
 		> * {

@@ -5,228 +5,188 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="../../styles.css" rel="stylesheet" />
+		<style>
+			.ld-course-info > * {
+				background-color: rgba(0, 0, 0, 0.1);
+				border: 1px solid white;
+			}
+		</style>
 	</head>
 	<body>
-
 		<div class="ld-container">
 			<div class="ld-course-info">
-
-				<div class="ld-course-info__breadcrums">
-					Breadcrumbs
-				</div>
-				<header class="ld-course-info__header">
-					<h1 class="ld-main-content__title">Course Title</h1>
-					<div class="ld-main-content__enrollment">Not Enrolled</div>
-					<div class="ld-main-content__lessons">6 Lessons</div>
-				</header>
-				<main class="ld-course-info__main">
-					<!-- Description, Materials, Lesson List -->
-
-				</main>
-				<aside class="ld-course-info__aside">
-					<!-- Subscription, Pricing, Progress, etc. -->
-
-				</aside>
-
-
-
-				<!-- Sidebar: Information of subscription status and instructors -->
-				<aside class="ld-main-content__aside">
-					Aside
-
-				</aside>
-				<!-- Sidebar -->
-
-				<!-- Display selector: Show course content or course material -->
-				<nav class="ld-main-content__nav">
-					<menu class="ld-main-content__nav-menu">
-						<li
-							class="ld-main-content__nav-item ld-main-content__nav-item--active"
-						>
-							<a
-								href=""
-								data-selector-type="display-content"
-								data-selector-target="description"
-								>Course</a
-							>
-						</li>
-						<li class="ld-main-content__nav-item">
-							<a
-								href=""
-								data-selector-type="display-content"
-								data-selector-target="materials"
-								>Materials</a
-							>
-						</li>
-					</menu>
+				<nav class="ld-course-info__breadcrumbs">
+					Breadcrumbs component
 				</nav>
-				<!-- Display selector -->
-
-				<!-- Course content -->
-				<div class="ld-main-content__main" id="">
-					<div class="ld-course-info">
-						<main
-							class="ld-course-info__content"
-							data-content-id="description"
-						>
-							<div class="ld-course-info__description">
-								<h2 class="ld-course-info__subtitle">
-									Description
-								</h2>
-
-								<p>
-									This is an example of a free course
-									demonstrating some of the core LearnDash
-									functionality.
-								</p>
-
-								<p>Key concepts covered include:</p>
-
-								<ul>
-									<li>LearnDash Focus Mode demonstration</li>
-									<li>Accepted media files</li>
-									<li>Example quiz questions</li>
-									<li>Timer demonstration</li>
-									<li>Course workflow</li>
-								</ul>
-
-								<p>
-									Advanced functionality such as learner
-									engagement notifications, assignments, essay
-									questions (and more) are not featured. Don’t
-									hesitate to contact us if you have any
-									questions relating to any of the LearnDash
-									functionality. 🙂
-								</p>
-							</div>
-							<!-- course-info__description -->
-							<div class="ld-course-sections">
-								<h2 class="ld-course-info__subtitle">
-									Content
-								</h2>
-
-								<h3 class="ld-course-section__title">
-									Section 1
-								</h3>
-								<section
-									class="ld-course-lesson"
-									id="course-lesson-1"
+				<h1 class="ld-course-info__title">
+					Tristique Magna Sit Amet Purus Gravida Quis Blandit Turpis
+					Cursus
+				</h1>
+				<aside class="ld-course-info__aside">Sidebar component</aside>
+				<main class="ld-course-info__main">
+					<nav class="ld-course-info__tabs">
+						<ul>
+							<li>
+								<a
+									href="javascript:;"
+									data-tabbed-switch="course-content-materials"
+									data-tabbed-switch-target=".ld-course-info__content"
+									data-tabbed-switch-class="ld-course-info__content--active"
+									>Content</a
 								>
-									<h4 class="ld-course-lesson__title">
-										Course Lesson 1
-									</h4>
-									<div class="ld-course-lesson__status">
-										Not started
-									</div>
-									<div class="ld-course-lesson__display">
-										<a href="#course-lesson-1"></a>
-									</div>
-									<ul class="ld-course-lesson__topics">
-										<li class="ld-course-lesson__topic">
-											Topic1
-										</li>
-										<li class="ld-course-lesson__topic">
-											Topic2
-										</li>
-										<li class="ld-course-lesson__topic">
-											Topic3
-										</li>
-									</ul>
-									<ul class="ld-course-lesson__quizzes">
-										<li class="ld-course-lesson_quiz">
-											Quiz 1
-										</li>
-									</ul>
-								</section>
-
-								<section
-									class="ld-course-lesson"
-									id="course-lesson-2"
+							</li>
+							<li>
+								<a
+									href="javascript:;"
+									data-tabbed-switch="course-content-materials"
+									data-tabbed-switch-target=".ld-course-info__materials"
+									data-tabbed-switch-class="ld-course-info__materials--active"
+									>Material</a
 								>
-									<h4 class="ld-course-lesson__title">
-										Course Lesson 2
-									</h4>
-									<div class="ld-course-lesson__status">
-										Not started
-									</div>
-									<div class="ld-course-lesson__display">
-										<a href="#course-lesson-2"></a>
-									</div>
-									<ul class="ld-course-lesson__topics">
-										<li class="ld-course-lesson__topic">
-											Topic1
-										</li>
-										<li class="ld-course-lesson__topic">
-											Topic2
-										</li>
-									</ul>
-									<ul class="ld-course-lesson__quizzes">
-										<li class="ld-course-lesson_quiz">
-											Quiz 1
-										</li>
-										<li class="ld-course-lesson_quiz">
-											Quiz 2
-										</li>
-									</ul>
-								</section>
-
-								<h3 class="ld-course-section__title">
-									Section 2
-								</h3>
-								<section
-									class="ld-course-lesson"
-									id="course-lesson-3"
-								>
-									<h4 class="ld-course-lesson__title">
-										Course Lesson 3
-									</h4>
-									<div class="ld-course-lesson__status">
-										Not started
-									</div>
-									<div class="ld-course-lesson__display">
-										<a href="#course-lesson-3"></a>
-									</div>
-									<ul class="ld-course-lesson__topics">
-										<li class="ld-course-lesson__topic">
-											Topic1
-										</li>
-										<li class="ld-course-lesson__topic">
-											Topic2
-										</li>
-										<li class="ld-course-lesson__topic">
-											Topic3
-										</li>
-									</ul>
-									<ul class="ld-course-lesson__quizzes">
-										<li class="ld-course-lesson_quiz">
-											Quiz 1
-										</li>
-									</ul>
-								</section>
-							</div>
-							<!-- Sections -->
-						</main>
-						<!-- Course Content -->
-
-						<main
-							class="ld-course-info__materials"
-							data-content-id="materials"
-						>
-							<h2 class="ld-course-info__subtitle">
-								Course Materials
-							</h2>
-
-							<p>Course Materials here</p>
-						</main>
-						<!-- Course Materials -->
+							</li>
+						</ul>
+					</nav>
+					<div
+						class="ld-course-info__content"
+					>
+						<h2>Content</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipiscing
+							elit, etiam dis augue ac habitasse vel fusce,
+							natoque facilisi fames accumsan diam lacus. A ligula
+							sem in fermentum tincidunt quis aliquet lacus ornare
+							quisque, lacinia class donec curabitur feugiat
+							tempus suscipit commodo blandit elementum, magnis
+							orci ut fusce sed faucibus nullam nostra placerat.
+							Massa curabitur odio eget nibh lacus morbi tempus
+							enim, vulputate potenti diam penatibus cubilia
+							consequat.
+						</p>
+						<p>
+							Molestie torquent penatibus laoreet natoque et
+							bibendum vulputate posuere nibh, semper orci tortor
+							vestibulum aenean erat porttitor dictumst, odio
+							ullamcorper fusce mauris mattis ut porta phasellus.
+							Cras natoque venenatis turpis iaculis accumsan dui
+							dignissim eros, curabitur mauris in facilisi aptent
+							interdum semper nullam, massa aliquet at himenaeos
+							rhoncus fringilla dictumst. Sed aliquet sociosqu
+							posuere blandit viverra quisque, massa cubilia
+							tincidunt senectus natoque odio, ullamcorper a
+							mattis euismod ridiculus. Suspendisse consequat
+							felis platea netus ultricies duis lobortis
+							vestibulum, hac erat dis nisi fermentum eu blandit,
+							rhoncus aptent elementum mollis in per praesent.
+						</p>
+						<p>
+							Risus conubia morbi enim in auctor at, nisl mi justo
+							ridiculus pulvinar, libero nisi tellus himenaeos
+							maecenas. Fermentum conubia mauris quis sagittis
+							dictum penatibus semper commodo et, parturient purus
+							est ante sociosqu condimentum arcu vitae eu, rutrum
+							vel nascetur mattis congue odio cubilia felis. Magna
+							sodales est ridiculus pharetra dignissim ligula
+							vehicula, natoque molestie cubilia semper sapien.
+							Vulputate magna auctor cubilia aliquet vel ultrices
+							dictumst molestie, dignissim iaculis potenti tempor
+							netus enim.
+						</p>
+						<p>
+							Phasellus torquent praesent odio eros vel inceptos
+							nullam, egestas cras tortor volutpat pharetra mus
+							semper, class erat non risus luctus dignissim.
+							Varius orci sapien nam est risus hac, viverra duis
+							ridiculus scelerisque platea, conubia aliquam quis
+							facilisis nisl. Iaculis fermentum nec laoreet mollis
+							cursus aptent libero in phasellus fringilla, quam
+							neque congue turpis nibh inceptos lobortis elementum
+							ullamcorper ultrices, etiam per fusce blandit
+							suspendisse leo sapien facilisi ac.
+						</p>
 					</div>
-				</div>
-				<!-- Course content -->
+					<div class="ld-course-info__materials">
+						<h2>Materials</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipiscing
+							elit id ullamcorper laoreet, turpis faucibus ornare
+							iaculis lacinia morbi sodales mattis. Ullamcorper
+							nisi mi nibh mattis ac volutpat viverra tincidunt,
+							sociis vehicula varius aptent venenatis quis eu erat
+							nunc, pulvinar cubilia sodales porttitor congue
+							dapibus tristique. Placerat rutrum facilisi mauris
+							elementum hendrerit eros at nisl iaculis viverra
+							pulvinar blandit nascetur, euismod rhoncus laoreet
+							eu lobortis et sem auctor in cursus natoque
+							dignissim.
+						</p>
+						<p>
+							Tempor tellus curabitur sodales et ullamcorper
+							cursus hac, quisque eu duis vestibulum auctor cras,
+							magnis ultricies vitae felis torquent pharetra.
+							Congue laoreet sed commodo primis scelerisque in
+							cubilia nibh dapibus, elementum bibendum ornare enim
+							litora mi habitasse nostra risus, sagittis
+							vestibulum odio urna interdum facilisi ligula class.
+							Duis metus tristique sodales enim cum nam himenaeos,
+							arcu hendrerit vulputate aenean posuere. Ultricies
+							faucibus ridiculus ad habitasse gravida sollicitudin
+							bibendum mi curabitur placerat, porta euismod
+							nascetur dictum nulla donec nostra pulvinar posuere,
+							nec orci imperdiet in eget tempor habitant tempus
+							aenean.
+						</p>
+						<p>
+							Ullamcorper tempor eget magna consequat massa magnis
+							in platea semper curabitur dapibus, ac accumsan odio
+							quis nibh nisi primis litora cubilia aliquet.
+							Parturient in sem mollis risus felis vivamus
+							convallis cubilia, tincidunt sapien eu nec velit
+							malesuada cum duis hendrerit, cras ornare magnis
+							imperdiet tempus scelerisque nisl. Lobortis
+							consequat ad per tempor dis vitae platea eu
+							vestibulum fringilla sagittis malesuada, imperdiet a
+							dictumst sed bibendum tristique ultricies duis orci
+							natoque.
+						</p>
+						<p>
+							Ultrices suspendisse sapien tristique facilisi
+							primis netus auctor, vel quam ridiculus eros purus
+							justo lacus penatibus, mus torquent platea magna
+							tempor dis. Sagittis vestibulum varius nostra
+							dignissim netus curabitur, cras natoque est etiam
+							nec cubilia, at ullamcorper nascetur magna
+							tincidunt. Fermentum himenaeos aenean nunc rhoncus
+							laoreet lobortis nisi sollicitudin, purus fames
+							libero mus a sodales morbi vestibulum curabitur, est
+							dignissim vulputate enim blandit erat hac. Enim
+							venenatis a pretium curabitur donec justo commodo
+							felis vestibulum, cubilia condimentum maecenas
+							aliquet fusce semper tempus per, tellus convallis
+							eget orci dis nascetur integer augue.
+						</p>
+						<p>
+							Leo dictumst bibendum ullamcorper habitasse nostra
+							nec, sollicitudin sodales laoreet morbi mauris. Ac
+							pulvinar sociis nisl ridiculus himenaeos aliquet
+							placerat, class orci commodo porta ullamcorper
+							litora sociosqu, velit nascetur rutrum dictumst ut
+							pretium. Himenaeos vulputate massa cubilia
+							vestibulum varius quam, ac ad eu maecenas fringilla
+							tellus, lobortis lacus class sagittis porttitor.
+							Massa nullam etiam maecenas mauris sem arcu nascetur
+							quis, velit luctus per tincidunt erat potenti urna,
+							commodo tempus dictum ac tortor nisl pulvinar.
+						</p>
+					</div>
+				</main>
 			</div>
 		</div>
 		<!-- Main Content -->
+		<p>
+			<a href="../../">Return to index</a>
+		</p>
 
 		<!-- ld-site-footer -->
-		<script language="JavaScript" src="../js/scripts.js"></script>
+		<script language="JavaScript" src="../../scripts.js"></script>
 	</body>
 </html>

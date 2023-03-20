@@ -1,23 +1,53 @@
 // Styles the grid for the course landing page
 .ld-course-info {
 	display: grid;
+	gap: 16px;
+	grid-template-areas:
+		"breadcrumbs aside"
+		"title aside"
+		"main aside";
+	grid-template-columns: auto 350px;
 
-	&__description {
-		grid-column: 1 / 2;
-		grid-row: 1 / 2;
+	@include break-tablet {
+		display: initial;
+	}
+
+	&__breadcrumbs {
+		grid-area: breadcrumbs;
+	}
+
+	&__title {
+		grid-area: title;
+	}
+
+	&__aside {
+		grid-area: aside;
+	}
+
+	&__main {
+		grid-area: main;
+		display: grid;
 	}
 
 	&__content {
-		grid-column: 1 / 2;
-		grid-row: 2 / 3;
+		grid-area: 2 / 1 / 3 / 2;
+		background-color: var(--ld-color-body-bg);
+		position: relative;
+		z-index: -1;
+	}
+
+	&__content#{&}__content--active {
+		z-index: 0;
 	}
 
 	&__materials {
-		--display: 0;
-		grid-column: 1 / 1;
-		grid-row: calc(1 * var(--display)) / 3;
-		height: var(--display);
-		overflow: hidden;
-		background-color: var(--body-bg-color);
+		grid-area: 2 / 1 / 3 / 2;
+		background-color: var(--ld-color-body-bg);
+		position: relative;
+		z-index: -2;
+	}
+
+	&__materials#{&}__materials--active {
+		z-index: 0;
 	}
 }
