@@ -1,10 +1,10 @@
+// Page structure for the list of courses
 .ld-courses {
 	display: grid;
-	gap: 16px;
 	grid-template-areas:
 		"toggle search search"
 		"list list list"
-		"pg pg pg";
+		"pag pag pag";
 
 	&__toggle {
 		grid-area: toggle;
@@ -26,14 +26,14 @@
 	}
 
 	&__pagination {
-		grid-area: pg;
+		grid-area: pag;
 	}
 
 	&#{&}--show-filters {
 		grid-template-areas:
 			"toggle search search search"
 			"filters list list list"
-			"pg pg pg pg";
+			"pag pag pag pag";
 	}
 
 	&#{&}--show-filters &__filters {

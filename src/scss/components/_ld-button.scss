@@ -1,0 +1,31 @@
+.ld-button {
+	background: var(--ld-color-primary);
+	color: var(--ld-color-white);
+	border-radius: var(--ld-button-border-radius);
+	border-style: none;
+	padding: 12px 24px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: var(--ld-button-height);
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: var(--ld-font-size);
+
+	&--large {
+		padding: 16px 24px;
+		font-size: calc(var(--ld-font-size) * 1.14);
+	}
+
+	&--rounded {
+		border-radius: var(--ld-button-border-radius-rounded);
+	}
+
+	&--secondary {
+		background-color: var(--ld-color-white);
+		color: var(--ld-color-primary);
+		border: 3px solid var(--ld-color-primary);
+	}
+}

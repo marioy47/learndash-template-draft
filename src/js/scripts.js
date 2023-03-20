@@ -1,3 +1,8 @@
-import toggleClass from './toggle-class';
+import toggleClassForTriggerSelector from './toggle-class';
 
-toggleClass();
+window.addEventListener('DOMContentLoaded', () => {
+	toggleClassForTriggerSelector(
+		'data-toggle-class-target',
+		'data-toggle-class-value'
+	);
+});

@@ -1,12 +1,13 @@
 // SCSS Variables
 
-// the @media statement does not accespt html variables.
-$break-tablet: 760px; // = $break-medium; adminbar goes big
+// the @media statement does not access html variables.
+$break-tablet: 640px; // = $break-medium; admin bar goes big
 $break-desktop: 940px; // = $break-large; admin sidebar auto folds
 $break-desktop-lg: 1440px;
 
 // CSS Variables.
 :root {
+
 	/** Colors **/
 	--ld-color-primary: #3259eb;
 	--ld-color-secondary: #ffd057;
@@ -19,38 +20,45 @@ $break-desktop-lg: 1440px;
 	--ld-color-contrast: #dce1e8;
 	--ld-color-light-1: #f3f8ff;
 	--ld-color-light-2: #f7f9fc;
-	--ld-color-white: #ffffff;
+	--ld-color-white: #fff;
 
 	/** Typography **/
 	--ld-font-family: inter, -apple-system, roboto, ubuntu, sans-serif;
-	--ld-font-size: calc(0.875rem + ((1vw - 0.4rem) * 0.25));
-	--ld-line-height: 1.5rem;
+	--ld-font-size: clamp(0.875rem, calc(0.875rem + (1 - 0.875) * ((100vw - 40rem) / (90 - 40))), 1rem);
+	--ld-line-height: 1.5;
 
 	/* Headings */
-	--ld-h1-size: calc(2.5rem + ((1vw - 0.4rem) * 3)); // from 2 to 4 rem
+	--ld-h1-size: clamp(2.5rem, calc(2.5rem + (4 - 2.5) * ((100vw - 40rem) / (90 - 40))), 4rem);
 	--ld-h1-weight: bold;
 	--ld-h1-spacing: -2%;
-	--ld-h1-height: 1.2;
+	--ld-h1-height: 1.125;
 
-	--ld-h2-size: calc(1.5rem + ((1vw - 0.4rem) * 2)); // from 1.5 to 2.5rem
+	--ld-h2-size: clamp(2rem, calc(2rem + (3 - 2) * ((100vw - 40rem) / (90 - 40))), 3rem);
 	--ld-h2-weight: bold;
 	--ld-h2-spacing: -2%;
-	--ld-h2-height: 1.2;
+	--ld-h2-height: 1.125;
 
-	--ld-h3-size: calc(1rem + ((1vw - 0.4rem) * 1)); // from 1 to 1.5rem
+	--ld-h3-size: clamp(1.5rem, calc(1.5rem + (2 - 1.5) * ((100vw - 40rem) / (90 - 40))), 2rem);
 	--ld-h3-weight: bold;
 	--ld-h3-spacing: -2%;
-	--ld-h3-height: 1.2;
+	--ld-h3-height: 1.25;
 
-	--ld-h4-size: calc(1rem + ((1vw - 0.4rem) * 1)); // from 1 to 1.5rem
+	--ld-h4-size: clamp(1.25rem, calc(1.25rem + (1.5 - 1.25) * ((100vw - 40rem) / (90 - 40))), 1.5rem);
 	--ld-h4-weight: 500;
 	--ld-h4-spacing: inherit;
 	--ld-h4-height: 1.2;
 
+	/** Buttons **/
+	--ld-button-bg: var(--ld-color-primary);
+	--ld-button-color: var(--ld-color-white);
+	--ld-button-bg-hover: #2c4fd1;
+	--ld-button-height: 2.85rem;
+	--ld-button-font-size: var(--ld-font-size);
+	--ld-button-font-size-lg: calc(var(--ld-button-font-size) * 1.14);
+	--ld-button-border-radius: 4px;
+	--ld-button-border-radius-rounded: 100px;
+
 	/** Container margins and padding **/
-	--ld-container-width-desktop: 1200px;
-	--ld-container-width-tablet: 720px;
-	--ld-container-width-mobile: 420px;
 	--ld-container-padding: 8px;
 
 	/** Site body **/

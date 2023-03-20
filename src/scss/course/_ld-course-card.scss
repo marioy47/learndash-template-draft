@@ -1,0 +1,30 @@
+// Styles one card on the course list.
+.ld-course-card {
+	padding: 0;
+	background: var(--ld-color-white);
+	border: 1px solid var(--ld-color-contrast);
+	order: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 700px;
+
+	> * {
+		width: 100%;
+		margin: 0 24px;
+		border: 1px solid red;
+	}
+
+	&__image {
+
+		img {
+			width: 100%;
+			height: 255px;
+			object-fit: cover;
+		}
+	}
+
+	&__info {
+		flex-grow: 1;
+	}
+}

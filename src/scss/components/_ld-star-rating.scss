@@ -1,0 +1,15 @@
+.ld-star-rating {
+
+	&__star::after {
+		content: "\2605";
+	}
+
+	&__star--empty::after {
+		content: "\2606";
+	}
+
+	&__number {
+		font-size: calc(var(--font-size) * 0.8);
+	}
+
+}

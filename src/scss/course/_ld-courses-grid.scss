@@ -1,0 +1,26 @@
+.ld-courses-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+
+
+	> * {
+		height: 645px;
+	}
+
+	@include break-tablet {
+		grid-template-columns: 1fr;
+
+		> * {
+			height: 340px;
+		}
+	}
+
+	@include break-mobile{
+		grid-template-columns: 1fr;
+
+		> * {
+			height: 645px;
+		}
+	}
+}

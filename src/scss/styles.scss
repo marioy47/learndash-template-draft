@@ -1,33 +1,27 @@
 @import "tools/variables";
 @import "tools/mixins";
+@import "tools/fonts";
 
-/** HTML5 native elemtns `body`, `strong`, `font`, etc. **/
-@import "html-elements/fonts";
 
 /** Components **/
-@import "components/ld-container";
-@import "components/ld-icon";
-@import "components/ld-courses-grid";
-@import "components/ld-courses";
+@import "components/ld-components";
+@import "course/ld-course";
 
 /** Page Sections **/
-@import "ld-site-header";
-@import "ld-menu-profile";
-@import "ld-site-footer";
+// @import "ld-menu-profile";
 
 /** Global blocks **/
-@import "ld-main-content";
-@import "ld-progress";
-@import "ld-pie-chart";
-@import "ld-breadcrumb";
-@import "ld-alert";
-@import "ld-locker";
-@import "ld-course-subscription";
-@import "ld-course-lesson";
+// @import "ld-main-content";
+// @import "ld-progress";
+// @import "ld-pie-chart";
+// @import "ld-breadcrumb";
+// @import "ld-alert";
+// @import "ld-locker";
+// @import "ld-course-subscription";
+// @import "ld-course-lesson";
 
 /** Pages **/
 @import "course/ld-course";
 @import "lesson/index";
 @import "quiz/ld-quiz";
-
 

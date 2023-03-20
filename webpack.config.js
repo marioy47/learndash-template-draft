@@ -51,6 +51,7 @@ module.exports = {
 			server: {
 				baseDir: './dist',
 			},
+			// proxy: 'https://ld-wp.lndo.site/',
 		}),
 	],
 };

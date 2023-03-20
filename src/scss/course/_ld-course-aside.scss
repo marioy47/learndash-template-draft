@@ -1,12 +1,6 @@
-.ld-course-subscription {
+// Styles the subscription section on the course landing page.
+.ld-course-aside {
 
-	&__star::after {
-		content: "\2605";
-	}
-
-	&__star--empty::after {
-		content: "\2606";
-	}
 
 	&__subtitle {
 		font-size: 70%;

@@ -1,11 +1,9 @@
-// Main container for all the thinks LearnDash
+// Main container for all the things LearnDash
 
 .ld-container {
-	display: block;
 	font-family: var(--ld-font-family);
 	font-size: clamp(var(--ld-font-size), calc(var(--ld-font-size) + ((1vw - 0.4rem) * 0.25)), 1rem);
 	line-height: var(--ld-line-height);
-	max-width: var(--ld-container-width-desktop);
 	padding: var(--ld-container-padding);
 	margin: 0 auto;
 

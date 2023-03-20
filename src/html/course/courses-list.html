@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Grid</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        .ld-course-card {
+            background-color: rgba(0, 0, 0, .1);
+            min-height: 300px;
+        }
+		div[class^='ld-courses__'] {
+			background-color: rgba(0, 0, 0, .1);
+			border: 1px solid #eee;
+		}
+    </style>
+</head>
+<body>
+    <h1>List of courses</h1>
+    <p>Here is only the structure of the RESPONSIVE list of courses without the course content. In Course Card is how a course inside this grid looks</p>
+    <p>The background-color is applied in a local &lt;style&gt; tag</p>
+    <div class="ld-container">
+        <main class="ld-courses">
+            <div class="ld-courses__toggle"><a data-toggle-class-target="ld-courses" data-toggle-class-value="ld-courses--show-filters">Toggle</a></div>
+            <div class="ld-courses__search">Search</div>
+            <div class="ld-courses__filters">Filters</div>
+            <div class="ld-courses__list">
+                <div class="ld-courses-grid">
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                    <article class="ld-course-card"></article>
+                </div>
+            </div>
+            <div class="ld-courses__pagination">Pagination</div>
+        </main>
+    </div>
+    <a href="../../">Back to index</a>
+
+    <script src="../../scripts.js"></script>
+</body>
+</html>

@@ -1,3 +1,2 @@
-import doLog from './tools/log';
-
-doLog('Only displayed on the dashboard');
+/* Scripts for the dashboard. */
+console.log('Dashboard scripts');

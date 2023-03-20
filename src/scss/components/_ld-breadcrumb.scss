@@ -1,0 +1,19 @@
+.ld-breadcrumb {
+	display: flex;
+	padding: 1rem 0;
+	list-style: none;
+	margin: 0;
+
+
+	&__item {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 10.5rem;
+
+		&:not(:last-child)::after {
+			content: "/";
+			padding: 0 0.25rem;
+		}
+	}
+}
